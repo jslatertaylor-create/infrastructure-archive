@@ -380,6 +380,49 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 .di-pip.done { background: var(--accent); }
 .di-pip.current { background: var(--accent-lt); }
 
+
+/* RESEARCH THREAD */
+.research-thread {
+  margin: 3rem 0 0;
+  padding: 1.75rem 2rem;
+  background: rgba(200,146,42,0.04);
+  border-top: 1px solid var(--accent-border);
+  border-bottom: 1px solid var(--accent-border);
+}
+.rt-label {
+  font-size: 0.58rem; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1rem; display: block;
+}
+.rt-text {
+  font-size: 0.88rem; color: var(--text-2); line-height: 1.8;
+}
+.rt-text strong { color: var(--text); }
+
+/* DATA PORTRAIT */
+.data-portrait {
+  margin: 2.5rem 0;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.dp-svg-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.dp-svg-wrap svg { width: 100%; height: auto; display: block; }
+.dp-node { cursor: pointer; }
+.dp-node circle { transition: r 0.2s, fill 0.2s; }
+.dp-node:hover circle.dp-dot { r: 7; fill: var(--accent); }
+.dp-node text { transition: fill 0.2s; }
+.dp-node:hover text.dp-node-label { fill: #EAD9BE; }
+.dp-detail { opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+.dp-node:hover .dp-detail { opacity: 1; }
+.dp-caption {
+  padding: 0.65rem 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem; color: var(--text-3); line-height: 1.55;
+}
+
 @media(max-width:680px) {
   .nav-links { display: none; }
   .exhibit-body { grid-template-columns: 1fr; gap: 2rem; }
@@ -396,7 +439,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <span class="nav-logo" onclick="showSection('lobby')">The Infrastructure Archive</span>
   <ul class="nav-links">
     <li><a onclick="showSection('gallery')">Exhibition</a></li>
-    <li><a onclick="showSection('curator')">Curator's Office</a></li>
+    <li><a onclick="showSection('curator')">Curator's Corner</a></li>
   </ul>
 </nav>
 
@@ -448,8 +491,8 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('curator')">
       <p class="card-num">Wing 005</p>
-      <h3 class="card-title">The Curator's Office</h3>
-      <p class="card-sources">Jeo Slater-Taylor · Curator on Record</p>
+      <h3 class="card-title">The Curator's Corner</h3>
+      <p class="card-sources">Jeovane Slater-Taylor · Curator on Record</p>
       <p class="card-desc">Who curates matters. A Solutions Architect turned STS scholar on what it means to have spent a decade inside the infrastructure you are now studying.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
@@ -837,6 +880,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <div class="callout"><p>"The bodies most surveilled were also the people whose accounts of that surveillance were systematically dismissed as not counting as evidence. The same logic governs who gets watched and who gets believed."</p></div>
 
+      <div class="research-thread">
+        <span class="rt-label">Research Thread · How Wing 001 Contributes to the Dissertation</span>
+        <p class="rt-text">Browne's methodological choice to treat slave narratives, coded spirituals, and popular culture as co-equal theoretical sources is the epistemological move my dissertation depends on. If those artifacts count as evidence, then cultural practices count as data. Her concept of <strong>racializing surveillance</strong> — where surveillance doesn't just observe race but actively produces it — is the template for Black Code's central claim: cultural practices don't simply reflect expertise hierarchies, they constitute them. Monea makes the identical structural argument about heteronormativity: the internet didn't reflect straightness, it became straight. That move — from reflection to constitution — is the core of what I'm arguing culture does to technical knowledge.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1045,6 +1093,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <p>Black Code treats Black women as epistemic actors whose lived experiences generate alternative understandings of technological design, knowledge production, and social impact. It is not simply a critique of exclusion. It is a framework for analyzing how marginalized positionalities produce distinct technological imaginaries — and for asking what we lose when those imaginaries get coded out of the system before the architecture diagram is ever drawn.</p>
 
+      <div class="research-thread">
+        <span class="rt-label">Research Thread · How Wing 002 Contributes to the Dissertation</span>
+        <p class="rt-text">Carrigan's bro code is the most direct predecessor to <strong>Black Code</strong>. My dissertation extends her framework: where the bro code explains how masculinity structures professional legitimacy in technical fields, Black Code examines how race and gender together produce navigational practices that constitute their own form of sociotechnical infrastructure. Criado-Perez provides the epistemological model for what the invisible default does — once male data gets classified as human data, the exclusion becomes self-justifying and invisible from within the system. Black Code argues the same logic operates with whiteness and masculinity as the unmarked defaults for what technical expertise looks like, sounds like, and gets recognized as.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1214,6 +1267,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <p>Boellstorff recovers the Greek concept of <em>techne</em> — craft, making, the knowledge embedded in how things are produced — to argue that technology is always already an epistemological claim. How we produce things is also how we produce truth. This museum is a techne argument. The digital museum format is not a container for the argument. It is the argument. A dissertation that claims cultural knowledge is experiential cannot demonstrate that claim in standard academic prose without the form contradicting the content. The medium is not decoration. It is evidence.</p>
 
+      <div class="research-thread">
+        <span class="rt-label">Research Thread · How Wing 003 Contributes to the Dissertation</span>
+        <p class="rt-text">Haraway's situated knowledges is the methodological warrant for my entire approach. If all knowledge is produced from somewhere, then my biography is not a complication to manage — it is a resource to account for. The Curator's Corner is a direct application of this principle. Nash's critique of institutionalized intersectionality is also a direct warning to my own project: Black feminist frameworks can circulate while Black women don't. <strong>Black Code</strong> must be careful not to become another traveling theory that generates academic prestige while the community it describes remains underrecognized. Boellstorff's techne argument is why this museum exists in this form: a dissertation claiming cultural knowledge is experiential cannot make that case in standard prose without the form contradicting the content.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1323,6 +1381,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <p>This is the note this wing ends on — not resolution, but aperture. The work documented in this museum is not finished. The infrastructure of surveillance, of gendered design, of epistemological gatekeeping is still operating. But Dokumaci showed us that people have always been building inside the peach. Benjamin showed us the abolitionist tradition has always had tools the institution refused to recognize. Clarke and Haraway showed us that kin can be made where it was not supposed to exist. Bahng shows us that the fence was always low. What is on the other side has always been possible. It is being built right now, by people who stopped waiting for permission.</p>
 
+      <div class="research-thread">
+        <span class="rt-label">Research Thread · How Wing 004 Contributes to the Dissertation</span>
+        <p class="rt-text">Dokumaci is the closest theoretical neighbor to <strong>Black Code</strong>. Her argument that activist affordances — the micro-acts through which disabled people create access to worlds not designed for them — constitute expertise the system cannot recognize from inside itself, is precisely the argument Black Code makes about Black women's cultural practices in technical environments. Both texts ask the same question: what gets recognized as technical knowledge, and what does that recognition require you to overlook? Benjamin's abolitionist tools name the political horizon the dissertation gestures toward — not diversity initiatives, but a fundamental rethinking of what technical expertise is, who produces it, and what it is for.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1334,7 +1397,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
     <p class="exhibit-catalogue">Wing 005</p>
     <h2 class="exhibit-title">The Curator's <em>Office</em></h2>
     <div class="exhibit-sources-bar">
-      <span class="source-tag">Jeo Slater-Taylor</span><span class="source-tag">Curator on Record</span>
+      <span class="source-tag">Jeovane Slater-Taylor</span><span class="source-tag">Curator on Record</span>
     </div>
   </div>
 
@@ -1348,64 +1411,266 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       Nobody called it<br>
       political.<br><br>
       They called it<br>
-      <em>requirements</em>.
+      <em>requirements</em>.<br><br>
+      The why kid<br>
+      eventually<br>
+      asks why<br>
+      <em>that</em>.
     </div>
   </div>
 
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This office is an argument about positionality — and about what it means to have spent a decade inside the infrastructure you are now studying.</p>
+      <p class="wall-label-text">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This office is a full account of the curator's position — because the argument of this museum is that you cannot understand the knowledge without understanding the knower.</p>
     </div>
 
     <div class="exhibit-essay">
 
-      <div class="gallery-img">
-        <div style="min-height:300px;background:linear-gradient(165deg,#0A0806 0%,#141008 50%,#0C0E10 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;text-align:center;position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 40px,rgba(200,146,42,0.03) 40px,rgba(200,146,42,0.03) 41px)"></div>
-          <p style="font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;position:relative">Credentials on Record</p>
-          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;position:relative">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;padding:0.4rem 1rem;border:1px solid rgba(200,146,42,0.3);color:var(--text-2)">Solutions Architect</span>
-            <span style="font-size:0.7rem;letter-spacing:0.15em;padding:0.4rem 1rem;border:1px solid rgba(200,146,42,0.3);color:var(--text-2)">TS/SCI Clearance</span>
-            <span style="font-size:0.7rem;letter-spacing:0.15em;padding:0.4rem 1rem;border:1px solid rgba(200,146,42,0.3);color:var(--text-2)">HUD · BAE Systems · Agile Defense</span>
-            <span style="font-size:0.7rem;letter-spacing:0.15em;padding:0.4rem 1rem;border:1px solid rgba(200,146,42,0.3);color:var(--text-2)">Security+ · PMP</span>
-            <span style="font-size:0.7rem;letter-spacing:0.15em;padding:0.4rem 1rem;border:1px solid rgba(200,146,42,0.3);color:var(--text-2)">PhD Candidate · STS · Virginia Tech</span>
+      <!-- HEADSHOT + DATA PORTRAIT -->
+      <div style="display:grid;grid-template-columns:1fr 2fr;gap:0;border:1px solid var(--border);overflow:hidden;margin-bottom:2.5rem">
+
+        <!-- Headshot -->
+        <div style="background:var(--bg-2);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;border-right:1px solid var(--border)">
+          <div style="width:100%;aspect-ratio:3/4;background:var(--bg-3);overflow:hidden;position:relative">
+            <img
+              src="images/headshot.jpg"
+              alt="Jeovane Slater-Taylor"
+              style="width:100%;height:100%;object-fit:cover;display:block;filter:sepia(0.08) brightness(0.9)"
+              onerror="this.style.display='none';document.getElementById('headshot-placeholder').style.display='flex'"
+            />
+            <div id="headshot-placeholder" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;padding:2rem;text-align:center">
+              <svg width="48" height="60" viewBox="0 0 48 60" xmlns="http://www.w3.org/2000/svg" opacity="0.25">
+                <circle cx="24" cy="16" r="14" fill="none" stroke="#C8922A" stroke-width="1.5"/>
+                <path d="M4 52 Q4 36 24 34 Q44 36 44 52" fill="none" stroke="#C8922A" stroke-width="1.5"/>
+              </svg>
+              <p style="font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-3)">Portrait</p>
+              <p style="font-size:0.68rem;color:var(--text-3);opacity:0.6">Upload images/headshot.jpg<br>to display</p>
+            </div>
+          </div>
+          <div style="padding:1.25rem;text-align:center;width:100%">
+            <p style="font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text)">Jeovane Slater-Taylor</p>
+            <p style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-top:0.3rem">Jeovane</p>
+            <p style="font-size:0.72rem;color:var(--text-3);margin-top:0.5rem;line-height:1.5">PhD Candidate<br>Science &amp; Technology Studies<br>Virginia Tech · 2026</p>
           </div>
         </div>
-        <div class="gallery-img-label">
-          <span class="gallery-img-num">The Curator</span>
-          <span class="gallery-img-caption">Jeo Slater-Taylor — first-year PhD student, Science and Technology Studies, Virginia Tech. Former federal solutions architect. The person inside the infrastructure who decided to study it.</span>
+
+        <!-- Data Portrait -->
+        <div class="data-portrait" style="margin:0;border:none">
+          <div class="dp-svg-wrap">
+            <svg viewBox="0 0 580 460" xmlns="http://www.w3.org/2000/svg" style="background:#0A0806">
+
+              <!-- Subtle human silhouette watermark -->
+              <g opacity="0.06" transform="translate(290,220)">
+                <circle cx="0" cy="-110" r="38" fill="none" stroke="#C8922A" stroke-width="2"/>
+                <path d="M-50,-68 Q-55,-40 -55,20 Q-55,60 -35,65 L-30,120 Q-30,130 -18,130 L18,130 Q30,130 30,120 L35,65 Q55,60 55,20 Q55,-40 50,-68 Z" fill="none" stroke="#C8922A" stroke-width="2"/>
+              </g>
+
+              <!-- Connecting lines from center to each node -->
+              <g stroke="rgba(200,146,42,0.18)" stroke-width="0.75" stroke-dasharray="3,4">
+                <line x1="290" y1="220" x2="487" y2="220"/>
+                <line x1="290" y1="220" x2="465" y2="314"/>
+                <line x1="290" y1="220" x2="397" y2="390"/>
+                <line x1="290" y1="220" x2="290" y2="415"/>
+                <line x1="290" y1="220" x2="183" y2="390"/>
+                <line x1="290" y1="220" x2="115" y2="314"/>
+                <line x1="290" y1="220" x2="93" y2="220"/>
+                <line x1="290" y1="220" x2="115" y2="126"/>
+                <line x1="290" y1="220" x2="183" y2="50"/>
+                <line x1="290" y1="220" x2="290" y2="25"/>
+                <line x1="290" y1="220" x2="397" y2="50"/>
+                <line x1="290" y1="220" x2="465" y2="126"/>
+              </g>
+
+              <!-- Center node -->
+              <g text-anchor="middle">
+                <circle cx="290" cy="220" r="42" fill="rgba(200,146,42,0.08)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
+                <text x="290" y="215" fill="#EAD9BE" font-size="11" font-family="Cormorant Garamond,Georgia,serif" font-style="italic">Jeovane Slater-Taylor</text>
+                <text x="290" y="230" fill="#A89278" font-size="7.5" font-family="DM Sans,sans-serif" letter-spacing="1.5">CURATOR · RESEARCHER</text>
+              </g>
+
+              <!-- Node: Howard University (270° top) -->
+              <g class="dp-node" transform="translate(290,25)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(74,120,255,0.3)" stroke="#4A78FF" stroke-width="1"/>
+                <text class="dp-node-label" x="0" y="-12" fill="#6A90D0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">HOWARD UNIVERSITY</text>
+                <text x="0" y="-3" fill="#4A78FF" font-size="7" font-family="DM Sans,sans-serif">HBCU · BS · The Mecca</text>
+                <g class="dp-detail">
+                  <text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Counter-infrastructure</text>
+                  <text x="0" y="20" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">as epistemology</text>
+                </g>
+              </g>
+
+              <!-- Node: Cornell (300° upper-right) -->
+              <g class="dp-node" transform="translate(397,50)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
+                <text class="dp-node-label" x="0" y="-12" fill="#8A7040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">CORNELL UNIVERSITY</text>
+                <text x="0" y="-3" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">IVY LEAGUE · MS · Systems Eng.</text>
+                <g class="dp-detail">
+                  <text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Knowledge systems</text>
+                  <text x="0" y="20" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">translation</text>
+                </g>
+              </g>
+
+              <!-- Node: UMD (330° right-top) -->
+              <g class="dp-node" transform="translate(465,126)" text-anchor="start">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,150,255,0.3)" stroke="#6496FF" stroke-width="1"/>
+                <text class="dp-node-label" x="12" y="-8" fill="#5070A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">UNIV. OF MARYLAND</text>
+                <text x="12" y="2" fill="#6496FF" font-size="7" font-family="DM Sans,sans-serif">BIG TEN · MS · CS / HCI</text>
+                <g class="dp-detail">
+                  <text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Where tech met the human</text>
+                </g>
+              </g>
+
+              <!-- Node: Federal Architect (0° right) -->
+              <g class="dp-node" transform="translate(487,220)" text-anchor="start">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,100,60,0.3)" stroke="#A0643C" stroke-width="1"/>
+                <text class="dp-node-label" x="12" y="-8" fill="#806040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">SOLUTIONS ARCHITECT</text>
+                <text x="12" y="2" fill="#A0643C" font-size="7" font-family="DM Sans,sans-serif">HUD · BAE Systems · Agile Defense</text>
+                <g class="dp-detail">
+                  <text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Nine years inside</text>
+                </g>
+              </g>
+
+              <!-- Node: TS/SCI (30°) -->
+              <g class="dp-node" transform="translate(465,314)" text-anchor="start">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(120,80,40,0.3)" stroke="#785028" stroke-width="1"/>
+                <text class="dp-node-label" x="12" y="-4" fill="#785028" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">TS/SCI · PMP · Security+</text>
+                <g class="dp-detail">
+                  <text x="12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Clearance as credentialing</text>
+                </g>
+              </g>
+
+              <!-- Node: Virginia Tech (60° lower-right) -->
+              <g class="dp-node" transform="translate(397,390)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,80,80,0.3)" stroke="#C84848" stroke-width="1"/>
+                <text class="dp-node-label" x="0" y="16" fill="#803030" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">VIRGINIA TECH</text>
+                <text x="0" y="26" fill="#C84848" font-size="7" font-family="DM Sans,sans-serif">PhD in Progress · STS · Current</text>
+                <g class="dp-detail">
+                  <text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">The why kid asking down</text>
+                </g>
+              </g>
+
+              <!-- Node: DMV Community (90° bottom) -->
+              <g class="dp-node" transform="translate(290,415)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(60,160,120,0.3)" stroke="#3CA078" stroke-width="1"/>
+                <text class="dp-node-label" x="0" y="18" fill="#2A7050" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DMV COMMUNITY</text>
+                <text x="0" y="28" fill="#3CA078" font-size="7" font-family="DM Sans,sans-serif">DC · Maryland · Virginia</text>
+                <g class="dp-detail">
+                  <text x="0" y="40" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Where home and work converge</text>
+                </g>
+              </g>
+
+              <!-- Node: NSBE (120° lower-left) -->
+              <g class="dp-node" transform="translate(183,390)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
+                <text class="dp-node-label" x="0" y="16" fill="#8A6020" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">NSBE</text>
+                <text x="0" y="26" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Lifetime Member · DC Professionals</text>
+                <g class="dp-detail">
+                  <text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Infrastructure for the excluded</text>
+                </g>
+              </g>
+
+              <!-- Node: Delta Sigma Theta (150° left-bottom) -->
+              <g class="dp-node" transform="translate(115,314)" text-anchor="end">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(180,30,30,0.35)" stroke="#C82020" stroke-width="1"/>
+                <text class="dp-node-label" x="-12" y="-8" fill="#901818" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DELTA SIGMA THETA</text>
+                <text x="-12" y="2" fill="#C82020" font-size="7" font-family="DM Sans,sans-serif">Founded 1913 · Howard University</text>
+                <g class="dp-detail">
+                  <text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Black Code, lived</text>
+                </g>
+              </g>
+
+              <!-- Node: Why Kid (180° left) -->
+              <g class="dp-node" transform="translate(93,220)" text-anchor="end">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,120,200,0.3)" stroke="#A078C8" stroke-width="1"/>
+                <text class="dp-node-label" x="-12" y="-4" fill="#7050A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">THE WHY KID</text>
+                <g class="dp-detail">
+                  <text x="-12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Always asking underneath</text>
+                </g>
+              </g>
+
+              <!-- Node: Youngest of Three (210°) -->
+              <g class="dp-node" transform="translate(115,126)" text-anchor="end">
+                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,160,180,0.3)" stroke="#64A0B4" stroke-width="1"/>
+                <text class="dp-node-label" x="-12" y="-8" fill="#407090" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">YOUNGEST OF THREE</text>
+                <text x="-12" y="2" fill="#64A0B4" font-size="7" font-family="DM Sans,sans-serif">Three Black women, one family</text>
+                <g class="dp-detail">
+                  <text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Learned by watching first</text>
+                </g>
+              </g>
+
+              <!-- Node: Black Code (240°) -->
+              <g class="dp-node" transform="translate(183,50)" text-anchor="middle">
+                <circle class="dp-dot" cx="0" cy="0" r="6" fill="rgba(200,146,42,0.4)" stroke="#C8922A" stroke-width="1.5"/>
+                <text class="dp-node-label" x="0" y="-14" fill="#A89278" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5" font-weight="500">BLACK CODE</text>
+                <text x="0" y="-4" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Dissertation Contribution</text>
+                <g class="dp-detail">
+                  <text x="0" y="8" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Culture as infrastructure</text>
+                </g>
+              </g>
+
+            </svg>
+          </div>
+          <p class="dp-caption">Hover each node to see its connection to the research. These data points together constitute the position from which this museum was curated — and the dissertation argues that position is the methodology, not an obstacle to it.</p>
         </div>
       </div>
 
+      <!-- COMMUNITY -->
+      <h3>Community as Infrastructure</h3>
+
+      <p>The most important lesson of nine years in technical fields was not technical. It was this: community is infrastructure. Not metaphorically — literally. The friends who explained what the room really meant after the meeting ended. The line sisters who had already navigated the institution you were entering and left the map. The professional network that passed you an opportunity before it was posted. The family that held you when the institution couldn't. These are not background to professional success. They are the mechanism. They are what makes the work survivable and the person inside the work intact.</p>
+
+      <p>The practice of community — building it where it doesn't exist, showing up to maintain it at personal cost, leaning into it in times of need and leaning back when someone else needs the weight held — that practice is the subject of this dissertation. Black Code is not an academic abstraction. It is the name for what this curator and every Black woman she knows has been doing their entire career: building the infrastructure the institution refused to provide, and navigating the ones that were built without them in mind.</p>
+
+      <div class="callout"><p>"You build community where it doesn't exist because the alternative is surviving alone in rooms not designed for you. And you lean into it in times of need because that is what it was built for. That cycle — building, maintaining, leaning in, holding up — is a form of expertise. It just never appears in any job description."</p></div>
+
+      <p>Community, for this curator, means all of it at once: friends who became family, family who became the foundation, line sisters who became the first call, colleagues who became the network, mentors who became the map. The DMV — DC, Maryland, Virginia — as the place where all of these layers live together. Howard University's intellectual legacy threading through every room. NSBE's professional infrastructure threading through every career move. Delta Sigma Theta's sisterhood threading through every hard season. None of these are separate. They constitute each other. They constitute the person doing the research.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin:2.5rem 0">
+        <div style="background:var(--bg);padding:2rem">
+          <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Sisterhood · Founded 1913</p>
+          <p style="font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:0.35rem">Delta Sigma Theta<br>Sorority, Inc.</p>
+          <p style="font-size:0.7rem;letter-spacing:0.1em;color:var(--text-3);margin-bottom:1.25rem">22 Founders · Howard University · The Baddest</p>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">Founded by 22 women who immediately marched in the 1913 Women's Suffrage Parade before the ink on their charter was dry — that is the energy. Delta Sigma Theta is scholarship, sisterhood, public service, and collective action as a way of being in the world. The line sisters are the first call. They have already navigated the room you're about to enter, or they'll be in it with you. That is not a social relationship. That is infrastructure — built by Black women, for Black women, because the alternative was going in alone.</p>
+        </div>
+        <div style="background:var(--bg);padding:2rem;border-left:1px solid var(--border)">
+          <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Professional Community</p>
+          <p style="font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:0.35rem">National Society of<br>Black Engineers</p>
+          <p style="font-size:0.7rem;letter-spacing:0.1em;color:var(--text-3);margin-bottom:1.25rem">Lifetime Member · DC Professionals Chapter</p>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">NSBE exists because the technical professions did not automatically include Black engineers — so the community built its own mentorship, networking, and credentialing infrastructure to fill the gap. Lifetime membership is a commitment to that project: not just benefiting from the network but contributing to it, building it forward for the people coming behind. The DC Professionals chapter is the professional community that has held this curator's career in ways no employer ever could. It is a case study walking around in business casual.</p>
+        </div>
+      </div>
+
+      <div style="background:var(--bg-2);border:1px solid var(--border);padding:2rem;margin:2rem 0">
+        <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Place as Community</p>
+        <p style="font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--text);margin-bottom:1rem">The DMV — DC · Maryland · Virginia</p>
+        <p style="font-size:0.88rem;color:var(--text-2);line-height:1.8">The DC-Maryland-Virginia corridor is one of the densest concentrations of Black professional life, Black institutional power, and federal technical infrastructure in the United States. Growing up and building a career here means existing at the intersection of Howard University's intellectual legacy, the federal government's technical apparatus, and a Black professional community that has always understood it was building inside systems not designed for it. The DMV shaped this curator's understanding of what technical expertise looks like before having the academic language to describe what she was seeing. It is the community that made the research question legible in the first place.</p>
+      </div>
+
+      <!-- FAMILY -->
+      <h3>The Youngest of Three</h3>
+
+      <p>Being the youngest of three Black daughters is not simply a biographical detail. It is a knowledge formation. Growing up watching two older sisters navigate institutions, workplaces, and the specific labor of being a Black woman in spaces not designed for you — that is an education in situated knowledge that no syllabus provides. The youngest learns by watching. She asks why. She inherits the hard-won maps her sisters drew and then finds herself in territories they never visited. This is one of them.</p>
+
+      <div class="callout"><p>"The why kid is the one who cannot accept that a thing is just the way it is. Every structure has a history. Every default was a decision. Every room that felt hostile was designed — and can therefore be redesigned. That is the argument. It has always been the argument."</p></div>
+
+      <!-- CAREER -->
       <h3>Nine Years Inside</h3>
 
-      <p>I spent nine years building infrastructure. Federal systems, integration architectures, data flows across agencies that affected thousands of people. I held a TS/SCI clearance and sat in rooms where technical decisions were described exclusively in technical terms. Nobody called them cultural decisions. Nobody called them political decisions. They were requirements, constraints, specifications. The language of technical neutrality was so pervasive that I used it myself, fluently, for nearly a decade.</p>
+      <p>Before the PhD: nearly a decade as a Solutions Architect embedded in federal agencies and defense consulting firms. HUD's Office of the CIO. BAE Systems. Agile Defense. TS/SCI clearance. Security+. PMP. I sat in rooms where technical decisions affecting thousands of people were described exclusively in technical terms — requirements, constraints, specifications. The language of technical neutrality was so pervasive that I used it myself, fluently, for nearly a decade without fully naming what it was.</p>
 
-      <p>This museum is my first year of learning to see that fluency as a fluency with a politics. The texts in these wings gave me something I didn't have as a practicing Solutions Architect: a vocabulary for what was happening in those rooms that the rooms themselves refused to supply.</p>
+      <p>This museum is the first year of learning to see that fluency as a fluency with a politics. The texts in these wings gave me something I didn't have as a practicing Solutions Architect: a vocabulary for what was happening in those rooms that the rooms themselves refused to supply.</p>
 
-      <div class="callout"><p>"Browne taught me that the systems I built had histories I wasn't trained to see. Criado-Perez taught me that the bodies I implicitly encoded into my designs were not generic. Haraway taught me that the position I spoke from was not universal. Dokumaci and Benjamin taught me that the people most harmed by those systems are also the ones most equipped to critique and dismantle them."</p></div>
+      <!-- DISSERTATION -->
+      <h3>The Argument</h3>
 
-      <h3>The Dissertation Argument</h3>
+      <p>My dissertation argues that <em>culture functions as sociotechnical infrastructure</em> — that cultural practices shape who gets recognized as an expert, whose knowledge counts, and how technical systems get built and legitimized. I introduce <strong>Black Code</strong> to describe the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where Carrigan's bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality and universality.</p>
 
-      <p>My dissertation argues that <em>culture functions as sociotechnical infrastructure</em> — that cultural practices shape who gets recognized as an expert, whose knowledge counts as knowledge, and how technical systems get built and legitimized. This is not a purely academic claim. I lived it. I watched it operate. I participated in it without having the language to name it.</p>
-
-      <p>The concept of <strong>Black Code</strong> — which I introduce as an extension of Carrigan's bro code — describes the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where the bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality, objectivity, and universality. It treats Black women not as a population to be included but as epistemic actors whose lived experiences generate alternative understandings of technological design and knowledge production.</p>
-
-      <div class="callout"><p>"A project arguing that cultural knowledge is experiential cannot demonstrate that in standard academic prose without the form contradicting the content. This museum is the argument about form. The medium is not decoration. It is evidence."</p></div>
-
-      <h3>Why This Form</h3>
-
-      <p>Browne helped me articulate why the form of knowledge production is not a stylistic preference but a political commitment. The people most surveilled were also the people whose accounts of that surveillance were systematically dismissed as not counting as evidence. The academy's standard evidentiary hierarchy was constructed to exclude certain kinds of knowing — and that exclusion is not separate from the racial logic Browne traces. It is the same logic.</p>
-
-      <p>A digital museum is not the obvious genre for a graduate seminar final project. But a standard research paper would make an argument about experiential knowledge while refusing to produce any. This museum tries to do what it claims. It is situated knowledge — a view from somewhere specific, by someone with a particular history, making an argument that can only be made from inside the infrastructure that is also the object of study.</p>
-
-      <p>I am a "why kid." I have always needed to understand the systems underneath the systems. This museum is that impulse applied to the field I spent a decade inside without fully understanding. It is also, I think, the most honest thing I've made all year.</p>
+      <p>This museum is an enactment of that argument. A dissertation that claims cultural knowledge is experiential cannot make that claim in standard academic prose without the form contradicting the content. The digital museum is not a container for the argument. It is the argument — made by someone whose biography is the methodology, whose communities are the research sites, and who has been inside the infrastructure long enough to know exactly what it refuses to name.</p>
 
     </div>
   </div>
 </section>
-
 
 
 <footer>
@@ -1415,6 +1680,50 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
 <script>
 
+
+
+// -- Curator Biography Interactive --
+var bioCurrent = 0;
+var bioAnswered = Array(5).fill(false);
+var bioCorrect = ["counter","code","situated","gap","inside"];
+
+function bioAnswer(btn, chosen) {
+  if (bioAnswered[bioCurrent]) return;
+  bioAnswered[bioCurrent] = true;
+  var obj = document.querySelectorAll("#curator .di-object")[bioCurrent];
+  var correct = bioCorrect[bioCurrent];
+  var fact = obj.dataset.fact;
+  var choices = obj.querySelectorAll(".di-choice");
+  choices.forEach(function(b) { b.disabled = true; });
+  if (chosen === correct) {
+    btn.classList.add("correct");
+  } else {
+    btn.classList.add("wrong");
+    choices.forEach(function(b) {
+      if (b.getAttribute("onclick").indexOf(correct) > -1) b.classList.add("correct");
+    });
+  }
+  var reveal = document.getElementById("bio-reveal-" + bioCurrent);
+  reveal.innerHTML = "<strong>The connection:</strong> " + fact;
+  reveal.classList.add("show");
+}
+
+function bioNav(dir) {
+  var objs = document.querySelectorAll("#curator .di-object");
+  var pips = document.querySelectorAll("#bio-progress .di-pip");
+  objs[bioCurrent].classList.remove("active");
+  pips[bioCurrent].classList.remove("current");
+  pips[bioCurrent].classList.add("done");
+  bioCurrent += dir;
+  if (bioCurrent < 0) bioCurrent = 0;
+  if (bioCurrent >= objs.length) bioCurrent = objs.length - 1;
+  objs[bioCurrent].classList.add("active");
+  pips[bioCurrent].classList.remove("done");
+  pips[bioCurrent].classList.add("current");
+  document.getElementById("bio-counter").textContent = (bioCurrent + 1) + " of " + objs.length;
+  document.getElementById("bio-prev").disabled = bioCurrent === 0;
+  document.getElementById("bio-next").disabled = bioCurrent === objs.length - 1;
+}
 
 // ── Situated Knowledge Interactive ──
 var skCurrent = 0;
