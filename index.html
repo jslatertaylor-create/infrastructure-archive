@@ -295,6 +295,91 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   color: var(--accent); font-size: 1.1rem; padding-left: 3px;
 }
 
+
+/* GALLERY IMAGE — full-bleed museum print */
+.gallery-img {
+  width: 100%; position: relative; overflow: hidden;
+  margin: 2.5rem 0 0; background: #080604;
+}
+.gallery-img img {
+  width: 100%; display: block; max-height: 480px; object-fit: cover;
+  filter: sepia(0.12) brightness(0.82) contrast(1.05);
+}
+.gallery-img-label {
+  padding: 0.65rem 1.25rem; background: var(--bg-2);
+  border-bottom: 1px solid var(--border); display: flex;
+  align-items: baseline; gap: 1.25rem; flex-wrap: wrap;
+}
+.gallery-img-num {
+  font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--accent); flex-shrink: 0;
+}
+.gallery-img-caption {
+  font-size: 0.76rem; color: var(--text-3); line-height: 1.55;
+}
+
+/* INTERACTIVE: Who Was This Designed For */
+.design-interactive {
+  margin: 2.5rem 0; border: 1px solid var(--border); overflow: hidden;
+}
+.di-header {
+  padding: 1.25rem 1.5rem; background: var(--bg-3);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.di-label { font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); }
+.di-counter { font-size: 0.68rem; color: var(--text-3); }
+.di-body { padding: 2rem 1.5rem; background: var(--bg); min-height: 220px; }
+.di-object { display: none; }
+.di-object.active { display: block; }
+.di-object-name {
+  font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 300; color: var(--text); margin-bottom: 0.25rem;
+}
+.di-object-hint {
+  font-size: 0.72rem; letter-spacing: 0.12em; color: var(--text-3);
+  margin-bottom: 1.5rem; text-transform: uppercase;
+}
+.di-choices { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.di-choice {
+  padding: 0.55rem 1.25rem; border: 1px solid var(--border);
+  font-size: 0.78rem; color: var(--text-2); background: transparent;
+  cursor: pointer; transition: all 0.2s; font-family: var(--sans);
+  letter-spacing: 0.06em;
+}
+.di-choice:hover { border-color: var(--accent-border); color: var(--text); }
+.di-choice.correct { border-color: var(--accent); background: var(--accent-dim); color: var(--text); }
+.di-choice.wrong { border-color: rgba(180,50,50,0.4); background: rgba(180,50,50,0.08); color: var(--text-3); }
+.di-reveal {
+  display: none; padding: 1rem 1.25rem;
+  background: rgba(200,146,42,0.06); border-left: 2px solid var(--accent);
+  font-size: 0.85rem; color: var(--text-2); line-height: 1.7;
+}
+.di-reveal.show { display: block; }
+.di-reveal strong { color: var(--text); }
+.di-nav {
+  padding: 1rem 1.5rem; background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.di-btn {
+  padding: 0.45rem 1.1rem; border: 1px solid var(--border);
+  font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--text-3); background: transparent; cursor: pointer;
+  font-family: var(--sans); transition: all 0.2s;
+}
+.di-btn:hover:not(:disabled) { border-color: var(--accent-border); color: var(--accent); }
+.di-btn:disabled { opacity: 0.3; cursor: default; }
+.di-progress {
+  display: flex; gap: 4px;
+}
+.di-pip {
+  width: 20px; height: 3px; background: var(--border); border-radius: 2px;
+  transition: background 0.3s;
+}
+.di-pip.done { background: var(--accent); }
+.di-pip.current { background: var(--accent-lt); }
+
 @media(max-width:680px) {
   .nav-links { display: none; }
   .exhibit-body { grid-template-columns: 1fr; gap: 2rem; }
@@ -401,7 +486,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       It <em>produces</em> you.
     </div>
     <div class="wing-poem-rule"></div>
-    <p class="wing-poem-attr">A curatorial reflection on Browne's Dark Matters · The Infrastructure Archive · 2026</p>
+    
   </div>
 
   <!-- TIMELINE -->
@@ -765,48 +850,201 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <span class="source-tag">Criado-Perez</span><span class="source-tag">Rentetzi</span><span class="source-tag">Carrigan</span>
     </div>
   </div>
+
+  <div class="wing-poem">
+    <span class="wing-poem-eyebrow">On the Epistemology of the Default</span>
+    <div class="wing-poem-lines">
+      The dummy in the driver's seat<br>
+      has always been a man.<br>
+      No one decided this.<br>
+      That's the point.<br><br>
+      The exclusion that feels like<br>
+      <em>neutrality</em> —<br>
+      the design choice<br>
+      that forgot to be one.
+    </div>
+  </div>
+
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Default is a design choice. When the default body encoded into a system is male, every other body becomes a deviation — not a user, but an edge case. This wing holds the evidence.</p>
+      <p class="wall-label-text">Default is not neutral. It is a decision that forgot to announce itself. When the default body in a design system is male, every other body becomes an edge case. These three texts document the architecture of that forgetting — and one of them names a way out.</p>
     </div>
+
     <div class="exhibit-essay">
-      <h3>The Gender Data Gap — Caroline Criado-Perez</h3>
-      <p>Criado-Perez's <em>Invisible Women</em> is exhaustive in the best possible way. The data gap — the systemic absence of women's data from scientific studies, urban planning, medical research, and product design — means the material world is built around a body that is presumed to be male.</p>
 
-      <div class="data-chart">
-        <div class="data-bar-row"><span class="data-bar-label">Crash test dummies</span><div class="data-bar-track"><div class="data-bar-fill" style="width:95%"></div></div><span class="data-bar-pct">95% ♂</span></div>
-        <div class="data-bar-row"><span class="data-bar-label">Drug trial subjects</span><div class="data-bar-track"><div class="data-bar-fill" style="width:80%"></div></div><span class="data-bar-pct">80% ♂</span></div>
-        <div class="data-bar-row"><span class="data-bar-label">AI training data (faces)</span><div class="data-bar-track"><div class="data-bar-fill" style="width:77%"></div></div><span class="data-bar-pct">77% ♂</span></div>
-        <div class="data-bar-row"><span class="data-bar-label">Medical textbook images</span><div class="data-bar-track"><div class="data-bar-fill" style="width:70%"></div></div><span class="data-bar-pct">70% ♂</span></div>
-        <div class="data-bar-row"><span class="data-bar-label">Office thermostat std.</span><div class="data-bar-track"><div class="data-bar-fill" style="width:100%"></div></div><span class="data-bar-pct">100% ♂</span></div>
-        <p class="data-note">The default body is male. Every other body is an edge case in the design document.</p>
-      </div>
+      <!-- ── CRIADO-PEREZ ── -->
 
-      <div class="exhibit-pullquote">
-        <p>"The absence of data is itself a data point. It tells you who the system was designed to count."</p>
-        <cite>— Reading note on Criado-Perez, Invisible Women</cite>
-      </div>
-
-      <h3>The Gender of Things — María Rentetzi</h3>
-      <p>Rentetzi's work adds a material history dimension: technologies have always been gendered — not just in who uses them but in how they were developed, who was credited, and what kinds of knowledge they were designed to produce. The laboratory itself is a gendered space, and the instruments inside it carry the gender politics of their manufacture. The thing and its politics arrive together.</p>
-
-      <div class="exhibit-pullquote">
-        <p>"Instruments are not neutral mediators of nature. They are made objects — and like all made objects, they carry the politics of their making."</p>
-        <cite>— Reading note on Rentetzi, The Gender of Things</cite>
-      </div>
-
-      <h3>The Informal Architecture of Exclusion — Coleen Carrigan</h3>
-      <p>Carrigan maps the informal social infrastructure of tech and engineering workplaces — the unwritten norms that make women feel like permanent guests in rooms they helped build. The bro code is not written down. It lives in the inside joke, the after-hours Slack channel, the conference hallway. I worked in those rooms for nine years. The code was legible before I had a name for it.</p>
-
-      <h3>Caroline Criado-Perez in Conversation</h3>
-      <div class="exhibit-video">
-        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:0.75rem;background:var(--bg-3);padding:2rem;text-align:center">
-          <span style="font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent)">Caroline Criado-Perez · Talk</span>
-          <p style="font-family:var(--serif);font-size:1.1rem;font-style:italic;color:var(--text)">Invisible Women: How the Gender Data Gap Kills</p>
-          <a href="https://www.youtube.com/results?search_query=Caroline+Criado+Perez+Invisible+Women+talk" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.2rem;border:1px solid var(--accent-border);color:var(--accent);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--accent-dim)'" onmouseout="this.style.background='transparent'">▶ Find on YouTube</a>
+      <div class="gallery-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/US_Food_and_Drug_Administration_crash_test_dummy_testing.jpg?width=1200"
+          alt="Crash test dummy in vehicle safety test"
+          loading="lazy"
+          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Crash_test_dummy_test.jpg/1200px-Crash_test_dummy_test.jpg'"
+        />
+        <div class="gallery-img-label">
+          <span class="gallery-img-num">Object 001</span>
+          <span class="gallery-img-caption">The standard crash test dummy is calibrated to the 50th-percentile male body — 5'9", 171 lbs. A female-proportioned dummy was not required by US safety regulations until 2022. Photo: public domain.</span>
         </div>
       </div>
+
+      <h3>The Epistemic Trap — Caroline Criado-Perez, <em>Invisible Women</em></h3>
+
+      <p>I have spent most of my professional career working with data. As a Solutions Architect embedded in federal agencies and defense consulting firms, I believed that data was simultaneously the most valuable and the most underutilized resource any organization possessed. Criado-Perez's <em>Invisible Women</em> did not disrupt that belief. It sharpened it into something more uncomfortable. The problem she documents is not that organizations failed to collect data. It is that they collected data about men, labeled it people data, and proceeded as though the category had been satisfied.</p>
+
+      <p>This is the epistemic trap — and it is more structurally sophisticated than a mere oversight. Once men's data is classified as human data, women become a subset of men. A deviation. And if women are already a subset, then designing for the universal human norm — which is to say, designing for men — accounts for everyone by definition. The exclusion justifies itself from within its own logic. You cannot contest it using the system's own terms because the system defined you out of the frame before the argument began.</p>
+
+      <div class="callout"><p>"Once men's data is classified as human data, the exclusion becomes self-justifying. You cannot contest it using the system's own terms because the system defined you out of the frame before the argument began. This is what epistemic injustice looks like at the infrastructural level."</p></div>
+
+      <p>What Criado-Perez is describing is an <strong>undocumented critical dependency</strong>. Care work, female physiology, women's movement patterns through cities — all running the system, none of them in the architecture diagram. Nobody allocated resources to maintain them. Nobody built redundancy around them. The system is dependent on inputs it refuses to acknowledge. If women collectively declined to perform unpaid care work the way male researchers declined to collect female data, the economy would not have a gender data gap. It would have a collapse.</p>
+
+      <!-- Interactive -->
+      <div class="design-interactive">
+        <div class="di-header">
+          <span class="di-label">Interactive · Who Was This Designed For?</span>
+          <span class="di-counter" id="di-counter">1 of 6</span>
+        </div>
+        <div class="di-body">
+          <div class="di-object active" data-answer="male" data-fact="Crash test dummies were calibrated to the 50th-percentile male body for decades. Women are 47% more likely to be seriously injured in frontal crashes because of this. A female-proportioned dummy wasn't federally required until 2022.">
+            <p class="di-object-name">The Crash Test Dummy</p>
+            <p class="di-object-hint">Who was the body this safety device was built to protect?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'male')">The average man</button>
+              <button class="di-choice" onclick="diAnswer(this,'female')">The average woman</button>
+              <button class="di-choice" onclick="diAnswer(this,'both')">Both equally</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-0"></div>
+          </div>
+          <div class="di-object" data-answer="male" data-fact="Office thermostats are set using a 1960s formula based on the metabolic rate of a 40-year-old, 154-pound man. Women's metabolic rates run 20–32% lower, meaning the default 'comfortable' temperature is systematically too cold for most women.">
+            <p class="di-object-name">The Office Thermostat</p>
+            <p class="di-object-hint">Whose comfort was the standard temperature formula based on?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'male')">A 40-year-old man</button>
+              <button class="di-choice" onclick="diAnswer(this,'female')">The average worker</button>
+              <button class="di-choice" onclick="diAnswer(this,'both')">An equal sample</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-1"></div>
+          </div>
+          <div class="di-object" data-answer="male" data-fact="Until 1993, the NIH required women to be excluded from most clinical drug trials — their hormonal cycles were considered a 'complication.' Standard drug dosages are still derived from these male-only trials. Women experience adverse drug reactions at nearly twice the rate of men.">
+            <p class="di-object-name">The Standard Drug Dosage</p>
+            <p class="di-object-hint">Who were the clinical trial subjects that established the dose you're prescribed?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'male')">Men only (pre-1993)</button>
+              <button class="di-choice" onclick="diAnswer(this,'female')">A balanced sample</button>
+              <button class="di-choice" onclick="diAnswer(this,'both')">Varied by drug</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-2"></div>
+          </div>
+          <div class="di-object" data-answer="male" data-fact="Voice recognition systems were trained predominantly on male voices. A 2019 study found they misrecognize women's speech 70% more often than men's. The acoustic models had simply learned from data that reflected who was in the room when they were built.">
+            <p class="di-object-name">The Voice Assistant</p>
+            <p class="di-object-hint">Whose voice patterns were the speech recognition models primarily trained on?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'male')">Mostly male voices</button>
+              <button class="di-choice" onclick="diAnswer(this,'female')">Mostly female voices</button>
+              <button class="di-choice" onclick="diAnswer(this,'both')">Equal distribution</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-3"></div>
+          </div>
+          <div class="di-object" data-answer="male" data-fact="Standard smartphones are designed around an average male hand span. Studies show women find them difficult to use one-handed — not because of any deficiency in women's hands, but because 'standard' was defined without them. The phone that fits in your pocket was sized for a pocket that was sized for a man.">
+            <p class="di-object-name">The Smartphone</p>
+            <p class="di-object-hint">Whose hand size was the standard smartphone form factor designed around?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'male')">The average male hand</button>
+              <button class="di-choice" onclick="diAnswer(this,'female')">A universal average</button>
+              <button class="di-choice" onclick="diAnswer(this,'both')">Multiple hand sizes</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-4"></div>
+          </div>
+          <div class="di-object" data-answer="male" data-fact="NASA's EMU spacesuit was designed around a male body. When the first all-women spacewalk was scheduled in 2019, there was only one medium-sized suit available — not two. The mission was reassigned. The official explanation: a 'wardrobe malfunction.' The actual explanation: an inventory built around a default that never accounted for two women on the same mission.">
+            <p class="di-object-name">The NASA Spacesuit</p>
+            <p class="di-object-hint">The first all-women spacewalk was cancelled because of a spacesuit issue. What was the problem?</p>
+            <div class="di-choices">
+              <button class="di-choice" onclick="diAnswer(this,'fit')">Only one medium suit in stock</button>
+              <button class="di-choice" onclick="diAnswer(this,'tech')">A technical malfunction</button>
+              <button class="di-choice" onclick="diAnswer(this,'schedule')">A scheduling conflict</button>
+            </div>
+            <div class="di-reveal" id="di-reveal-5"></div>
+          </div>
+        </div>
+        <div class="di-nav">
+          <button class="di-btn" id="di-prev" onclick="diNav(-1)" disabled>← Prev</button>
+          <div class="di-progress" id="di-progress">
+            <div class="di-pip current"></div><div class="di-pip"></div><div class="di-pip"></div>
+            <div class="di-pip"></div><div class="di-pip"></div><div class="di-pip"></div>
+          </div>
+          <button class="di-btn" id="di-next" onclick="diNav(1)">Next →</button>
+        </div>
+      </div>
+
+      <div class="browne-talk">
+        <div class="bt-left">
+          <p class="bt-tag">Caroline Criado-Perez · 2019</p>
+          <p class="bt-title">Invisible Women: Exposing Data Bias in a World Designed for Men</p>
+          <p class="bt-desc">Criado-Perez on the gender data gap — how the male default gets laundered into objectivity, and why designing for the "universal human" (who is always assumed male) is the epistemic trap structuring modern medicine, urban design, and technology.</p>
+          <a class="bt-link" href="https://www.youtube.com/results?search_query=Caroline+Criado+Perez+Invisible+Women+talk" target="_blank">▶ Find on YouTube</a>
+        </div>
+        <div class="bt-right"><div class="bt-play">▶</div></div>
+      </div>
+
+      <!-- ── RENTETZI ── -->
+
+      <div class="gallery-img">
+        <img src="https://images-assets.nasa.gov/image/iss061e035854/iss061e035854~orig.jpg"
+          alt="Christina Koch and Jessica Meir conduct first all-female spacewalk, October 2019"
+          loading="lazy"
+          onerror="this.style.background='#0A0806';this.style.height='300px'"
+        />
+        <div class="gallery-img-label">
+          <span class="gallery-img-num">Object 002</span>
+          <span class="gallery-img-caption">Christina Koch and Jessica Meir conduct the first all-female spacewalk, October 18, 2019 — six months after the original mission was reassigned because NASA only had one medium-sized spacesuit available. Photo: NASA / public domain.</span>
+        </div>
+      </div>
+
+      <h3>The Gender of Things — María Rentetzi, <em>The Gender of Things</em></h3>
+
+      <p>Imagine preparing for a historic all-women spacewalk, only to have the mission quietly reassigned days before launch — the official explanation being a "wardrobe malfunction." In one phrase, two of the most rigorously trained humans on earth had been reduced to women worried about their outfit, not astronauts failed by a system that was never designed to support them. What actually happened had nothing to do with vanity. NASA's spacesuit inventory had simply been built around a male default, and no one had thought to provision two medium suits for a crew that included two women.</p>
+
+      <p>This is exactly what Rentetzi is documenting in <em>The Gender of Things</em>. Her argument is that objects are not born gendered — they become gendered through the social relations of production that organize who uses them, who is credited for working with them, and whose relationship to them counts as expertise. The pattern she identifies is consistent: the moment a domestic craft gains industrial scale or institutional prestige, the women who built that craft get pushed out while the craft itself becomes a tool in their displacement.</p>
+
+      <div class="callout"><p>"Culture does the maintenance work of gender bias in technology. The gendering of things doesn't happen once and stay fixed — it must be continuously reproduced through cultural practices, norms, and narratives. Culture isn't just the backdrop for how expertise develops. It is the infrastructure through which expertise gets sorted, validated, and gatekept."</p></div>
+
+      <div class="gallery-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sophia_(robot).jpg?width=1200"
+          alt="Sophia the humanoid robot"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        />
+        <div class="gallery-img-label">
+          <span class="gallery-img-num">Object 003</span>
+          <span class="gallery-img-caption">Sophia, the humanoid robot developed by Hanson Robotics, was granted Saudi citizenship in 2017 — before many Saudi women had secured full rights in practice. Deployed as the global face of AI, she embodies what Rentetzi calls the domestic-to-industrial pipeline: feminized labor automated and sold as innovation. Photo: Wikimedia Commons / CC BY-SA 4.0.</span>
+        </div>
+      </div>
+
+      <p>Siri, Alexa, and Cortana were each launched with female voices as default, because decades of research confirm that users associate female voices with service and compliance and male voices with authority. The oldest form of feminized domestic labor — assistance — got automated and sold as a premium product with a woman's voice built in. Sophia takes it further. None of these are accidents. Each is the domestic-to-industrial pipeline, rendered in code and silicone. Progress built on gendered dispossession doesn't dismantle that dispossession. It just carries it forward into new materials.</p>
+
+      <!-- ── CARRIGAN ── -->
+
+      <div class="gallery-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_campus_Mountain_View_dsc06695.jpg?width=1200"
+          alt="Tech campus open office environment"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        />
+        <div class="gallery-img-label">
+          <span class="gallery-img-num">Object 004</span>
+          <span class="gallery-img-caption">The open-plan tech campus. The bro code is not written in the employee handbook — it lives in the informal architecture of this space: who gets the corner office, who gets pulled into the hallway conversation, whose after-hours channel you're not in. Photo: Wikimedia Commons / CC BY-SA 2.0.</span>
+        </div>
+      </div>
+
+      <h3>The Bro Code and Beyond — Coleen Carrigan, <em>Cracking the Bro Code</em></h3>
+
+      <p>Carrigan's text validated my lived experience of merely trying to obtain a degree in computer science, let alone navigate the workforce. Her central argument is that gender discrepancies in engineering are not just the product of pipeline concerns or individual bias — they are products of cultural norms and institutional practices that subtly prefer men and perpetuate masculine professional identities. The <strong>bro code</strong> is not written down. It lives in the inside joke, the after-hours Slack channel, the conference hallway conversation that happens after the meeting ends. It rewards hegemonic masculinity-related behaviors while marginalizing people who do not perform them.</p>
+
+      <div class="callout"><p>"Engineering organizations frame inequality as an individual problem — something women must overcome through resilience or skill development — while simultaneously disregarding the institutional norms that privilege masculine identity performances. The problem is structural. The solution being sold is personal."</p></div>
+
+      <p>What this text opened up for me is an opportunity to extend Carrigan's framework. My dissertation introduces the concept of <strong>Black Code</strong> — the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where the bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality, objectivity, and universality in technological systems.</p>
+
+      <p>Black Code treats Black women as epistemic actors whose lived experiences generate alternative understandings of technological design, knowledge production, and social impact. It is not simply a critique of exclusion. It is a framework for analyzing how marginalized positionalities produce distinct technological imaginaries — and for asking what we lose when those imaginaries get coded out of the system before the architecture diagram is ever drawn.</p>
+
     </div>
   </div>
 </section>
@@ -933,6 +1171,54 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 </footer>
 
 <script>
+
+// ── Design Interactive ──
+var diCurrent = 0;
+var diAnswered = Array(6).fill(false);
+var diObjects, diPips;
+
+function diInit() {
+  diObjects = document.querySelectorAll('.di-object');
+  diPips = document.querySelectorAll('.di-pip');
+}
+
+function diAnswer(btn, chosen) {
+  if (diAnswered[diCurrent]) return;
+  diAnswered[diCurrent] = true;
+  var obj = diObjects[diCurrent];
+  var correct = obj.dataset.answer;
+  var fact = obj.dataset.fact;
+  var choices = obj.querySelectorAll('.di-choice');
+  choices.forEach(function(b) { b.disabled = true; });
+  if (chosen === correct) {
+    btn.classList.add('correct');
+  } else {
+    btn.classList.add('wrong');
+    choices.forEach(function(b) {
+      if (b.getAttribute('onclick').indexOf("'" + correct + "'") > -1) b.classList.add('correct');
+    });
+  }
+  var reveal = obj.querySelector('.di-reveal');
+  reveal.innerHTML = '<strong>The answer:</strong> ' + fact;
+  reveal.classList.add('show');
+}
+
+function diNav(dir) {
+  if (!diObjects) diInit();
+  diObjects[diCurrent].classList.remove('active');
+  diPips[diCurrent].classList.remove('current');
+  diPips[diCurrent].classList.add('done');
+  diCurrent += dir;
+  if (diCurrent < 0) diCurrent = 0;
+  if (diCurrent >= diObjects.length) diCurrent = diObjects.length - 1;
+  diObjects[diCurrent].classList.add('active');
+  diPips[diCurrent].classList.remove('done');
+  diPips[diCurrent].classList.add('current');
+  document.getElementById('di-counter').textContent = (diCurrent + 1) + ' of ' + diObjects.length;
+  document.getElementById('di-prev').disabled = diCurrent === 0;
+  document.getElementById('di-next').disabled = diCurrent === diObjects.length - 1;
+}
+
 function brookesFallback() {
   var c = document.getElementById('brookes-container');
   if (!c) return;
