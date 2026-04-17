@@ -440,6 +440,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <ul class="nav-links">
     <li><a onclick="showSection('gallery')">Exhibition</a></li>
     <li><a onclick="showSection('curator')">Curator's Corner</a></li>
+    <li><a onclick="showSection('about')">About the Project</a></li>
   </ul>
 </nav>
 
@@ -458,36 +459,43 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="gallery-header fade-in">
     <p class="section-label">Current Exhibition · Spring 2026</p>
     <h2 class="section-title">Culture as Sociotechnical Infrastructure</h2>
-    <p class="section-intro">Five exhibit wings. Each one an argument. Taken together, a theory of how what we call "technology" is always already a cultural artifact — and who pays the price for pretending otherwise.</p>
+    <p class="section-intro">Four operations. Four wings. One argument: culture is not the backdrop for how technical systems work — it is the infrastructure through which knowledge gets taken, stripped of context, used without credit, and written out. And one wing that documents what refusal looks like.</p>
   </div>
   <div class="exhibit-grid">
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-surveillance')">
       <p class="card-num">Wing 001</p>
-      <h3 class="card-title">The Surveillance Wing</h3>
+      <h3 class="card-title">Extraction</h3>
       <p class="card-sources">Browne · Monea · Schaeffer · Gill-Peterson</p>
-      <p class="card-desc">Surveillance is not a neutral practice. It is a technology with a history — one written on Black bodies, on queer lives, on Indigenous land, and on trans children's medical records.</p>
+      <p class="card-desc">Before a system can exploit what it takes, it has to take it. This wing documents how information, knowledge, and visibility are extracted from bodies — and what that extraction has always looked like.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-design')">
       <p class="card-num">Wing 002</p>
-      <h3 class="card-title">The Design Defaults Gallery</h3>
+      <h3 class="card-title">Abstraction</h3>
       <p class="card-sources">Criado-Perez · Rentetzi · Carrigan</p>
-      <p class="card-desc">What happens when the body encoded into a design is not yours? Gendered omissions, the weight of things built neutral, and the informal architecture of exclusion.</p>
+      <p class="card-desc">Once something is taken, it gets stripped of its origins — context removed, specificity laundered into universality. This wing documents how particular bodies and their knowledge get abstracted into defaults that appear to belong to no one.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-knowledge')">
       <p class="card-num">Wing 003</p>
-      <h3 class="card-title">The Knowledge Room</h3>
+      <h3 class="card-title">Exploitation</h3>
       <p class="card-sources">Nash · Haraway · Cipolla et al. · Boellstorff</p>
-      <p class="card-desc">Whose knowledge counts? From the god trick to situated knowledges to the traveling theory of intersectionality — the epistemological stakes of feminist STS.</p>
+      <p class="card-desc">The framework circulates. The people who built it don't. This wing documents how marginalized knowledge gets used — cited, deployed, profited from — while its producers remain unrecognized and underresourced.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-resistance')">
       <p class="card-num">Wing 004</p>
-      <h3 class="card-title">The Resistance Archive</h3>
+      <h3 class="card-title">Erasure</h3>
       <p class="card-sources">Dokumaci · Benjamin · Clarke &amp; Haraway · Bahng</p>
-      <p class="card-desc">Infrastructure can also be unmade. Activist affordances, abolitionist imagination, making kin not population — the tools of counter-infrastructure.</p>
+      <p class="card-desc">Erasure names what the system does. This wing documents what refusal looks like — the activist affordances, abolitionist tools, and speculative practices of people who refused to be written out and built their own way in.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
+    </div>
+    <div class="exhibit-card fade-in" onclick="showSection('about')">
+      <p class="card-num">About</p>
+      <h3 class="card-title">About the Project</h3>
+      <p class="card-sources">Form · Process · Tools · Vision</p>
+      <p class="card-desc">Why a museum. Why these names. Why this design. And an honest account of how AI was used to build a project about the cultural politics of knowledge production.</p>
+      <span class="card-enter">Enter <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('curator')">
       <p class="card-num">Wing 005</p>
@@ -503,8 +511,8 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <section id="exhibit-surveillance" class="exhibit-page">
   <div class="exhibit-hero">
     <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
-    <p class="exhibit-catalogue">Wing 001</p>
-    <h2 class="exhibit-title">To Watch Is Never <em>Innocent</em></h2>
+    <p class="exhibit-catalogue">Wing 001 · Extraction</p>
+    <h2 class="exhibit-title">Extraction</h2>
     <div class="exhibit-sources-bar">
       <span class="source-tag">Browne</span><span class="source-tag">Monea</span><span class="source-tag">Schaeffer</span><span class="source-tag">Gill-Peterson</span>
     </div>
@@ -892,26 +900,14 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <section id="exhibit-design" class="exhibit-page">
   <div class="exhibit-hero">
     <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
-    <p class="exhibit-catalogue">Wing 002</p>
-    <h2 class="exhibit-title">The <em>Default</em> Body</h2>
+    <p class="exhibit-catalogue">Wing 002 · Abstraction</p>
+    <h2 class="exhibit-title">Abstraction</h2>
     <div class="exhibit-sources-bar">
       <span class="source-tag">Criado-Perez</span><span class="source-tag">Rentetzi</span><span class="source-tag">Carrigan</span>
     </div>
   </div>
 
-  <div class="wing-poem">
-    <span class="wing-poem-eyebrow">On the Epistemology of the Default</span>
-    <div class="wing-poem-lines">
-      The dummy in the driver's seat<br>
-      has always been a man.<br>
-      No one decided this.<br>
-      That's the point.<br><br>
-      The exclusion that feels like<br>
-      <em>neutrality</em> —<br>
-      the design choice<br>
-      that forgot to be one.
-    </div>
-  </div>
+
 
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
@@ -1106,27 +1102,14 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <section id="exhibit-knowledge" class="exhibit-page">
   <div class="exhibit-hero">
     <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
-    <p class="exhibit-catalogue">Wing 003</p>
-    <h2 class="exhibit-title">The View from <em>Somewhere</em></h2>
+    <p class="exhibit-catalogue">Wing 003 · Exploitation</p>
+    <h2 class="exhibit-title">Exploitation</h2>
     <div class="exhibit-sources-bar">
       <span class="source-tag">Nash</span><span class="source-tag">Haraway</span><span class="source-tag">Cipolla et al.</span><span class="source-tag">Boellstorff</span>
     </div>
   </div>
 
-  <div class="wing-poem">
-    <span class="wing-poem-eyebrow">On the God Trick</span>
-    <div class="wing-poem-lines">
-      The view from nowhere<br>
-      is a view from somewhere<br>
-      that learned to hide<br>
-      its address.<br><br>
-      The only way to find<br>
-      a larger vision<br>
-      is to be<br>
-      <em>somewhere</em><br>
-      in particular.
-    </div>
-  </div>
+
 
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
@@ -1280,8 +1263,8 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <section id="exhibit-resistance" class="exhibit-page">
   <div class="exhibit-hero">
     <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
-    <p class="exhibit-catalogue">Wing 004</p>
-    <h2 class="exhibit-title">Other Arrangements, Still <em>Possible</em></h2>
+    <p class="exhibit-catalogue">Wing 004 · Erasure</p>
+    <h2 class="exhibit-title">Erasure</h2>
     <div class="exhibit-sources-bar">
       <span class="source-tag">Dokumaci</span><span class="source-tag">Benjamin</span><span class="source-tag">Clarke &amp; Haraway</span><span class="source-tag">Bahng</span>
     </div>
@@ -1667,6 +1650,54 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <p>My dissertation argues that <em>culture functions as sociotechnical infrastructure</em> — that cultural practices shape who gets recognized as an expert, whose knowledge counts, and how technical systems get built and legitimized. I introduce <strong>Black Code</strong> to describe the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where Carrigan's bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality and universality.</p>
 
       <p>This museum is an enactment of that argument. A dissertation that claims cultural knowledge is experiential cannot make that claim in standard academic prose without the form contradicting the content. The digital museum is not a container for the argument. It is the argument — made by someone whose biography is the methodology, whose communities are the research sites, and who has been inside the infrastructure long enough to know exactly what it refuses to name.</p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== ABOUT THE PROJECT ==================== -->
+<section id="about" class="exhibit-page">
+  <div class="exhibit-hero">
+    <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
+    <p class="exhibit-catalogue">About the Project</p>
+    <h2 class="exhibit-title">About the <em>Project</em></h2>
+    <div class="exhibit-sources-bar">
+      <span class="source-tag">Origins</span><span class="source-tag">Design</span><span class="source-tag">Process</span>
+    </div>
+  </div>
+
+  <div class="exhibit-body">
+    <div class="exhibit-wall-label">
+      <p class="wall-label-title">A Note on This Work</p>
+      <p class="wall-label-text">Every project has a context. This one is a graduate seminar, a stack of readings, a creative instinct, and a question: what happens when the work takes on a different form?</p>
+    </div>
+
+    <div class="exhibit-essay">
+
+      <h3>Where This Came From</h3>
+
+      <p>This project began as a final assignment for my Gender, Bodies, and Technology seminar at Virginia Tech in Spring 2026. Over the course of the semester, I engaged with ten texts that each, in their own way, argued that the systems we build carry the politics of the people and cultures that built them. I needed a way to bring those readings together that felt commensurate with what they were asking me to think about.</p>
+
+      <p>A research paper felt insufficient — not because papers don't matter, but because these particular texts kept asking questions about form, about experience, about what kinds of knowledge get recognized and in what containers. The digital museum format presented itself as an opportunity to do two things at once: summarize and synthesize my engagement with the course material, and explore what it looks like when intellectual work takes on an experiential shape. This is that exploration.</p>
+
+      <p>It is worth saying clearly: this is not my dissertation. It is not a direct derivative of my research. It is a creative and intellectual project inspired by a semester of reading, thinking, and wanting to make something that honored both the rigor of the scholarship and the fact that ideas deserve to be experienced, not just described.</p>
+
+      <h3>Why This Design</h3>
+
+      <p>The aesthetic of this museum — dark backgrounds, amber light, archival grain, the weight of serif type against negative space — was a deliberate attempt to build something that felt like a space worth being in. Archives hold difficult things. They hold evidence of the very operations this museum documents: extraction, abstraction, exploitation, erasure. The visual language sits at that tension on purpose. It is meant to feel both institutional and intimate, both weighty and navigable.</p>
+
+      <p>The amber is light in darkness. Every callout, every accent, every hover state in amber is a small act of illumination — the visual equivalent of bringing something forward that was sitting in the margins. The museum structure itself — wings, wall labels, object numbers, curatorial statements — borrows from the conventions of institutional knowledge display in order to ask questions about those conventions. Who decides what gets exhibited? Whose story gets told as universal? What disappears from the record? The form is asking those questions even when the text isn't.</p>
+
+      <p>The four operational names — Extraction, Abstraction, Exploitation, Erasure — came from synthesis work I developed across this semester connecting Browne's <em>Dark Matters</em> and Schaeffer's <em>Unsettled Borders</em>. They describe four moves in a single process by which cultural knowledge gets taken, stripped of context, used without credit, and written out. Naming the wings after the operations rather than the topics was a decision to keep the mechanism visible throughout the experience. Wing 004 is named Erasure because that is what the system does — and what the exhibit refuses.</p>
+
+      <h3>A Note on AI</h3>
+
+      <p>This project was built with the assistance of Claude, an AI tool developed by Anthropic. I want to be transparent about that because this project values transparency, and because honest acknowledgment of collaboration is part of what this work is about.</p>
+
+      <p>The content of this museum — the readings, the interpretations, the curatorial decisions, the personal narrative, the creative vision — is mine. The design direction is mine. What I brought to Claude was a clear idea of what I wanted to make and why. What Claude contributed was the technical build: translating that vision into a functional, designed website. Think of it the way you would think of any creative collaboration where one person has the vision and another has the technical skills to render it. The ideas did not come from the tool. The tool made the ideas visible.</p>
+
+
 
     </div>
   </div>
