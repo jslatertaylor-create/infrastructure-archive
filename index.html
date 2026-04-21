@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Infrastructure Archive — A Digital Museum</title>
+<title>Inside the Black Box, A Digital Museum</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -164,7 +164,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   color: var(--accent);
 }
 
-/* CALLOUT BOX — unified amber style */
+/* CALLOUT BOX, unified amber style */
 .callout {
   margin: 2rem 0; padding: 1.5rem 2rem;
   background: rgba(200,146,42,0.07);
@@ -296,7 +296,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 }
 
 
-/* GALLERY IMAGE — full-bleed museum print */
+/* GALLERY IMAGE, full-bleed museum print */
 .gallery-img {
   width: 100%; position: relative; overflow: hidden;
   margin: 2.5rem 0 0; background: #080604;
@@ -436,7 +436,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <body>
 
 <nav>
-  <span class="nav-logo" onclick="showSection('lobby')">The Infrastructure Archive</span>
+  <span class="nav-logo" onclick="showSection('lobby')">Inside the Black Box</span>
   <ul class="nav-links">
     <li><a onclick="showSection('gallery')">Exhibition</a></li>
     <li><a onclick="showSection('curator')">Curator's Corner</a></li>
@@ -447,10 +447,10 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 <!-- ==================== LOBBY ==================== -->
 <section id="lobby" class="active">
   <p class="lobby-eyebrow">Virginia Tech · Gender, Bodies &amp; Technology · Spring 2026</p>
-  <h1 class="lobby-title">The <em>Infrastructure</em><br>Archive</h1>
+  <h1 class="lobby-title">Inside the<br><em>Black Box</em></h1>
   <p class="lobby-subtitle">A Digital Museum of Bodies, Systems, and What Gets Built In</p>
   <div class="lobby-rule"></div>
-  <p class="lobby-desc">Culture is not background. Culture is infrastructure — the invisible architecture that determines who is seen, who is tracked, who is designed for, and who is erased. Ten texts. Five wings. Come inside.</p>
+  <p class="lobby-desc">Proprietary. Protected. Deliberately out of reach. The black box keeps the logic of a system hidden from the very people it affects. Western sociotechnical infrastructure is no different. The cultural mechanisms shaping who is seen, who is tracked, who is designed for, and who gets written out is built into the system. It just isn't documented. Ten texts. Four operations.</p>
   <button class="btn-enter" onclick="showSection('gallery')">Enter the Exhibition <span>→</span></button>
 </section>
 
@@ -459,35 +459,36 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="gallery-header fade-in">
     <p class="section-label">Current Exhibition · Spring 2026</p>
     <h2 class="section-title">Culture as Sociotechnical Infrastructure</h2>
-    <p class="section-intro">Four operations. Four wings. One argument: culture is not the backdrop for how technical systems work — it is the infrastructure through which knowledge gets taken, stripped of context, used without credit, and written out. And one wing that documents what refusal looks like.</p>
+    <p class="section-intro" style="font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.4rem);font-weight:300;color:var(--text);margin-bottom:1.5rem">There is no such thing as accidental bias. Who you are, what you believe, and what you've experienced is woven into everything you build.</p>
+    <p class="section-intro">Western society has built its sociotechnical infrastructure of culture using four tools: Extraction, Abstraction, Exploitation, and Erasure. These wings open the box. Each one names an operation, documents how it works, and shows what it costs.</p>
   </div>
   <div class="exhibit-grid">
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-surveillance')">
       <p class="card-num">Wing 001</p>
       <h3 class="card-title">Extraction</h3>
       <p class="card-sources">Browne · Monea · Schaeffer · Gill-Peterson</p>
-      <p class="card-desc">Before a system can exploit what it takes, it has to take it. This wing documents how information, knowledge, and visibility are extracted from bodies — and what that extraction has always looked like.</p>
+      <p class="card-desc">Before a system can exploit what it takes, it has to take it. This wing documents how information, knowledge, and visibility are extracted from bodies, and what that extraction has always looked like.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-design')">
       <p class="card-num">Wing 002</p>
       <h3 class="card-title">Abstraction</h3>
       <p class="card-sources">Criado-Perez · Rentetzi · Carrigan</p>
-      <p class="card-desc">Once something is taken, it gets stripped of its origins — context removed, specificity laundered into universality. This wing documents how particular bodies and their knowledge get abstracted into defaults that appear to belong to no one.</p>
+      <p class="card-desc">Once something is taken, it gets stripped of its origins, context removed, specificity laundered into universality. This wing documents how particular bodies and their knowledge get abstracted into defaults that appear to belong to no one.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-knowledge')">
       <p class="card-num">Wing 003</p>
       <h3 class="card-title">Exploitation</h3>
       <p class="card-sources">Nash · Haraway · Cipolla et al. · Boellstorff</p>
-      <p class="card-desc">The framework circulates. The people who built it don't. This wing documents how marginalized knowledge gets used — cited, deployed, profited from — while its producers remain unrecognized and underresourced.</p>
+      <p class="card-desc">The framework circulates. The people who built it don't. This wing documents how marginalized knowledge gets used, cited, deployed, profited from, while its producers remain unrecognized and underresourced.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('exhibit-resistance')">
       <p class="card-num">Wing 004</p>
       <h3 class="card-title">Erasure</h3>
       <p class="card-sources">Dokumaci · Benjamin · Clarke &amp; Haraway · Bahng</p>
-      <p class="card-desc">Erasure names what the system does. This wing documents what refusal looks like — the activist affordances, abolitionist tools, and speculative practices of people who refused to be written out and built their own way in.</p>
+      <p class="card-desc">Erasure names what the system does. This wing documents what refusal looks like, the activist affordances, abolitionist tools, and speculative practices of people who refused to be written out and built their own way in.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
     <div class="exhibit-card fade-in" onclick="showSection('about')">
@@ -520,30 +521,22 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
   <!-- POEM INSTALLATION -->
   <div class="wing-poem">
-    <span class="wing-poem-eyebrow">After the Lantern Laws · 1713–</span>
     <div class="wing-poem-lines">
-      They said carry a lantern<br>
-      so we could see you —<br>
-      so the city could rest —<br><br>
-      But light is not safety<br>
-      when it was made<br>
-      to make you <em>findable</em>.<br><br>
-      Hypervisibility as threat.<br>
-      Invisibility as neglect.<br>
-      Not opposites —<br>
-      two simultaneous operations<br>
-      of the same logic.<br><br>
-      The camera does not see you.<br>
-      It <em>produces</em> you.
+      Take me as I am<br>
+      or leave me as you found me.<br><br>
+      I am whole.<br>
+      I am one.<br>
+      I am here.<br><br>
+      I am not to be claimed.
     </div>
     <div class="wing-poem-rule"></div>
-    
+    <p class="wing-poem-attr">Jeovane Slater-Taylor</p>
   </div>
 
   <!-- TIMELINE -->
   <div style="max-width:900px;margin:0 auto;padding:0 2.5rem 4rem;border-bottom:1px solid var(--border)">
     <div class="exhibit-timeline">
-      <p class="timeline-header">Key Surveillance Technologies · 1713 — Present · Hover each date</p>
+      <p class="timeline-header">Key Surveillance Technologies · 1713, Present · Hover each date</p>
       <div class="timeline-scroll" id="tl-scroll">
         <div class="timeline-inner">
 
@@ -556,7 +549,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
-                <p class="tl-popup-label">1660 map of New Amsterdam — the city that passed the lantern laws</p>
+                <p class="tl-popup-label">1660 map of New Amsterdam, the city that passed the lantern laws</p>
               </div>
             </div>
             <div class="tl-event"><strong>Lantern Laws</strong>State-mandated visibility<span class="tl-tag racial">Racial</span></div>
@@ -598,7 +591,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
-                <p class="tl-popup-label">Manzanar War Relocation Center — 120,000 people tracked and removed</p>
+                <p class="tl-popup-label">Manzanar War Relocation Center, 120,000 people tracked and removed</p>
               </div>
             </div>
             <div class="tl-event"><strong>Japanese Internment</strong>State tracking at scale<span class="tl-tag racial">Racial</span></div>
@@ -640,7 +633,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
-                <p class="tl-popup-label">NSA Headquarters — PATRIOT Act authorized mass surveillance post-9/11</p>
+                <p class="tl-popup-label">NSA Headquarters, PATRIOT Act authorized mass surveillance post-9/11</p>
               </div>
             </div>
             <div class="tl-event"><strong>Post-9/11 PATRIOT Act</strong>Mass surveillance legalized<span class="tl-tag state">State</span></div>
@@ -654,7 +647,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
-                <p class="tl-popup-label">The first iPhone — location tracking normalized as convenience</p>
+                <p class="tl-popup-label">The first iPhone, location tracking normalized as convenience</p>
               </div>
             </div>
             <div class="tl-event"><strong>Smartphone GPS</strong>Tracking as convenience<span class="tl-tag digital">Digital</span></div>
@@ -668,7 +661,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
-                <p class="tl-popup-label">Snowden's leaked NSA PRISM slide — mass digital surveillance confirmed</p>
+                <p class="tl-popup-label">Snowden's leaked NSA PRISM slide, mass digital surveillance confirmed</p>
               </div>
             </div>
             <div class="tl-event"><strong>NSA PRISM</strong>Mass digital surveillance<span class="tl-tag digital">Digital</span></div>
@@ -716,19 +709,23 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
     <div class="exhibit-essay">
 
-      <h3>What Gets Watched — Simone Browne, <em>Dark Matters</em></h3>
-      <p>Browne's central argument is that you cannot build an honest theory of surveillance without centering Blackness — not as a special case or add-on, but as the foundation the whole system was built on. The technologies of transatlantic slavery — branding, slave passes, patrols, ship manifests, lantern laws — were not precursors to modern surveillance. They <em>were</em> modern surveillance. Contemporary systems like biometrics, facial recognition, and airport security screening inherit that racial logic directly, even when they present themselves as neutral.</p>
-      <p>Browne introduces two concepts that carry the book's theoretical weight. <strong>Racializing surveillance</strong> names what happens when surveillance practices draw and reinforce racial boundaries — actively producing racial categories rather than simply observing them. <strong>Dark sousveillance</strong> names the tactics, epistemologies, and freedom practices that enslaved and targeted Black people developed to resist: forged passes, coded songs, misdirection. The archive of slavery is not historical background. It is the actual theoretical infrastructure of surveillance as we know it.</p>
+      <h3>What Gets Watched · Simone Browne, <em>Dark Matters</em></h3>
 
-      <div class="callout"><p>"Black people are forced to straddle the line between visibility and invisibility, and neither side of that line is actually safe. The same body that gets hypervisible, invasive treatment at a TSA checkpoint is simultaneously invisible to facial recognition software trained on prototypically white faces. Hypervisibility as threat and invisibility as neglect are not opposites — they are two simultaneous operations of the same logic."</p></div>
+      <p>Think about the last time you stood in front of an automatic sink and it didn't turn on. You wave your hands. You reposition. You try again. The sensor doesn't see you. That experience carries real weight. There is an exhaustion that comes with existing in spaces not designed with you in mind, where even the most basic interactions require extra effort. That added labor is not accidental. It is the product of a design process that never included you.</p>
 
-      <p>The lantern laws make this vivid: enslaved people were legally compelled to carry candles in the streets after dark so the white gaze could always locate them. Visibility was mandated, on the state's terms. That logic did not end. It was digitized. The contemporary moment — in which a body simultaneously triggers TSA hyperscrutiny and returns no results in a facial recognition search — is not a contradiction. It is the same apparatus operating on the same premises.</p>
+      <p>This is the distinction at the heart of Simone Browne's <em>Dark Matters</em>: being watched is not the same as being seen. Black people and people of color want to be seen, recognized, accounted for, designed for. What they receive instead is surveillance. The sink that doesn't register your hands and the TSA agent who pulls you aside are two expressions of the same failure. One refuses to see you. The other cannot stop watching you.</p>
+
+      <p>Browne traces this back to the lantern laws of 18th century New York, which required enslaved people to carry candles in the streets after dark so the white gaze could always locate them. Visibility was mandated exposure, not protection. That logic did not end with slavery. It was inherited by every surveillance technology that followed, biometrics, facial recognition, airport security screening, systems that present themselves as neutral while carrying the same original premise.</p>
+
+      <div class="callout"><p>"The same body that receives hypervisible, invasive treatment at a TSA checkpoint is simultaneously invisible to facial recognition software trained on prototypically white faces. Neither side of that line is actually safe."</p></div>
+
+      <p>Browne gives us two concepts to hold this. <strong>Racializing surveillance</strong> names what happens when surveillance practices don't simply observe racial categories but actively produce and reinforce them. <strong>Dark sousveillance</strong> names the resistance: the freedom practices that targeted Black people developed to push back, forged passes, coded songs, misdirection. The archive of slavery is not historical background to a theory of surveillance. It is the theory.</p>
 
       <div class="browne-talk">
         <div class="bt-left">
           <p class="bt-tag">Simone Browne · CUNY Digital Praxis Seminar · December 2013</p>
           <p class="bt-title">Dark Sousveillance: Race, Surveillance and Resistance</p>
-          <p class="bt-desc">A 45-minute lecture developing the concepts of racializing surveillance and dark sousveillance — tracing surveillance from 18th-century lantern laws through biometric technology, and naming the freedom practices enslaved people developed to resist the systems watching them. Hosted at the Graduate Center, CUNY.</p>
+          <p class="bt-desc">A 45-minute lecture developing the concepts of racializing surveillance and dark sousveillance, tracing surveillance from 18th-century lantern laws through biometric technology, and naming the freedom practices enslaved people developed to resist the systems watching them. Hosted at the Graduate Center, CUNY.</p>
           <a class="bt-link" href="https://youtu.be/ul3zuogWcJ0" target="_blank">▶ Watch on YouTube</a>
         </div>
         <div class="bt-right">
@@ -754,13 +751,13 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         </div>
       </div>
 
-      <h3>What Gets Hidden — Alexander Monea, <em>The Digital Closet</em></h3>
-      <p>Monea's central distinction is one that matters significantly: the internet did not merely <em>reflect</em> a homophobic culture — it actively <em>became</em> one. Heteronormativity has been encoded as technical infrastructure, embedded into the training data that teaches algorithms what "sexual" means, the keyword taxonomies that determine what gets surfaced, the cultural assumptions of Silicon Valley coders, and the content moderation playbooks handed to offshore workers given seconds to adjudicate community standards.</p>
-      <p>The result is what Monea calls the "digital closet" — a term he frames not as metaphor but as mechanism. To participate in digital public life increasingly requires LGBTQ+ individuals to bracket their sexual identities, not because any single policy mandates it, but because the cumulative logic of the system makes visibility costly in ways that are precise, swift, and largely undetectable to those it does not target.</p>
+      <h3>What Gets Hidden · Alexander Monea, <em>The Digital Closet</em></h3>
+      <p>Monea's central distinction is one that matters significantly: the internet did not merely <em>reflect</em> a homophobic culture, it actively <em>became</em> one. Heteronormativity has been encoded as technical infrastructure, embedded into the training data that teaches algorithms what "sexual" means, the keyword taxonomies that determine what gets surfaced, the cultural assumptions of Silicon Valley coders, and the content moderation playbooks handed to offshore workers given seconds to adjudicate community standards.</p>
+      <p>The result is what Monea calls the "digital closet", a term he frames not as metaphor but as mechanism. To participate in digital public life increasingly requires LGBTQ+ individuals to bracket their sexual identities, not because any single policy mandates it, but because the cumulative logic of the system makes visibility costly in ways that are precise, swift, and largely undetectable to those it does not target.</p>
 
       <div class="callout"><p>"The internet did not stumble into straightness. It was built that way, incrementally, by people who could not see what they were encoding because it looked to them like nothing at all. The defaults that harm are the ones that feel like neutrality to those who set them."</p></div>
 
-      <p>The mechanism operates through a double movement of visibility: LGBTQ+ identities are rendered hypervisible as sexual threat — tripping filters trained on heteronormative assumptions — while being simultaneously erased as legitimate participants in digital public life through deprioritization, demonetization, and deplatforming. FOSTA-SESTA in 2017, framed as protecting trafficking victims, accelerated platform censorship in ways that landed hardest on LGBTQ+ communities while leaving major heteroporn producers largely intact.</p>
+      <p>The mechanism operates through a double movement of visibility: LGBTQ+ identities are rendered hypervisible as sexual threat, tripping filters trained on heteronormative assumptions, while being simultaneously erased as legitimate participants in digital public life through deprioritization, demonetization, and deplatforming. FOSTA-SESTA in 2017, framed as protecting trafficking victims, accelerated platform censorship in ways that landed hardest on LGBTQ+ communities while leaving major heteroporn producers largely intact.</p>
 
       <div class="filter-demo">
         <p class="fd-label">Interactive · The Digital Closet in Action</p>
@@ -790,11 +787,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         </div>
         <div class="v-install-cap">
           <span class="v-install-cap-label">Visual Installation · The Digital Gaze · After Monea's The Digital Closet · 2026</span>
-          <span class="v-install-cap-text">The camera sees everything within its frame. Everything it sees is categorized. What falls outside its categories — or activates the wrong ones — disappears from the record. The shadow it casts is larger than the device itself. Photo: CC0 / Unsplash.</span>
+          <span class="v-install-cap-text">The camera sees everything within its frame. Everything it sees is categorized. What falls outside its categories, or activates the wrong ones, disappears from the record. The shadow it casts is larger than the device itself. Photo: CC0 / Unsplash.</span>
         </div>
       </div>
 
-      <h3>Visible as Resource, Invisible as Person — Felicity Amaya Schaeffer, <em>Unsettled Borders</em></h3>
+      <h3>Visible as Resource, Invisible as Person · Felicity Amaya Schaeffer, <em>Unsettled Borders</em></h3>
 
       <div class="tower-wrap">
         <div class="tower-svg">
@@ -831,11 +828,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         </div>
       </div>
 
-      <p>Schaeffer's central argument is that the militarized surveillance apparatus at the US-Mexico border cannot be understood without centering its settler colonial foundations. The border was never a neutral line. It is a technology of occupation. <strong>Settler surveillance</strong> names the state's automated seeing that empties land of Native presence even as it scans for Native threat. <strong>Nativision</strong> is the visual and sensory knowledge of the land that Apache scouts possessed — knowledge the US military extracted, abstracted, and converted into its own arsenal, erasing the source in the process.</p>
+      <p>Schaeffer's central argument is that the militarized surveillance apparatus at the US-Mexico border cannot be understood without centering its settler colonial foundations. The border was never a neutral line. It is a technology of occupation. <strong>Settler surveillance</strong> names the state's automated seeing that empties land of Native presence even as it scans for Native threat. <strong>Nativision</strong> is the visual and sensory knowledge of the land that Apache scouts possessed, knowledge the US military extracted, abstracted, and converted into its own arsenal, erasing the source in the process.</p>
 
-      <div class="callout"><p>"You are visible as a resource and invisible as a person — which is somehow worse than either condition alone. The state sees your knowledge but not your humanity. It sees the <em>what</em> but not the <em>why</em>. And that selective seeing is what makes extraction possible."</p></div>
+      <div class="callout"><p>"You are visible as a resource and invisible as a person, which is somehow worse than either condition alone. The state sees your knowledge but not your humanity. It sees the <em>what</em> but not the <em>why</em>. And that selective seeing is what makes extraction possible."</p></div>
 
-      <p>The counter-logic Schaeffer offers is <strong>sacredscience</strong> — an Indigenous relational knowledge system that understands land not as property to be mapped but as a living ancestor to be guided by. You cannot extract from sacredscience without destroying it, because the knowledge only works inside the web of relations it emerged from. To abstract it is to kill it. What the military gained from Nativision was a shadow of what it took.</p>
+      <p>The counter-logic Schaeffer offers is <strong>sacredscience</strong>, an Indigenous relational knowledge system that understands land not as property to be mapped but as a living ancestor to be guided by. You cannot extract from sacredscience without destroying it, because the knowledge only works inside the web of relations it emerged from. To abstract it is to kill it. What the military gained from Nativision was a shadow of what it took.</p>
 
       <div class="svgmap-wrap">
         <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" style="background:#0A0807">
@@ -872,9 +869,9 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         <p class="svgmap-caption"><span class="svgmap-label">US–Mexico Borderlands · Surveillance Infrastructure</span>RVSS towers concentrated on Tohono O'odham Nation territory, with drone corridors covering the same land whose Indigenous knowledge informed the military's tracking techniques.</p>
       </div>
 
-      <h3>The Archive as Verdict — Jules Gill-Peterson, <em>Histories of the Transgender Child</em></h3>
-      <p>If Browne shows surveillance as racial infrastructure, Schaeffer as colonial extraction, and Monea as encoded heteronormativity, Gill-Peterson shows surveillance as medical governance — the use of clinical observation to produce, contain, and adjudicate gender nonconformity in children throughout the 20th century.</p>
-      <p>Gill-Peterson's archival recovery demonstrates that medicine did not discover the trans child. It produced one — through the accumulation of case files, diagnostic categories, and institutional protocols designed to identify and correct gender variance before it could become identity. The medical record was never a neutral document. It was a technology of assessment and a vehicle for enforcing gender normativity on bodies too young to contest being categorized.</p>
+      <h3>The Archive as Verdict · Jules Gill-Peterson, <em>Histories of the Transgender Child</em></h3>
+      <p>If Browne shows surveillance as racial infrastructure, Schaeffer as colonial extraction, and Monea as encoded heteronormativity, Gill-Peterson shows surveillance as medical governance, the use of clinical observation to produce, contain, and adjudicate gender nonconformity in children throughout the 20th century.</p>
+      <p>Gill-Peterson's archival recovery demonstrates that medicine did not discover the trans child. It produced one, through the accumulation of case files, diagnostic categories, and institutional protocols designed to identify and correct gender variance before it could become identity. The medical record was never a neutral document. It was a technology of assessment and a vehicle for enforcing gender normativity on bodies too young to contest being categorized.</p>
 
       <div class="doc-artifact">
         <div class="doc-stamp">CASE FILE</div>
@@ -883,14 +880,14 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         <div class="doc-field"><span class="doc-field-label">Presenting Concern:</span><span class="doc-field-value">Deviation from sex-normative behavior in play, dress, social preference</span></div>
         <div class="doc-field"><span class="doc-field-label">Observation Notes:</span><span class="doc-field-value redacted" title="Click to reveal">Subject displays cross-sex identification. Recommend behavioral intervention to reinforce sex-appropriate development prior to adolescence.</span></div>
         <div class="doc-field"><span class="doc-field-label">Prognosis:</span><span class="doc-field-value redacted" title="Click to reveal">With early intervention, normalization of gender expression is achievable. Without intervention, subject at risk for [diagnosis removed from use, 1973].</span></div>
-        <p class="doc-note">Hover or click redacted fields to reveal. Gill-Peterson recovers thousands of documents like this one — records that simultaneously created and pathologized the category of "the trans child." The archive watched. The archive judged. The bodies catalogued knew that long before the scholars arrived to read the files.</p>
+        <p class="doc-note">Hover or click redacted fields to reveal. Gill-Peterson recovers thousands of documents like this one, records that simultaneously created and pathologized the category of "the trans child." The archive watched. The archive judged. The bodies catalogued knew that long before the scholars arrived to read the files.</p>
       </div>
 
       <div class="callout"><p>"The bodies most surveilled were also the people whose accounts of that surveillance were systematically dismissed as not counting as evidence. The same logic governs who gets watched and who gets believed."</p></div>
 
       <div class="research-thread">
         <span class="rt-label">Research Thread · How Wing 001 Contributes to the Dissertation</span>
-        <p class="rt-text">Browne's methodological choice to treat slave narratives, coded spirituals, and popular culture as co-equal theoretical sources is the epistemological move my dissertation depends on. If those artifacts count as evidence, then cultural practices count as data. Her concept of <strong>racializing surveillance</strong> — where surveillance doesn't just observe race but actively produces it — is the template for Black Code's central claim: cultural practices don't simply reflect expertise hierarchies, they constitute them. Monea makes the identical structural argument about heteronormativity: the internet didn't reflect straightness, it became straight. That move — from reflection to constitution — is the core of what I'm arguing culture does to technical knowledge.</p>
+        <p class="rt-text">Browne's methodological choice to treat slave narratives, coded spirituals, and popular culture as co-equal theoretical sources is the epistemological move my dissertation depends on. If those artifacts count as evidence, then cultural practices count as data. Her concept of <strong>racializing surveillance</strong>, where surveillance doesn't just observe race but actively produces it, is the template for Black Code's central claim: cultural practices don't simply reflect expertise hierarchies, they constitute them. Monea makes the identical structural argument about heteronormativity: the internet didn't reflect straightness, it became straight. That move, from reflection to constitution, is the core of what I'm arguing culture does to technical knowledge.</p>
       </div>
 
     </div>
@@ -912,7 +909,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Default is not neutral. It is a decision that forgot to announce itself. When the default body in a design system is male, every other body becomes an edge case. These three texts document the architecture of that forgetting — and one of them names a way out.</p>
+      <p class="wall-label-text">Default is not neutral. It is a decision that forgot to announce itself. When the default body in a design system is male, every other body becomes an edge case. These three texts document the architecture of that forgetting, and one of them names a way out.</p>
     </div>
 
     <div class="exhibit-essay">
@@ -927,19 +924,19 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         />
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 001</span>
-          <span class="gallery-img-caption">The standard crash test dummy is calibrated to the 50th-percentile male body — 5'9", 171 lbs. A female-proportioned dummy was not required by US safety regulations until 2022. Photo: public domain.</span>
+          <span class="gallery-img-caption">The standard crash test dummy is calibrated to the 50th-percentile male body, 5'9", 171 lbs. A female-proportioned dummy was not required by US safety regulations until 2022. Photo: public domain.</span>
         </div>
       </div>
 
-      <h3>The Epistemic Trap — Caroline Criado-Perez, <em>Invisible Women</em></h3>
+      <h3>The Epistemic Trap · Caroline Criado-Perez, <em>Invisible Women</em></h3>
 
       <p>I have spent most of my professional career working with data. As a Solutions Architect embedded in federal agencies and defense consulting firms, I believed that data was simultaneously the most valuable and the most underutilized resource any organization possessed. Criado-Perez's <em>Invisible Women</em> did not disrupt that belief. It sharpened it into something more uncomfortable. The problem she documents is not that organizations failed to collect data. It is that they collected data about men, labeled it people data, and proceeded as though the category had been satisfied.</p>
 
-      <p>This is the epistemic trap — and it is more structurally sophisticated than a mere oversight. Once men's data is classified as human data, women become a subset of men. A deviation. And if women are already a subset, then designing for the universal human norm — which is to say, designing for men — accounts for everyone by definition. The exclusion justifies itself from within its own logic. You cannot contest it using the system's own terms because the system defined you out of the frame before the argument began.</p>
+      <p>This is the epistemic trap, and it is more structurally sophisticated than a mere oversight. Once men's data is classified as human data, women become a subset of men. A deviation. And if women are already a subset, then designing for the universal human norm, which is to say, designing for men, accounts for everyone by definition. The exclusion justifies itself from within its own logic. You cannot contest it using the system's own terms because the system defined you out of the frame before the argument began.</p>
 
       <div class="callout"><p>"Once men's data is classified as human data, the exclusion becomes self-justifying. You cannot contest it using the system's own terms because the system defined you out of the frame before the argument began. This is what epistemic injustice looks like at the infrastructural level."</p></div>
 
-      <p>What Criado-Perez is describing is an <strong>undocumented critical dependency</strong>. Care work, female physiology, women's movement patterns through cities — all running the system, none of them in the architecture diagram. Nobody allocated resources to maintain them. Nobody built redundancy around them. The system is dependent on inputs it refuses to acknowledge. If women collectively declined to perform unpaid care work the way male researchers declined to collect female data, the economy would not have a gender data gap. It would have a collapse.</p>
+      <p>What Criado-Perez is describing is an <strong>undocumented critical dependency</strong>. Care work, female physiology, women's movement patterns through cities, all running the system, none of them in the architecture diagram. Nobody allocated resources to maintain them. Nobody built redundancy around them. The system is dependent on inputs it refuses to acknowledge. If women collectively declined to perform unpaid care work the way male researchers declined to collect female data, the economy would not have a gender data gap. It would have a collapse.</p>
 
       <!-- Interactive -->
       <div class="design-interactive">
@@ -968,7 +965,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             </div>
             <div class="di-reveal" id="di-reveal-1"></div>
           </div>
-          <div class="di-object" data-answer="male" data-fact="Until 1993, the NIH required women to be excluded from most clinical drug trials — their hormonal cycles were considered a 'complication.' Standard drug dosages are still derived from these male-only trials. Women experience adverse drug reactions at nearly twice the rate of men.">
+          <div class="di-object" data-answer="male" data-fact="Until 1993, the NIH required women to be excluded from most clinical drug trials, their hormonal cycles were considered a 'complication.' Standard drug dosages are still derived from these male-only trials. Women experience adverse drug reactions at nearly twice the rate of men.">
             <p class="di-object-name">The Standard Drug Dosage</p>
             <p class="di-object-hint">Who were the clinical trial subjects that established the dose you're prescribed?</p>
             <div class="di-choices">
@@ -988,7 +985,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             </div>
             <div class="di-reveal" id="di-reveal-3"></div>
           </div>
-          <div class="di-object" data-answer="male" data-fact="Standard smartphones are designed around an average male hand span. Studies show women find them difficult to use one-handed — not because of any deficiency in women's hands, but because 'standard' was defined without them. The phone that fits in your pocket was sized for a pocket that was sized for a man.">
+          <div class="di-object" data-answer="male" data-fact="Standard smartphones are designed around an average male hand span. Studies show women find them difficult to use one-handed, not because of any deficiency in women's hands, but because 'standard' was defined without them. The phone that fits in your pocket was sized for a pocket that was sized for a man.">
             <p class="di-object-name">The Smartphone</p>
             <p class="di-object-hint">Whose hand size was the standard smartphone form factor designed around?</p>
             <div class="di-choices">
@@ -998,7 +995,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             </div>
             <div class="di-reveal" id="di-reveal-4"></div>
           </div>
-          <div class="di-object" data-answer="male" data-fact="NASA's EMU spacesuit was designed around a male body. When the first all-women spacewalk was scheduled in 2019, there was only one medium-sized suit available — not two. The mission was reassigned. The official explanation: a 'wardrobe malfunction.' The actual explanation: an inventory built around a default that never accounted for two women on the same mission.">
+          <div class="di-object" data-answer="male" data-fact="NASA's EMU spacesuit was designed around a male body. When the first all-women spacewalk was scheduled in 2019, there was only one medium-sized suit available, not two. The mission was reassigned. The official explanation: a 'wardrobe malfunction.' The actual explanation: an inventory built around a default that never accounted for two women on the same mission.">
             <p class="di-object-name">The NASA Spacesuit</p>
             <p class="di-object-hint">The first all-women spacewalk was cancelled because of a spacesuit issue. What was the problem?</p>
             <div class="di-choices">
@@ -1023,7 +1020,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         <div class="bt-left">
           <p class="bt-tag">Caroline Criado-Perez · 2019</p>
           <p class="bt-title">Invisible Women: Exposing Data Bias in a World Designed for Men</p>
-          <p class="bt-desc">Criado-Perez on the gender data gap — how the male default gets laundered into objectivity, and why designing for the "universal human" (who is always assumed male) is the epistemic trap structuring modern medicine, urban design, and technology.</p>
+          <p class="bt-desc">Criado-Perez on the gender data gap, how the male default gets laundered into objectivity, and why designing for the "universal human" (who is always assumed male) is the epistemic trap structuring modern medicine, urban design, and technology.</p>
           <a class="bt-link" href="https://www.youtube.com/results?search_query=Caroline+Criado+Perez+Invisible+Women+talk" target="_blank">▶ Find on YouTube</a>
         </div>
         <div class="bt-right"><div class="bt-play">▶</div></div>
@@ -1039,17 +1036,17 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         />
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 002</span>
-          <span class="gallery-img-caption">Christina Koch and Jessica Meir conduct the first all-female spacewalk, October 18, 2019 — six months after the original mission was reassigned because NASA only had one medium-sized spacesuit available. Photo: NASA / public domain.</span>
+          <span class="gallery-img-caption">Christina Koch and Jessica Meir conduct the first all-female spacewalk, October 18, 2019, six months after the original mission was reassigned because NASA only had one medium-sized spacesuit available. Photo: NASA / public domain.</span>
         </div>
       </div>
 
-      <h3>The Gender of Things — María Rentetzi, <em>The Gender of Things</em></h3>
+      <h3>The Gender of Things · María Rentetzi, <em>The Gender of Things</em></h3>
 
-      <p>Imagine preparing for a historic all-women spacewalk, only to have the mission quietly reassigned days before launch — the official explanation being a "wardrobe malfunction." In one phrase, two of the most rigorously trained humans on earth had been reduced to women worried about their outfit, not astronauts failed by a system that was never designed to support them. What actually happened had nothing to do with vanity. NASA's spacesuit inventory had simply been built around a male default, and no one had thought to provision two medium suits for a crew that included two women.</p>
+      <p>Imagine preparing for a historic all-women spacewalk, only to have the mission quietly reassigned days before launch, the official explanation being a "wardrobe malfunction." In one phrase, two of the most rigorously trained humans on earth had been reduced to women worried about their outfit, not astronauts failed by a system that was never designed to support them. What actually happened had nothing to do with vanity. NASA's spacesuit inventory had simply been built around a male default, and no one had thought to provision two medium suits for a crew that included two women.</p>
 
-      <p>This is exactly what Rentetzi is documenting in <em>The Gender of Things</em>. Her argument is that objects are not born gendered — they become gendered through the social relations of production that organize who uses them, who is credited for working with them, and whose relationship to them counts as expertise. The pattern she identifies is consistent: the moment a domestic craft gains industrial scale or institutional prestige, the women who built that craft get pushed out while the craft itself becomes a tool in their displacement.</p>
+      <p>This is exactly what Rentetzi is documenting in <em>The Gender of Things</em>. Her argument is that objects are not born gendered, they become gendered through the social relations of production that organize who uses them, who is credited for working with them, and whose relationship to them counts as expertise. The pattern she identifies is consistent: the moment a domestic craft gains industrial scale or institutional prestige, the women who built that craft get pushed out while the craft itself becomes a tool in their displacement.</p>
 
-      <div class="callout"><p>"Culture does the maintenance work of gender bias in technology. The gendering of things doesn't happen once and stay fixed — it must be continuously reproduced through cultural practices, norms, and narratives. Culture isn't just the backdrop for how expertise develops. It is the infrastructure through which expertise gets sorted, validated, and gatekept."</p></div>
+      <div class="callout"><p>"Culture does the maintenance work of gender bias in technology. The gendering of things doesn't happen once and stay fixed, it must be continuously reproduced through cultural practices, norms, and narratives. Culture isn't just the backdrop for how expertise develops. It is the infrastructure through which expertise gets sorted, validated, and gatekept."</p></div>
 
       <div class="gallery-img">
         <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sophia_(robot).jpg?width=1200"
@@ -1059,11 +1056,11 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         />
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 003</span>
-          <span class="gallery-img-caption">Sophia, the humanoid robot developed by Hanson Robotics, was granted Saudi citizenship in 2017 — before many Saudi women had secured full rights in practice. Deployed as the global face of AI, she embodies what Rentetzi calls the domestic-to-industrial pipeline: feminized labor automated and sold as innovation. Photo: Wikimedia Commons / CC BY-SA 4.0.</span>
+          <span class="gallery-img-caption">Sophia, the humanoid robot developed by Hanson Robotics, was granted Saudi citizenship in 2017, before many Saudi women had secured full rights in practice. Deployed as the global face of AI, she embodies what Rentetzi calls the domestic-to-industrial pipeline: feminized labor automated and sold as innovation. Photo: Wikimedia Commons / CC BY-SA 4.0.</span>
         </div>
       </div>
 
-      <p>Siri, Alexa, and Cortana were each launched with female voices as default, because decades of research confirm that users associate female voices with service and compliance and male voices with authority. The oldest form of feminized domestic labor — assistance — got automated and sold as a premium product with a woman's voice built in. Sophia takes it further. None of these are accidents. Each is the domestic-to-industrial pipeline, rendered in code and silicone. Progress built on gendered dispossession doesn't dismantle that dispossession. It just carries it forward into new materials.</p>
+      <p>Siri, Alexa, and Cortana were each launched with female voices as default, because decades of research confirm that users associate female voices with service and compliance and male voices with authority. The oldest form of feminized domestic labor, assistance, got automated and sold as a premium product with a woman's voice built in. Sophia takes it further. None of these are accidents. Each is the domestic-to-industrial pipeline, rendered in code and silicone. Progress built on gendered dispossession doesn't dismantle that dispossession. It just carries it forward into new materials.</p>
 
       <!-- ── CARRIGAN ── -->
 
@@ -1075,23 +1072,23 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         />
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 004</span>
-          <span class="gallery-img-caption">The open-plan tech campus. The bro code is not written in the employee handbook — it lives in the informal architecture of this space: who gets the corner office, who gets pulled into the hallway conversation, whose after-hours channel you're not in. Photo: Wikimedia Commons / CC BY-SA 2.0.</span>
+          <span class="gallery-img-caption">The open-plan tech campus. The bro code is not written in the employee handbook, it lives in the informal architecture of this space: who gets the corner office, who gets pulled into the hallway conversation, whose after-hours channel you're not in. Photo: Wikimedia Commons / CC BY-SA 2.0.</span>
         </div>
       </div>
 
-      <h3>The Bro Code and Beyond — Coleen Carrigan, <em>Cracking the Bro Code</em></h3>
+      <h3>The Bro Code and Beyond · Coleen Carrigan, <em>Cracking the Bro Code</em></h3>
 
-      <p>Carrigan's text validated my lived experience of merely trying to obtain a degree in computer science, let alone navigate the workforce. Her central argument is that gender discrepancies in engineering are not just the product of pipeline concerns or individual bias — they are products of cultural norms and institutional practices that subtly prefer men and perpetuate masculine professional identities. The <strong>bro code</strong> is not written down. It lives in the inside joke, the after-hours Slack channel, the conference hallway conversation that happens after the meeting ends. It rewards hegemonic masculinity-related behaviors while marginalizing people who do not perform them.</p>
+      <p>Carrigan's text validated my lived experience of merely trying to obtain a degree in computer science, let alone navigate the workforce. Her central argument is that gender discrepancies in engineering are not just the product of pipeline concerns or individual bias, they are products of cultural norms and institutional practices that subtly prefer men and perpetuate masculine professional identities. The <strong>bro code</strong> is not written down. It lives in the inside joke, the after-hours Slack channel, the conference hallway conversation that happens after the meeting ends. It rewards hegemonic masculinity-related behaviors while marginalizing people who do not perform them.</p>
 
-      <div class="callout"><p>"Engineering organizations frame inequality as an individual problem — something women must overcome through resilience or skill development — while simultaneously disregarding the institutional norms that privilege masculine identity performances. The problem is structural. The solution being sold is personal."</p></div>
+      <div class="callout"><p>"Engineering organizations frame inequality as an individual problem, something women must overcome through resilience or skill development, while simultaneously disregarding the institutional norms that privilege masculine identity performances. The problem is structural. The solution being sold is personal."</p></div>
 
-      <p>What this text opened up for me is an opportunity to extend Carrigan's framework. My dissertation introduces the concept of <strong>Black Code</strong> — the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where the bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality, objectivity, and universality in technological systems.</p>
+      <p>What this text opened up for me is an opportunity to extend Carrigan's framework. My dissertation introduces the concept of <strong>Black Code</strong>, the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where the bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality, objectivity, and universality in technological systems.</p>
 
-      <p>Black Code treats Black women as epistemic actors whose lived experiences generate alternative understandings of technological design, knowledge production, and social impact. It is not simply a critique of exclusion. It is a framework for analyzing how marginalized positionalities produce distinct technological imaginaries — and for asking what we lose when those imaginaries get coded out of the system before the architecture diagram is ever drawn.</p>
+      <p>Black Code treats Black women as epistemic actors whose lived experiences generate alternative understandings of technological design, knowledge production, and social impact. It is not simply a critique of exclusion. It is a framework for analyzing how marginalized positionalities produce distinct technological imaginaries, and for asking what we lose when those imaginaries get coded out of the system before the architecture diagram is ever drawn.</p>
 
       <div class="research-thread">
         <span class="rt-label">Research Thread · How Wing 002 Contributes to the Dissertation</span>
-        <p class="rt-text">Carrigan's bro code is the most direct predecessor to <strong>Black Code</strong>. My dissertation extends her framework: where the bro code explains how masculinity structures professional legitimacy in technical fields, Black Code examines how race and gender together produce navigational practices that constitute their own form of sociotechnical infrastructure. Criado-Perez provides the epistemological model for what the invisible default does — once male data gets classified as human data, the exclusion becomes self-justifying and invisible from within the system. Black Code argues the same logic operates with whiteness and masculinity as the unmarked defaults for what technical expertise looks like, sounds like, and gets recognized as.</p>
+        <p class="rt-text">Carrigan's bro code is the most direct predecessor to <strong>Black Code</strong>. My dissertation extends her framework: where the bro code explains how masculinity structures professional legitimacy in technical fields, Black Code examines how race and gender together produce navigational practices that constitute their own form of sociotechnical infrastructure. Criado-Perez provides the epistemological model for what the invisible default does, once male data gets classified as human data, the exclusion becomes self-justifying and invisible from within the system. Black Code argues the same logic operates with whiteness and masculinity as the unmarked defaults for what technical expertise looks like, sounds like, and gets recognized as.</p>
       </div>
 
     </div>
@@ -1114,7 +1111,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">All knowledge is produced from somewhere. The question is not whether a perspective is partial — it always is — but whether it names that partiality or hides it behind a claim to universality. This wing holds the epistemological argument that makes this museum possible.</p>
+      <p class="wall-label-text">All knowledge is produced from somewhere. The question is not whether a perspective is partial, it always is, but whether it names that partiality or hides it behind a claim to universality. This wing holds the epistemological argument that makes this museum possible.</p>
     </div>
 
     <div class="exhibit-essay">
@@ -1123,23 +1120,23 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <div class="gallery-img">
         <div style="min-height:300px;background:linear-gradient(160deg,#0C0A07 0%,#1A1208 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;text-align:center">
           <p style="font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem">Black Feminist Knowledge Production</p>
-          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.5;max-width:500px">"Loving the work without loving the women is its own form of violence — its own reproduction of the exclusions Black feminism was supposed to address."</p>
+          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,2rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.5;max-width:500px">"Loving the work without loving the women is its own form of violence, its own reproduction of the exclusions Black feminism was supposed to address."</p>
         </div>
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 001</span>
-          <span class="gallery-img-caption">Jennifer Nash, <em>Black Feminism Reimagined</em> (2019) — on intersectionality as traveling theory, and what gets lost in the travel.</span>
+          <span class="gallery-img-caption">Jennifer Nash, <em>Black Feminism Reimagined</em> (2019), on intersectionality as traveling theory, and what gets lost in the travel.</span>
         </div>
       </div>
 
-      <h3>After Intersectionality — Jennifer Nash, <em>Black Feminism Reimagined</em></h3>
+      <h3>After Intersectionality · Jennifer Nash, <em>Black Feminism Reimagined</em></h3>
 
-      <p><em>Black Feminism Reimagined</em> will likely be one of my favorite readings of the semester. Nash is doing something important here by reclaiming the "angry Black woman" trope, but in academic pedagogy — refusing to just celebrate Black feminism's success in the academy and instead holding it accountable through critique. This criticism often gets coded as anger or negativity, but Nash is showing that in some cases criticism comes from a place of love and a responsibility to defend the honor of Black feminism and intersectionality.</p>
+      <p><em>Black Feminism Reimagined</em> will likely be one of my favorite readings of the semester. Nash is doing something important here by reclaiming the "angry Black woman" trope, but in academic pedagogy, refusing to just celebrate Black feminism's success in the academy and instead holding it accountable through critique. This criticism often gets coded as anger or negativity, but Nash is showing that in some cases criticism comes from a place of love and a responsibility to defend the honor of Black feminism and intersectionality.</p>
 
-      <p>What stands out most is how Nash talks about intersectionality being prescriptive — as if it's something that's supposed to fix all of feminism's problems, positioned as a disciplinarian to feminism. Black women are positioned as the fixers, the teachers, the ones doing the labor of correcting white feminism. When intersectionality becomes just a methodology you apply or a framework you cite, it gets domesticated. It becomes about checking boxes, about making feminism look inclusive, rather than fundamentally transforming how we understand power and oppression.</p>
+      <p>What stands out most is how Nash talks about intersectionality being prescriptive, as if it's something that's supposed to fix all of feminism's problems, positioned as a disciplinarian to feminism. Black women are positioned as the fixers, the teachers, the ones doing the labor of correcting white feminism. When intersectionality becomes just a methodology you apply or a framework you cite, it gets domesticated. It becomes about checking boxes, about making feminism look inclusive, rather than fundamentally transforming how we understand power and oppression.</p>
 
-      <div class="callout"><p>"The academy loves Black feminist work but not Black women themselves. Intersectionality circulates everywhere — everyone cites it, gets published using it, builds careers on it. But that circulation happens without support for Black women scholars who created and continue to develop this work. Loving the work without loving the women is its own form of violence."</p></div>
+      <div class="callout"><p>"The academy loves Black feminist work but not Black women themselves. Intersectionality circulates everywhere, everyone cites it, gets published using it, builds careers on it. But that circulation happens without support for Black women scholars who created and continue to develop this work. Loving the work without loving the women is its own form of violence."</p></div>
 
-      <p>Nash's work counters the "here damn" logic — the idea that Black women should be grateful to be included in feminist conversations at all. Grateful that people cite intersectionality now. Nash is calling that out, showing how that demand for gratitude shuts down the critique we need. If Black women are supposed to be thankful for inclusion, then any further criticism looks like ingratitude. It insulates feminism from deeper interrogation by positioning Black women's presence as the solution rather than the beginning of necessary transformation.</p>
+      <p>Nash's work counters the "here damn" logic, the idea that Black women should be grateful to be included in feminist conversations at all. Grateful that people cite intersectionality now. Nash is calling that out, showing how that demand for gratitude shuts down the critique we need. If Black women are supposed to be thankful for inclusion, then any further criticism looks like ingratitude. It insulates feminism from deeper interrogation by positioning Black women's presence as the solution rather than the beginning of necessary transformation.</p>
 
       <!-- HARAWAY INTERACTIVE -->
       <div class="design-interactive">
@@ -1150,7 +1147,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         <div class="di-body" style="min-height:200px">
           <div class="di-object active" id="sk-0">
             <p class="di-object-name">What is the "god trick"?</p>
-            <p class="di-object-hint">Haraway's term for a specific kind of knowledge claim — which is it?</p>
+            <p class="di-object-hint">Haraway's term for a specific kind of knowledge claim, which is it?</p>
             <div class="di-choices">
               <button class="di-choice" onclick="skAnswer(this,'b')">The pretense of seeing everything from nowhere in particular</button>
               <button class="di-choice" onclick="skAnswer(this,'a')">Knowledge produced only by divine or spiritual authority</button>
@@ -1170,7 +1167,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
           </div>
           <div class="di-object" id="sk-2">
             <p class="di-object-name">What makes the cyborg a feminist figure for Haraway?</p>
-            <p class="di-object-hint">The cyborg is useful because of what it refuses — which boundary?</p>
+            <p class="di-object-hint">The cyborg is useful because of what it refuses, which boundary?</p>
             <div class="di-choices">
               <button class="di-choice" onclick="skAnswer(this,'c')">The boundary between nature and culture, organic and machine</button>
               <button class="di-choice" onclick="skAnswer(this,'a')">The boundary between human and animal</button>
@@ -1194,7 +1191,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="di-choices">
               <button class="di-choice" onclick="skAnswer(this,'b')">Technology is always also a way of producing knowledge and truth</button>
               <button class="di-choice" onclick="skAnswer(this,'a')">Technology is a form of art that expresses human creativity</button>
-              <button class="di-choice" onclick="skAnswer(this,'c')">Technology is ethically neutral — only its use is political</button>
+              <button class="di-choice" onclick="skAnswer(this,'c')">Technology is ethically neutral, only its use is political</button>
             </div>
             <div class="di-reveal" id="sk-reveal-4"></div>
           </div>
@@ -1216,43 +1213,43 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         </div>
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 002</span>
-          <span class="gallery-img-caption">Donna Haraway, <em>Situated Knowledges</em> (1988) and <em>A Cyborg Manifesto</em> (1985) — the epistemological foundation for every argument in this museum. Every exhibit is a view from somewhere.</span>
+          <span class="gallery-img-caption">Donna Haraway, <em>Situated Knowledges</em> (1988) and <em>A Cyborg Manifesto</em> (1985), the epistemological foundation for every argument in this museum. Every exhibit is a view from somewhere.</span>
         </div>
       </div>
 
-      <h3>The God Trick — Donna Haraway, <em>Situated Knowledges</em> and <em>A Cyborg Manifesto</em></h3>
+      <h3>The God Trick · Donna Haraway, <em>Situated Knowledges</em> and <em>A Cyborg Manifesto</em></h3>
 
-      <p>Haraway's <em>Situated Knowledges</em> is the epistemological foundation for everything in this museum. The "god trick" is her name for the view from nowhere — the claim to see everything without occupying any particular position. This is the move that launders perspective into objectivity. Every exhibit in every wing is a view from somewhere. The institution that produced these readings is somewhere. The curator who assembled them is somewhere. That is not a problem to be solved. It is a condition to be named and held accountable.</p>
+      <p>Haraway's <em>Situated Knowledges</em> is the epistemological foundation for everything in this museum. The "god trick" is her name for the view from nowhere, the claim to see everything without occupying any particular position. This is the move that launders perspective into objectivity. Every exhibit in every wing is a view from somewhere. The institution that produced these readings is somewhere. The curator who assembled them is somewhere. That is not a problem to be solved. It is a condition to be named and held accountable.</p>
 
-      <p>The <em>Cyborg Manifesto</em> extends this into political form. If the fantasy of a unified, essential self is a fiction that serves existing power arrangements, then embracing the cyborg — the hybrid, the partial, the constructed — is an act of resistance. The boundaries between human and machine, nature and culture, organism and technology are not natural. They are made. They can be remade. The cyborg is useful precisely because it refuses the mythic origin stories that prop up those boundaries.</p>
+      <p>The <em>Cyborg Manifesto</em> extends this into political form. If the fantasy of a unified, essential self is a fiction that serves existing power arrangements, then embracing the cyborg, the hybrid, the partial, the constructed, is an act of resistance. The boundaries between human and machine, nature and culture, organism and technology are not natural. They are made. They can be remade. The cyborg is useful precisely because it refuses the mythic origin stories that prop up those boundaries.</p>
 
-      <div class="callout"><p>"Feminist objectivity means quite simply situated knowledge. Partial perspective promises objective vision. The god trick of seeing everything from nowhere is a male fantasy. It produces irresponsibility — the power to see without being seen, to represent while escaping representation."</p></div>
+      <div class="callout"><p>"Feminist objectivity means quite simply situated knowledge. Partial perspective promises objective vision. The god trick of seeing everything from nowhere is a male fantasy. It produces irresponsibility, the power to see without being seen, to represent while escaping representation."</p></div>
 
       <div class="browne-talk">
         <div class="bt-left">
           <p class="bt-tag">Donna Haraway · Story Telling for Earthly Survival · Documentary 2016</p>
           <p class="bt-title">Staying with the Trouble: Making Kin in the Chthulucene</p>
-          <p class="bt-desc">Fabrizio Terranova's documentary portrait of Haraway — on situated knowledge, speculative fabulation, making kin, and why the stories we tell about science are inseparable from the science itself.</p>
+          <p class="bt-desc">Fabrizio Terranova's documentary portrait of Haraway, on situated knowledge, speculative fabulation, making kin, and why the stories we tell about science are inseparable from the science itself.</p>
           <a class="bt-link" href="https://vimeo.com/ondemand/donnaharaway" target="_blank">▶ Watch on Vimeo</a>
         </div>
         <div class="bt-right"><div class="bt-play">▶</div></div>
       </div>
 
       <!-- CIPOLLA -->
-      <h3>Polyphonic Knowledge — Cipolla, Gupta, Rubin, Willey, <em>Queer Feminist Science Studies</em></h3>
+      <h3>Polyphonic Knowledge · Cipolla, Gupta, Rubin, Willey, <em>Queer Feminist Science Studies</em></h3>
 
-      <p>The introduction to <em>Queer Feminist Science Studies</em> names what this museum tries to do: produce knowledge that is simultaneously rigorous and situated, analytical and embodied. The introduction is itself a methodology — multiple voices, multiple disciplinary locations, refusing the false comfort of a single authoritative perspective. The polyphony is not a limitation. It is the argument. The form of knowledge production is not separable from its content.</p>
+      <p>The introduction to <em>Queer Feminist Science Studies</em> names what this museum tries to do: produce knowledge that is simultaneously rigorous and situated, analytical and embodied. The introduction is itself a methodology, multiple voices, multiple disciplinary locations, refusing the false comfort of a single authoritative perspective. The polyphony is not a limitation. It is the argument. The form of knowledge production is not separable from its content.</p>
 
-      <div class="callout"><p>"Queer feminist science studies refuses the boundary between the scientist and the social — asking not just what science knows, but whose interests its knowledge serves, whose bodies its methods presuppose, and what ways of knowing it renders illegible."</p></div>
+      <div class="callout"><p>"Queer feminist science studies refuses the boundary between the scientist and the social, asking not just what science knows, but whose interests its knowledge serves, whose bodies its methods presuppose, and what ways of knowing it renders illegible."</p></div>
 
       <!-- BOELLSTORFF -->
-      <h3>Techne — Tom Boellstorff</h3>
+      <h3>Techne, Tom Boellstorff</h3>
 
-      <p>Boellstorff recovers the Greek concept of <em>techne</em> — craft, making, the knowledge embedded in how things are produced — to argue that technology is always already an epistemological claim. How we produce things is also how we produce truth. This museum is a techne argument. The digital museum format is not a container for the argument. It is the argument. A dissertation that claims cultural knowledge is experiential cannot demonstrate that claim in standard academic prose without the form contradicting the content. The medium is not decoration. It is evidence.</p>
+      <p>Boellstorff recovers the Greek concept of <em>techne</em>, craft, making, the knowledge embedded in how things are produced, to argue that technology is always already an epistemological claim. How we produce things is also how we produce truth. This museum is a techne argument. The digital museum format is not a container for the argument. It is the argument. A dissertation that claims cultural knowledge is experiential cannot demonstrate that claim in standard academic prose without the form contradicting the content. The medium is not decoration. It is evidence.</p>
 
       <div class="research-thread">
         <span class="rt-label">Research Thread · How Wing 003 Contributes to the Dissertation</span>
-        <p class="rt-text">Haraway's situated knowledges is the methodological warrant for my entire approach. If all knowledge is produced from somewhere, then my biography is not a complication to manage — it is a resource to account for. The Curator's Corner is a direct application of this principle. Nash's critique of institutionalized intersectionality is also a direct warning to my own project: Black feminist frameworks can circulate while Black women don't. <strong>Black Code</strong> must be careful not to become another traveling theory that generates academic prestige while the community it describes remains underrecognized. Boellstorff's techne argument is why this museum exists in this form: a dissertation claiming cultural knowledge is experiential cannot make that case in standard prose without the form contradicting the content.</p>
+        <p class="rt-text">Haraway's situated knowledges is the methodological warrant for my entire approach. If all knowledge is produced from somewhere, then my biography is not a complication to manage, it is a resource to account for. The Curator's Corner is a direct application of this principle. Nash's critique of institutionalized intersectionality is also a direct warning to my own project: Black feminist frameworks can circulate while Black women don't. <strong>Black Code</strong> must be careful not to become another traveling theory that generates academic prestige while the community it describes remains underrecognized. Boellstorff's techne argument is why this museum exists in this form: a dissertation claiming cultural knowledge is experiential cannot make that case in standard prose without the form contradicting the content.</p>
       </div>
 
     </div>
@@ -1285,7 +1282,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Infrastructure can also be unmade. The same cultural practices that reproduce exclusion can be turned toward different ends. This wing holds the tools of counter-infrastructure — not as utopia, but as evidence that other arrangements have always been possible and are being built right now.</p>
+      <p class="wall-label-text">Infrastructure can also be unmade. The same cultural practices that reproduce exclusion can be turned toward different ends. This wing holds the tools of counter-infrastructure, not as utopia, but as evidence that other arrangements have always been possible and are being built right now.</p>
     </div>
 
     <div class="exhibit-essay">
@@ -1294,79 +1291,79 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <div class="gallery-img">
         <div style="min-height:300px;background:linear-gradient(150deg,#07090A 0%,#0D1214 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;text-align:center">
           <p style="font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem">Activist Affordances · Arseli Dokumaci · 2023</p>
-          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"What Dokumaci calls 'people as affordances' — the ways other bodies become part of the ecological infrastructure of survival — is the world James finds when he finally gets inside."</p>
+          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"What Dokumaci calls 'people as affordances', the ways other bodies become part of the ecological infrastructure of survival, is the world James finds when he finally gets inside."</p>
         </div>
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 001</span>
-          <span class="gallery-img-caption">Arseli Dokumaci, <em>Activist Affordances</em> (2023) — a twelve-year visual ethnography of disabled people navigating environments built without them, and what they build in response.</span>
+          <span class="gallery-img-caption">Arseli Dokumaci, <em>Activist Affordances</em> (2023), a twelve-year visual ethnography of disabled people navigating environments built without them, and what they build in response.</span>
         </div>
       </div>
 
-      <h3>Inside the Peach — Arseli Dokumaci, <em>Activist Affordances</em></h3>
+      <h3>Inside the Peach · Arseli Dokumaci, <em>Activist Affordances</em></h3>
 
-      <p>Dokumaci asks readers to sit with a form of privilege most people never have to name: the experience of moving through a world designed with you in mind. Through a twelve-year visual ethnography conducted across Turkey and Quebec, she documents the lived experience of chronically ill and disabled people as they navigate environments built around normative bodies — illuminating the invisible labor required to survive in spaces that were never designed to accommodate them.</p>
+      <p>Dokumaci asks readers to sit with a form of privilege most people never have to name: the experience of moving through a world designed with you in mind. Through a twelve-year visual ethnography conducted across Turkey and Quebec, she documents the lived experience of chronically ill and disabled people as they navigate environments built around normative bodies, illuminating the invisible labor required to survive in spaces that were never designed to accommodate them.</p>
 
-      <p>Reading this text, I kept thinking about Roald Dahl's <em>James and the Giant Peach</em> — specifically about what it means to be James. To the outside world the disabled experience looks peachy, accommodated and handled, special parking included. James is that outside world, standing at a distance, unaware that inside the peach an entire world has already been built and is functioning on its own terms. Dokumaci's ethnography is the invitation to enter. The disabled people she documents are not waiting for James to arrive and make sense of things. They have been inside the peach all along, building community, developing knowledge, and navigating their journey with whatever and whoever is available to them.</p>
+      <p>Reading this text, I kept thinking about Roald Dahl's <em>James and the Giant Peach</em>, specifically about what it means to be James. To the outside world the disabled experience looks peachy, accommodated and handled, special parking included. James is that outside world, standing at a distance, unaware that inside the peach an entire world has already been built and is functioning on its own terms. Dokumaci's ethnography is the invitation to enter. The disabled people she documents are not waiting for James to arrive and make sense of things. They have been inside the peach all along, building community, developing knowledge, and navigating their journey with whatever and whoever is available to them.</p>
 
-      <div class="callout"><p>"What this text ultimately disrupts is the assumption that expertise looks a particular way and comes from a particular kind of body. Activist affordances are sophisticated technical and creative acts — but whether they are recognized as such depends entirely on who is doing the looking and from where they are standing."</p></div>
+      <div class="callout"><p>"What this text ultimately disrupts is the assumption that expertise looks a particular way and comes from a particular kind of body. Activist affordances are sophisticated technical and creative acts, but whether they are recognized as such depends entirely on who is doing the looking and from where they are standing."</p></div>
 
-      <p>The concept of <strong>shrinkage</strong> grounds the book's first half. Dokumaci reframes disability not as a property of the body but as the contraction of what the environment offers a particular body. A participant combs her hair by bending her head toward the comb rather than lifting her arm. Another reads the acoustics of parallel traffic to cross a street without audio signals. These are not clever adaptations. They are evidence of an entire epistemology built from within constraint — what Dokumaci calls "disability as method." This sits at the center of my own dissertation research, which examines how cultural practices shape the recognition of technical expertise. Dokumaci forces a broader view: how much knowledge have we been standing outside of, and what would it mean to finally step inside the peach?</p>
+      <p>The concept of <strong>shrinkage</strong> grounds the book's first half. Dokumaci reframes disability not as a property of the body but as the contraction of what the environment offers a particular body. A participant combs her hair by bending her head toward the comb rather than lifting her arm. Another reads the acoustics of parallel traffic to cross a street without audio signals. These are not clever adaptations. They are evidence of an entire epistemology built from within constraint, what Dokumaci calls "disability as method." This sits at the center of my own dissertation research, which examines how cultural practices shape the recognition of technical expertise. Dokumaci forces a broader view: how much knowledge have we been standing outside of, and what would it mean to finally step inside the peach?</p>
 
       <!-- BENJAMIN -->
       <div class="gallery-img">
         <div style="min-height:280px;background:linear-gradient(160deg,#0A0806 0%,#160A06 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;text-align:center">
           <p style="font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem">Race After Technology · Ruha Benjamin · 2019</p>
-          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"The New Jim Code: race enters the infrastructure the same way it always did — through the assumptions of those who built it, the data they trained on, and the populations they never considered."</p>
+          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"The New Jim Code: race enters the infrastructure the same way it always did, through the assumptions of those who built it, the data they trained on, and the populations they never considered."</p>
         </div>
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 002</span>
-          <span class="gallery-img-caption">Ruha Benjamin, <em>Race After Technology</em> (2019) — on the New Jim Code, abolitionist tools, and why the solution to racial bias in technical systems is not better audits but different premises entirely.</span>
+          <span class="gallery-img-caption">Ruha Benjamin, <em>Race After Technology</em> (2019), on the New Jim Code, abolitionist tools, and why the solution to racial bias in technical systems is not better audits but different premises entirely.</span>
         </div>
       </div>
 
-      <h3>Abolitionist Tools — Ruha Benjamin, <em>Race After Technology</em></h3>
+      <h3>Abolitionist Tools · Ruha Benjamin, <em>Race After Technology</em></h3>
 
-      <p>Benjamin's <em>Race After Technology</em> provides the political frame for this entire museum. The <strong>New Jim Code</strong> — her term for racial bias encoded into technical systems — is not an accident or a bug. It is a feature of systems built within and for a racially stratified society. The thread she traces is direct: physical segregation and redlining as the foundation, coded discrimination as the translation, and algorithmic harm as the result. Browne gives you the genealogy — surveillance was always racial, this is not new. Benjamin gives you the mechanism — the way physical discrimination gets abstracted into data and laundered through the language of technical neutrality.</p>
+      <p>Benjamin's <em>Race After Technology</em> provides the political frame for this entire museum. The <strong>New Jim Code</strong>, her term for racial bias encoded into technical systems, is not an accident or a bug. It is a feature of systems built within and for a racially stratified society. The thread she traces is direct: physical segregation and redlining as the foundation, coded discrimination as the translation, and algorithmic harm as the result. Browne gives you the genealogy, surveillance was always racial, this is not new. Benjamin gives you the mechanism, the way physical discrimination gets abstracted into data and laundered through the language of technical neutrality.</p>
 
-      <div class="callout"><p>"The people who were redlined out of wealth-building systems were also the people whose experiences were not the reference point when those systems went digital. So the bias went with them — now dressed up as math and presented as objective."</p></div>
+      <div class="callout"><p>"The people who were redlined out of wealth-building systems were also the people whose experiences were not the reference point when those systems went digital. So the bias went with them, now dressed up as math and presented as objective."</p></div>
 
-      <p>Benjamin's contribution is not just diagnosis. She offers <strong>abolitionist tools</strong> — a framework for asking what it would look like to build from the ground of justice rather than retrofitting justice onto systems designed for something else entirely. Abolition does not mean abandonment. It means refusing to accept the premise that the current system, as structured, is worth saving. It means asking: what would we build if we started from the communities most harmed by the current arrangement?</p>
+      <p>Benjamin's contribution is not just diagnosis. She offers <strong>abolitionist tools</strong>, a framework for asking what it would look like to build from the ground of justice rather than retrofitting justice onto systems designed for something else entirely. Abolition does not mean abandonment. It means refusing to accept the premise that the current system, as structured, is worth saving. It means asking: what would we build if we started from the communities most harmed by the current arrangement?</p>
 
       <div class="exhibit-video">
         <iframe src="https://www.youtube-nocookie.com/embed/QO3nY_u6hos?rel=0&modestbranding=1&color=white"
-          title="Ruha Benjamin: Is technology our savior — or our slayer? TED 2023"
+          title="Ruha Benjamin: Is technology our savior, or our slayer? TED 2023"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen loading="lazy"></iframe>
       </div>
 
       <!-- CLARKE & HARAWAY -->
-      <h3>Making Kin, Not Population — Adele Clarke &amp; Donna Haraway</h3>
+      <h3>Making Kin, Not Population · Adele Clarke &amp; Donna Haraway</h3>
 
-      <p>Clarke and Haraway assemble arguments for reimagining reproduction, population, and care outside the logics of capitalism and colonialism. <strong>Making kin</strong> is a counter-infrastructure practice — it refuses the normative family form as the only model for human connection and builds alternative structures of obligation and care. The demand to "make kin not babies" is deliberately provocative: it asks us to redirect our energies from biological reproduction within existing structures toward the creation of new forms of belonging that cut across those structures.</p>
+      <p>Clarke and Haraway assemble arguments for reimagining reproduction, population, and care outside the logics of capitalism and colonialism. <strong>Making kin</strong> is a counter-infrastructure practice, it refuses the normative family form as the only model for human connection and builds alternative structures of obligation and care. The demand to "make kin not babies" is deliberately provocative: it asks us to redirect our energies from biological reproduction within existing structures toward the creation of new forms of belonging that cut across those structures.</p>
 
-      <div class="callout"><p>"Kin making is worldbuilding. The infrastructure of belonging — who counts as family, who has obligations to whom, what forms of care get recognized and resourced — can be redesigned. It has been before, by the people most excluded from the official versions."</p></div>
+      <div class="callout"><p>"Kin making is worldbuilding. The infrastructure of belonging, who counts as family, who has obligations to whom, what forms of care get recognized and resourced, can be redesigned. It has been before, by the people most excluded from the official versions."</p></div>
 
       <!-- BAHNG -->
       <div class="gallery-img">
         <div style="min-height:260px;background:linear-gradient(170deg,#070A09 0%,#0C1410 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3rem;text-align:center">
           <p style="font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem">Low Fences · Aimee Bahng</p>
-          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"Low fences do not keep the speculative out. They mark the edge of what we agreed to call the yard — and nothing more."</p>
+          <p style="font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:300;font-style:italic;color:var(--text);line-height:1.55;max-width:520px">"Low fences do not keep the speculative out. They mark the edge of what we agreed to call the yard, and nothing more."</p>
         </div>
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 003</span>
-          <span class="gallery-img-caption">Aimee Bahng, "Low Fences" — on speculative geography, the thinness of the boundaries we mistake for permanent, and the arrangements that exist just past what we agreed to call the limit.</span>
+          <span class="gallery-img-caption">Aimee Bahng, "Low Fences", on speculative geography, the thinness of the boundaries we mistake for permanent, and the arrangements that exist just past what we agreed to call the limit.</span>
         </div>
       </div>
 
-      <h3>Low Fences — Aimee Bahng</h3>
+      <h3>Low Fences · Aimee Bahng</h3>
 
-      <p>Bahng's "Low Fences" offers a speculative geography — the recognition that the boundaries we treat as natural or permanent are agreements, not facts. The borders of the possible are drawn, not discovered. They are maintained by consensus, and where the consensus thins, other arrangements become visible. The low fence does not keep the speculative out. It marks the edge of what we agreed to call the yard — and nothing more. Beyond it: the same world, organized differently.</p>
+      <p>Bahng's "Low Fences" offers a speculative geography, the recognition that the boundaries we treat as natural or permanent are agreements, not facts. The borders of the possible are drawn, not discovered. They are maintained by consensus, and where the consensus thins, other arrangements become visible. The low fence does not keep the speculative out. It marks the edge of what we agreed to call the yard, and nothing more. Beyond it: the same world, organized differently.</p>
 
-      <p>This is the note this wing ends on — not resolution, but aperture. The work documented in this museum is not finished. The infrastructure of surveillance, of gendered design, of epistemological gatekeeping is still operating. But Dokumaci showed us that people have always been building inside the peach. Benjamin showed us the abolitionist tradition has always had tools the institution refused to recognize. Clarke and Haraway showed us that kin can be made where it was not supposed to exist. Bahng shows us that the fence was always low. What is on the other side has always been possible. It is being built right now, by people who stopped waiting for permission.</p>
+      <p>This is the note this wing ends on, not resolution, but aperture. The work documented in this museum is not finished. The infrastructure of surveillance, of gendered design, of epistemological gatekeeping is still operating. But Dokumaci showed us that people have always been building inside the peach. Benjamin showed us the abolitionist tradition has always had tools the institution refused to recognize. Clarke and Haraway showed us that kin can be made where it was not supposed to exist. Bahng shows us that the fence was always low. What is on the other side has always been possible. It is being built right now, by people who stopped waiting for permission.</p>
 
       <div class="research-thread">
         <span class="rt-label">Research Thread · How Wing 004 Contributes to the Dissertation</span>
-        <p class="rt-text">Dokumaci is the closest theoretical neighbor to <strong>Black Code</strong>. Her argument that activist affordances — the micro-acts through which disabled people create access to worlds not designed for them — constitute expertise the system cannot recognize from inside itself, is precisely the argument Black Code makes about Black women's cultural practices in technical environments. Both texts ask the same question: what gets recognized as technical knowledge, and what does that recognition require you to overlook? Benjamin's abolitionist tools name the political horizon the dissertation gestures toward — not diversity initiatives, but a fundamental rethinking of what technical expertise is, who produces it, and what it is for.</p>
+        <p class="rt-text">Dokumaci is the closest theoretical neighbor to <strong>Black Code</strong>. Her argument that activist affordances, the micro-acts through which disabled people create access to worlds not designed for them, constitute expertise the system cannot recognize from inside itself, is precisely the argument Black Code makes about Black women's cultural practices in technical environments. Both texts ask the same question: what gets recognized as technical knowledge, and what does that recognition require you to overlook? Benjamin's abolitionist tools name the political horizon the dissertation gestures toward, not diversity initiatives, but a fundamental rethinking of what technical expertise is, who produces it, and what it is for.</p>
       </div>
 
     </div>
@@ -1405,7 +1402,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="exhibit-body">
     <div class="exhibit-wall-label">
       <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This office is a full account of the curator's position — because the argument of this museum is that you cannot understand the knowledge without understanding the knower.</p>
+      <p class="wall-label-text">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This office is a full account of the curator's position, because the argument of this museum is that you cannot understand the knowledge without understanding the knower.</p>
     </div>
 
     <div class="exhibit-essay">
@@ -1594,62 +1591,62 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
             </svg>
           </div>
-          <p class="dp-caption">Hover each node to see its connection to the research. These data points together constitute the position from which this museum was curated — and the dissertation argues that position is the methodology, not an obstacle to it.</p>
+          <p class="dp-caption">Hover each node to see its connection to the research. These data points together constitute the position from which this museum was curated, and the dissertation argues that position is the methodology, not an obstacle to it.</p>
         </div>
       </div>
 
       <!-- COMMUNITY -->
       <h3>Community as Infrastructure</h3>
 
-      <p>The most important lesson of nine years in technical fields was not technical. It was this: community is infrastructure. Not metaphorically — literally. The friends who explained what the room really meant after the meeting ended. The line sisters who had already navigated the institution you were entering and left the map. The professional network that passed you an opportunity before it was posted. The family that held you when the institution couldn't. These are not background to professional success. They are the mechanism. They are what makes the work survivable and the person inside the work intact.</p>
+      <p>The most important lesson of nine years in technical fields was not technical. It was this: community is infrastructure. Not metaphorically, literally. The friends who explained what the room really meant after the meeting ended. The line sisters who had already navigated the institution you were entering and left the map. The professional network that passed you an opportunity before it was posted. The family that held you when the institution couldn't. These are not background to professional success. They are the mechanism. They are what makes the work survivable and the person inside the work intact.</p>
 
-      <p>The practice of community — building it where it doesn't exist, showing up to maintain it at personal cost, leaning into it in times of need and leaning back when someone else needs the weight held — that practice is the subject of this dissertation. Black Code is not an academic abstraction. It is the name for what this curator and every Black woman she knows has been doing their entire career: building the infrastructure the institution refused to provide, and navigating the ones that were built without them in mind.</p>
+      <p>The practice of community, building it where it doesn't exist, showing up to maintain it at personal cost, leaning into it in times of need and leaning back when someone else needs the weight held, that practice is the subject of this dissertation. Black Code is not an academic abstraction. It is the name for what this curator and every Black woman she knows has been doing their entire career: building the infrastructure the institution refused to provide, and navigating the ones that were built without them in mind.</p>
 
-      <div class="callout"><p>"You build community where it doesn't exist because the alternative is surviving alone in rooms not designed for you. And you lean into it in times of need because that is what it was built for. That cycle — building, maintaining, leaning in, holding up — is a form of expertise. It just never appears in any job description."</p></div>
+      <div class="callout"><p>"You build community where it doesn't exist because the alternative is surviving alone in rooms not designed for you. And you lean into it in times of need because that is what it was built for. That cycle, building, maintaining, leaning in, holding up, is a form of expertise. It just never appears in any job description."</p></div>
 
-      <p>Community, for this curator, means all of it at once: friends who became family, family who became the foundation, line sisters who became the first call, colleagues who became the network, mentors who became the map. The DMV — DC, Maryland, Virginia — as the place where all of these layers live together. Howard University's intellectual legacy threading through every room. NSBE's professional infrastructure threading through every career move. Delta Sigma Theta's sisterhood threading through every hard season. None of these are separate. They constitute each other. They constitute the person doing the research.</p>
+      <p>Community, for this curator, means all of it at once: friends who became family, family who became the foundation, line sisters who became the first call, colleagues who became the network, mentors who became the map. The DMV, DC, Maryland, Virginia, as the place where all of these layers live together. Howard University's intellectual legacy threading through every room. NSBE's professional infrastructure threading through every career move. Delta Sigma Theta's sisterhood threading through every hard season. None of these are separate. They constitute each other. They constitute the person doing the research.</p>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin:2.5rem 0">
         <div style="background:var(--bg);padding:2rem">
           <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Sisterhood · Founded 1913</p>
           <p style="font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:0.35rem">Delta Sigma Theta<br>Sorority, Inc.</p>
           <p style="font-size:0.7rem;letter-spacing:0.1em;color:var(--text-3);margin-bottom:1.25rem">22 Founders · Howard University · The Baddest</p>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">Founded by 22 women who immediately marched in the 1913 Women's Suffrage Parade before the ink on their charter was dry — that is the energy. Delta Sigma Theta is scholarship, sisterhood, public service, and collective action as a way of being in the world. The line sisters are the first call. They have already navigated the room you're about to enter, or they'll be in it with you. That is not a social relationship. That is infrastructure — built by Black women, for Black women, because the alternative was going in alone.</p>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">Founded by 22 women who immediately marched in the 1913 Women's Suffrage Parade before the ink on their charter was dry, that is the energy. Delta Sigma Theta is scholarship, sisterhood, public service, and collective action as a way of being in the world. The line sisters are the first call. They have already navigated the room you're about to enter, or they'll be in it with you. That is not a social relationship. That is infrastructure, built by Black women, for Black women, because the alternative was going in alone.</p>
         </div>
         <div style="background:var(--bg);padding:2rem;border-left:1px solid var(--border)">
           <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Professional Community</p>
           <p style="font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:0.35rem">National Society of<br>Black Engineers</p>
           <p style="font-size:0.7rem;letter-spacing:0.1em;color:var(--text-3);margin-bottom:1.25rem">Lifetime Member · DC Professionals Chapter</p>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">NSBE exists because the technical professions did not automatically include Black engineers — so the community built its own mentorship, networking, and credentialing infrastructure to fill the gap. Lifetime membership is a commitment to that project: not just benefiting from the network but contributing to it, building it forward for the people coming behind. The DC Professionals chapter is the professional community that has held this curator's career in ways no employer ever could. It is a case study walking around in business casual.</p>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.75">NSBE exists because the technical professions did not automatically include Black engineers, so the community built its own mentorship, networking, and credentialing infrastructure to fill the gap. Lifetime membership is a commitment to that project: not just benefiting from the network but contributing to it, building it forward for the people coming behind. The DC Professionals chapter is the professional community that has held this curator's career in ways no employer ever could. It is a case study walking around in business casual.</p>
         </div>
       </div>
 
       <div style="background:var(--bg-2);border:1px solid var(--border);padding:2rem;margin:2rem 0">
         <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem">Place as Community</p>
-        <p style="font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--text);margin-bottom:1rem">The DMV — DC · Maryland · Virginia</p>
+        <p style="font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--text);margin-bottom:1rem">The DMV, DC · Maryland · Virginia</p>
         <p style="font-size:0.88rem;color:var(--text-2);line-height:1.8">The DC-Maryland-Virginia corridor is one of the densest concentrations of Black professional life, Black institutional power, and federal technical infrastructure in the United States. Growing up and building a career here means existing at the intersection of Howard University's intellectual legacy, the federal government's technical apparatus, and a Black professional community that has always understood it was building inside systems not designed for it. The DMV shaped this curator's understanding of what technical expertise looks like before having the academic language to describe what she was seeing. It is the community that made the research question legible in the first place.</p>
       </div>
 
       <!-- FAMILY -->
       <h3>The Youngest of Three</h3>
 
-      <p>Being the youngest of three Black daughters is not simply a biographical detail. It is a knowledge formation. Growing up watching two older sisters navigate institutions, workplaces, and the specific labor of being a Black woman in spaces not designed for you — that is an education in situated knowledge that no syllabus provides. The youngest learns by watching. She asks why. She inherits the hard-won maps her sisters drew and then finds herself in territories they never visited. This is one of them.</p>
+      <p>Being the youngest of three Black daughters is not simply a biographical detail. It is a knowledge formation. Growing up watching two older sisters navigate institutions, workplaces, and the specific labor of being a Black woman in spaces not designed for you, that is an education in situated knowledge that no syllabus provides. The youngest learns by watching. She asks why. She inherits the hard-won maps her sisters drew and then finds herself in territories they never visited. This is one of them.</p>
 
-      <div class="callout"><p>"The why kid is the one who cannot accept that a thing is just the way it is. Every structure has a history. Every default was a decision. Every room that felt hostile was designed — and can therefore be redesigned. That is the argument. It has always been the argument."</p></div>
+      <div class="callout"><p>"The why kid is the one who cannot accept that a thing is just the way it is. Every structure has a history. Every default was a decision. Every room that felt hostile was designed, and can therefore be redesigned. That is the argument. It has always been the argument."</p></div>
 
       <!-- CAREER -->
       <h3>Nine Years Inside</h3>
 
-      <p>Before the PhD: nearly a decade as a Solutions Architect embedded in federal agencies and defense consulting firms. HUD's Office of the CIO. BAE Systems. Agile Defense. TS/SCI clearance. Security+. PMP. I sat in rooms where technical decisions affecting thousands of people were described exclusively in technical terms — requirements, constraints, specifications. The language of technical neutrality was so pervasive that I used it myself, fluently, for nearly a decade without fully naming what it was.</p>
+      <p>Before the PhD: nearly a decade as a Solutions Architect embedded in federal agencies and defense consulting firms. HUD's Office of the CIO. BAE Systems. Agile Defense. TS/SCI clearance. Security+. PMP. I sat in rooms where technical decisions affecting thousands of people were described exclusively in technical terms, requirements, constraints, specifications. The language of technical neutrality was so pervasive that I used it myself, fluently, for nearly a decade without fully naming what it was.</p>
 
       <p>This museum is the first year of learning to see that fluency as a fluency with a politics. The texts in these wings gave me something I didn't have as a practicing Solutions Architect: a vocabulary for what was happening in those rooms that the rooms themselves refused to supply.</p>
 
       <!-- DISSERTATION -->
       <h3>The Argument</h3>
 
-      <p>My dissertation argues that <em>culture functions as sociotechnical infrastructure</em> — that cultural practices shape who gets recognized as an expert, whose knowledge counts, and how technical systems get built and legitimized. I introduce <strong>Black Code</strong> to describe the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where Carrigan's bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality and universality.</p>
+      <p>My dissertation argues that <em>culture functions as sociotechnical infrastructure</em>, that cultural practices shape who gets recognized as an expert, whose knowledge counts, and how technical systems get built and legitimized. I introduce <strong>Black Code</strong> to describe the shared cultural logics, interpretive strategies, and relational practices through which Black women navigate and reshape technical environments. Where Carrigan's bro code explains how masculinity structures professional legitimacy, Black Code examines how Black women's engagement with technology exposes the limits of claims to neutrality and universality.</p>
 
-      <p>This museum is an enactment of that argument. A dissertation that claims cultural knowledge is experiential cannot make that claim in standard academic prose without the form contradicting the content. The digital museum is not a container for the argument. It is the argument — made by someone whose biography is the methodology, whose communities are the research sites, and who has been inside the infrastructure long enough to know exactly what it refuses to name.</p>
+      <p>This museum is an enactment of that argument. A dissertation that claims cultural knowledge is experiential cannot make that claim in standard academic prose without the form contradicting the content. The digital museum is not a container for the argument. It is the argument, made by someone whose biography is the methodology, whose communities are the research sites, and who has been inside the infrastructure long enough to know exactly what it refuses to name.</p>
 
     </div>
   </div>
@@ -1679,23 +1676,23 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <p>This project began as a final assignment for my Gender, Bodies, and Technology seminar at Virginia Tech in Spring 2026. Over the course of the semester, I engaged with ten texts that each, in their own way, argued that the systems we build carry the politics of the people and cultures that built them. I needed a way to bring those readings together that felt commensurate with what they were asking me to think about.</p>
 
-      <p>A research paper felt insufficient — not because papers don't matter, but because these particular texts kept asking questions about form, about experience, about what kinds of knowledge get recognized and in what containers. The digital museum format presented itself as an opportunity to do two things at once: summarize and synthesize my engagement with the course material, and explore what it looks like when intellectual work takes on an experiential shape. This is that exploration.</p>
+      <p>A research paper felt insufficient, not because papers don't matter, but because these particular texts kept asking questions about form, about experience, about what kinds of knowledge get recognized and in what containers. The digital museum format presented itself as an opportunity to do two things at once: summarize and synthesize my engagement with the course material, and explore what it looks like when intellectual work takes on an experiential shape. This is that exploration.</p>
 
       <p>It is worth saying clearly: this is not my dissertation. It is not a direct derivative of my research. It is a creative and intellectual project inspired by a semester of reading, thinking, and wanting to make something that honored both the rigor of the scholarship and the fact that ideas deserve to be experienced, not just described.</p>
 
       <h3>Why This Design</h3>
 
-      <p>The aesthetic of this museum — dark backgrounds, amber light, archival grain, the weight of serif type against negative space — was a deliberate attempt to build something that felt like a space worth being in. Archives hold difficult things. They hold evidence of the very operations this museum documents: extraction, abstraction, exploitation, erasure. The visual language sits at that tension on purpose. It is meant to feel both institutional and intimate, both weighty and navigable.</p>
+      <p>The aesthetic of this museum, dark backgrounds, amber light, archival grain, the weight of serif type against negative space, was a deliberate attempt to build something that felt like a space worth being in. Archives hold difficult things. They hold evidence of the very operations this museum documents: extraction, abstraction, exploitation, erasure. The visual language sits at that tension on purpose. It is meant to feel both institutional and intimate, both weighty and navigable.</p>
 
-      <p>The amber is light in darkness. Every callout, every accent, every hover state in amber is a small act of illumination — the visual equivalent of bringing something forward that was sitting in the margins. The museum structure itself — wings, wall labels, object numbers, curatorial statements — borrows from the conventions of institutional knowledge display in order to ask questions about those conventions. Who decides what gets exhibited? Whose story gets told as universal? What disappears from the record? The form is asking those questions even when the text isn't.</p>
+      <p>The amber is light in darkness. Every callout, every accent, every hover state in amber is a small act of illumination, the visual equivalent of bringing something forward that was sitting in the margins. The museum structure itself, wings, wall labels, object numbers, curatorial statements, borrows from the conventions of institutional knowledge display in order to ask questions about those conventions. Who decides what gets exhibited? Whose story gets told as universal? What disappears from the record? The form is asking those questions even when the text isn't.</p>
 
-      <p>The four operational names — Extraction, Abstraction, Exploitation, Erasure — came from synthesis work I developed across this semester connecting Browne's <em>Dark Matters</em> and Schaeffer's <em>Unsettled Borders</em>. They describe four moves in a single process by which cultural knowledge gets taken, stripped of context, used without credit, and written out. Naming the wings after the operations rather than the topics was a decision to keep the mechanism visible throughout the experience. Wing 004 is named Erasure because that is what the system does — and what the exhibit refuses.</p>
+      <p>The four operational names, Extraction, Abstraction, Exploitation, Erasure, came from synthesis work I developed across this semester connecting Browne's <em>Dark Matters</em> and Schaeffer's <em>Unsettled Borders</em>. They describe four moves in a single process by which cultural knowledge gets taken, stripped of context, used without credit, and written out. Naming the wings after the operations rather than the topics was a decision to keep the mechanism visible throughout the experience. Wing 004 is named Erasure because that is what the system does, and what the exhibit refuses.</p>
 
       <h3>A Note on AI</h3>
 
       <p>This project was built with the assistance of Claude, an AI tool developed by Anthropic. I want to be transparent about that because this project values transparency, and because honest acknowledgment of collaboration is part of what this work is about.</p>
 
-      <p>The content of this museum — the readings, the interpretations, the curatorial decisions, the personal narrative, the creative vision — is mine. The design direction is mine. What I brought to Claude was a clear idea of what I wanted to make and why. What Claude contributed was the technical build: translating that vision into a functional, designed website. Think of it the way you would think of any creative collaboration where one person has the vision and another has the technical skills to render it. The ideas did not come from the tool. The tool made the ideas visible.</p>
+      <p>The content of this museum, the readings, the interpretations, the curatorial decisions, the personal narrative, the creative vision, is mine. The design direction is mine. What I brought to Claude was a clear idea of what I wanted to make and why. What Claude contributed was the technical build: translating that vision into a functional, designed website. Think of it the way you would think of any creative collaboration where one person has the vision and another has the technical skills to render it. The ideas did not come from the tool. The tool made the ideas visible.</p>
 
 
 
@@ -1705,7 +1702,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
 
 <footer>
-  <span class="footer-museum">The Infrastructure Archive · GBT Seminar · Virginia Tech · 2026</span>
+  <span class="footer-museum">Inside the Black Box · GBT Seminar · Virginia Tech · 2026</span>
   <span class="footer-note">A digital museum as final project</span>
 </footer>
 
@@ -1765,7 +1762,7 @@ var skFacts = [
   "Partial perspective admits its location and can therefore be held accountable. The god trick cannot be contested because it refuses to name where it stands.",
   "The cyborg refuses the boundary between nature and culture, organic and machine. It has no origin story, so it cannot be recuperated into the myths that prop those boundaries up.",
   "Nash’s critique: intersectionality circulates everywhere while the Black women who created it remain marginalized. The framework gains institutional prestige; its creators do not.",
-  "Boellstorff uses techne to argue that how we make things shapes what we know. Technology is never just a tool — it is a way of producing truth. The form is the evidence."
+  "Boellstorff uses techne to argue that how we make things shapes what we know. Technology is never just a tool, it is a way of producing truth. The form is the evidence."
 ];
 
 function skAnswer(btn, chosen) {
@@ -1891,16 +1888,16 @@ function runFilter() {
     results.innerHTML = '<p class="filter-hint">Searching…</p>';
     setTimeout(() => {
       results.innerHTML = `
-        <div class="filter-result-item"><span class="filter-tag">filtered</span><s style="opacity:0.4">${val} — community resources</s></div>
-        <div class="filter-result-item"><span class="filter-tag">removed</span><s style="opacity:0.4">${val} — history &amp; culture</s></div>
-        <div class="filter-result-item"><span class="filter-tag">restricted</span><s style="opacity:0.4">${val} — support networks</s></div>
-        <div class="filter-blocked">⚠ Content flagged by automated moderation. Results limited.<br>This is not a bug — it is an architecture.</div>`;
+        <div class="filter-result-item"><span class="filter-tag">filtered</span><s style="opacity:0.4">${val}, community resources</s></div>
+        <div class="filter-result-item"><span class="filter-tag">removed</span><s style="opacity:0.4">${val}, history &amp; culture</s></div>
+        <div class="filter-result-item"><span class="filter-tag">restricted</span><s style="opacity:0.4">${val}, support networks</s></div>
+        <div class="filter-blocked">⚠ Content flagged by automated moderation. Results limited.<br>This is not a bug, it is an architecture.</div>`;
     }, 700);
   } else {
     results.innerHTML = `
-      <div class="filter-result-item"><span class="filter-tag">web</span>${val} — encyclopedia entry</div>
-      <div class="filter-result-item"><span class="filter-tag">web</span>${val} — recent news</div>
-      <div class="filter-result-item"><span class="filter-tag">web</span>${val} — related topics</div>
+      <div class="filter-result-item"><span class="filter-tag">web</span>${val}, encyclopedia entry</div>
+      <div class="filter-result-item"><span class="filter-tag">web</span>${val}, recent news</div>
+      <div class="filter-result-item"><span class="filter-tag">web</span>${val}, related topics</div>
       <p class="filter-hint" style="margin-top:0.4rem">Try a queer-related term and see what changes.</p>`;
   }
 }
