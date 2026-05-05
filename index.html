@@ -9,14 +9,51 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0C0A07; --bg-2: #141109; --bg-3: #1D1810; --bg-4: #261F14;
-  --text: #EAD9BE; --text-2: #A89278; --text-3: #6E5A42;
+  --bg: #1A1410; --bg-2: #201A14; --bg-3: #261F18; --bg-4: #2E261E;
+  --text: #EAD9BE; --text-2: #A89278; --text-3: #7A6550;
   --accent: #C8922A; --accent-lt: #E8B84B;
-  --accent-dim: rgba(200,146,42,0.16); --accent-border: rgba(200,146,42,0.28);
-  --border: rgba(234,217,190,0.08); --border-hover: rgba(234,217,190,0.18);
+  --accent-dim: rgba(200,146,42,0.12); --accent-border: rgba(200,146,42,0.28);
+  --border: rgba(234,217,190,0.08); --border-2: rgba(234,217,190,0.14);
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
+  --c-ext: #6478C8; --c-ext-dim: rgba(100,120,200,0.12); --c-ext-b: rgba(100,120,200,0.32);
+  --c-abs: #C8922A; --c-abs-dim: rgba(200,146,42,0.12); --c-abs-b: rgba(200,146,42,0.32);
+  --c-exp: #3CA078; --c-exp-dim: rgba(60,160,120,0.12); --c-exp-b: rgba(60,160,120,0.32);
+  --c-era: #C84848; --c-era-dim: rgba(200,72,72,0.12); --c-era-b: rgba(200,72,72,0.32);
 }
+
+#exhibit-surveillance {
+  --wa: var(--c-ext); --wd: var(--c-ext-dim); --wb: var(--c-ext-b);
+}
+#exhibit-design {
+  --wa: var(--c-abs); --wd: var(--c-abs-dim); --wb: var(--c-abs-b);
+}
+#exhibit-knowledge {
+  --wa: var(--c-exp); --wd: var(--c-exp-dim); --wb: var(--c-exp-b);
+}
+#exhibit-resistance {
+  --wa: var(--c-era); --wd: var(--c-era-dim); --wb: var(--c-era-b);
+}
+.exhibit-page .exhibit-catalogue,
+.exhibit-page .wall-label-title,
+.exhibit-page .rt-label,
+.exhibit-page .gallery-img-num,
+.exhibit-page .v-install-cap-label,
+.exhibit-page .v-install-cap-label,
+.exhibit-page .bt-tag,
+.exhibit-page .wing-poem-eyebrow,
+.exhibit-page .wing-poem-attr,
+.exhibit-page .source-tag,
+.exhibit-page h3 { color: var(--wa, var(--accent)); }
+.exhibit-page .callout { background: var(--wd, var(--accent-dim)); border-left-color: var(--wa, var(--accent)); }
+.exhibit-page .research-thread { border-color: var(--wb, var(--accent-border)); }
+.exhibit-page .bt-link { color: var(--wa, var(--accent)); border-color: var(--wb, var(--accent-border)); }
+.exhibit-page .wing-poem-rule { background: var(--wb, var(--accent-border)); }
+.exhibit-page .timeline-header { color: var(--wa, var(--accent)); }
+.exhibit-page .tl-year { color: var(--wa, var(--accent)); }
+.exhibit-page .di-label { color: var(--wa, var(--accent)); }
+.exhibit-page .di-choice.correct { border-color: var(--wa, var(--accent)); background: var(--wd, var(--accent-dim)); }
+
 
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
@@ -463,28 +500,28 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
     <p class="section-intro">Western society has built its sociotechnical infrastructure of culture using four tools: Extraction, Abstraction, Exploitation, and Erasure. These wings open the box. Each one names an operation, documents how it works, and shows what it costs.</p>
   </div>
   <div class="exhibit-grid">
-    <div class="exhibit-card fade-in" onclick="showSection('exhibit-surveillance')">
+    <div class="exhibit-card fade-in" onclick="showSection('exhibit-surveillance')" style="border-top:2px solid var(--c-ext)">
       <p class="card-num">Wing 001</p>
       <h3 class="card-title">Extraction</h3>
       <p class="card-sources">Browne · Monea · Schaeffer · Gill-Peterson</p>
       <p class="card-desc">Before a system can exploit what it takes, it has to take it. This wing documents how information, knowledge, and visibility are extracted from bodies, and what that extraction has always looked like.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
-    <div class="exhibit-card fade-in" onclick="showSection('exhibit-design')">
+    <div class="exhibit-card fade-in" onclick="showSection('exhibit-design')" style="border-top:2px solid var(--c-abs)">
       <p class="card-num">Wing 002</p>
       <h3 class="card-title">Abstraction</h3>
       <p class="card-sources">Criado-Perez · Rentetzi · Carrigan</p>
       <p class="card-desc">Once something is taken, it gets stripped of its origins, context removed, specificity laundered into universality. This wing documents how particular bodies and their knowledge get abstracted into defaults that appear to belong to no one.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
-    <div class="exhibit-card fade-in" onclick="showSection('exhibit-knowledge')">
+    <div class="exhibit-card fade-in" onclick="showSection('exhibit-knowledge')" style="border-top:2px solid var(--c-exp)">
       <p class="card-num">Wing 003</p>
       <h3 class="card-title">Exploitation</h3>
       <p class="card-sources">Nash · Haraway · Cipolla et al. · Boellstorff</p>
       <p class="card-desc">The framework circulates. The people who built it don't. This wing documents how marginalized knowledge gets used, cited, deployed, profited from, while its producers remain unrecognized and underresourced.</p>
       <span class="card-enter">Enter Wing <span>→</span></span>
     </div>
-    <div class="exhibit-card fade-in" onclick="showSection('exhibit-resistance')">
+    <div class="exhibit-card fade-in" onclick="showSection('exhibit-resistance')" style="border-top:2px solid var(--c-era)">
       <p class="card-num">Wing 004</p>
       <h3 class="card-title">Erasure</h3>
       <p class="card-sources">Dokumaci · Benjamin · Clarke &amp; Haraway · Bahng</p>
@@ -545,7 +582,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Castello_Plan_NEW_YORK_1660.jpg?width=260" alt="The Castello Plan of New Amsterdam, 1660" loading="lazy"
+                <img src="images/timeline/01-castello-plan.jpg" alt="The Castello Plan of New Amsterdam, 1660" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -559,7 +596,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Panopticon.jpg?width=260" alt="Bentham's Panopticon plan" loading="lazy"
+                <img src="images/timeline/02-panopticon.jpg" alt="Bentham's Panopticon plan" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -573,7 +610,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bertillon_measuring_01.jpg?width=260" alt="Bertillon anthropometric measurement" loading="lazy"
+                <img src="images/timeline/03-bertillon.jpg" alt="Bertillon anthropometric measurement" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -587,7 +624,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Manzanar_internment_center_aerial.jpg?width=260" alt="Manzanar internment camp" loading="lazy"
+                <img src="images/timeline/04-manzanar.jpg" alt="Manzanar internment camp" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -601,7 +638,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/COINTELPRO_brochure.jpg?width=260" alt="COINTELPRO FBI document" loading="lazy"
+                <img src="images/timeline/05-cointelpro.jpg" alt="COINTELPRO FBI document" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -615,7 +652,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Surveillance_camera_2.jpg?width=260" alt="Early CCTV camera" loading="lazy"
+                <img src="images/timeline/06-cctv.jpg" alt="Early CCTV camera" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -629,7 +666,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/National_Security_Agency_headquarters%2C_Fort_Meade%2C_Maryland.jpg?width=260" alt="NSA Headquarters" loading="lazy"
+                <img src="images/timeline/07-nsa.jpg" alt="NSA Headquarters" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -643,7 +680,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_1st_Gen.svg?width=260" alt="First iPhone 2007" loading="lazy"
+                <img src="images/timeline/08-iphone.jpg" alt="First iPhone 2007" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -657,7 +694,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Prism_slide_1.jpg?width=260" alt="NSA PRISM leak Snowden" loading="lazy"
+                <img src="images/timeline/09-prism.jpg" alt="NSA PRISM leak Snowden" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -671,7 +708,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Clearview-ai-logo.jpg?width=260" alt="Facial recognition technology" loading="lazy"
+                <img src="images/timeline/10-facial-recognition.jpg" alt="Facial recognition technology" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -685,7 +722,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
             <div class="tl-dot-wrap">
               <div class="tl-dot"></div>
               <div class="tl-popup">
-                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/George_Floyd_protest_at_Minneapolis_3rd_Precinct_05-27-20.jpg?width=260" alt="Minneapolis BLM protest May 2020" loading="lazy"
+                <img src="images/timeline/11-blm.jpg" alt="Minneapolis BLM protest May 2020" loading="lazy"
                   style="width:100%;height:80px;object-fit:cover;display:block;filter:sepia(0.2) brightness(0.78)"
                   onerror="this.style.opacity='0'"
                 />
@@ -737,7 +774,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <div class="v-install">
         <div style="position:relative;background:#0A0806;min-height:220px;overflow:hidden">
           <img
-            src="https://tile.loc.gov/storage-services/service/pnp/cph/3a30000/3a34000/3a34600/3a34658r.jpg"
+            src="images/brookes.jpg"
             crossorigin="anonymous"
             alt="Stowage of the British Slave Ship Brookes under the Regulated Slave Trade Act of 1788"
             loading="lazy"
@@ -775,7 +812,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         <div style="position:relative;background:#050403;min-height:200px;overflow:hidden">
           <div id="cctv-container" style="min-height:200px;background:#050403">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Surveillance_camera_shadow_%28Unsplash%29.jpg/1200px-Surveillance_camera_shadow_%28Unsplash%29.jpg"
+              src="images/cctv-shadow.jpg"
               referrerpolicy="no-referrer"
               alt="Shadow of surveillance camera on wall"
               loading="lazy"
@@ -917,10 +954,10 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <!-- ── CRIADO-PEREZ ── -->
 
       <div class="gallery-img">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/US_Food_and_Drug_Administration_crash_test_dummy_testing.jpg?width=1200"
+        <img src="images/crash-test.jpg"
           alt="Crash test dummy in vehicle safety test"
           loading="lazy"
-          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Crash_test_dummy_test.jpg/1200px-Crash_test_dummy_test.jpg'"
+          onerror="this.src='images/crash-test.jpg'"
         />
         <div class="gallery-img-label">
           <span class="gallery-img-num">Object 001</span>
@@ -1029,7 +1066,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <!-- ── RENTETZI ── -->
 
       <div class="gallery-img">
-        <img src="https://images-assets.nasa.gov/image/iss061e035854/iss061e035854~orig.jpg"
+        <img src="images/spacewalk.jpg"
           alt="Christina Koch and Jessica Meir conduct first all-female spacewalk, October 2019"
           loading="lazy"
           onerror="this.style.background='#0A0806';this.style.height='300px'"
@@ -1049,7 +1086,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <div class="callout"><p>"Culture does the maintenance work of gender bias in technology. The gendering of things doesn't happen once and stay fixed, it must be continuously reproduced through cultural practices, norms, and narratives. Culture isn't just the backdrop for how expertise develops. It is the infrastructure through which expertise gets sorted, validated, and gatekept."</p></div>
 
       <div class="gallery-img">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sophia_(robot).jpg?width=1200"
+        <img src="images/sophia.jpg"
           alt="Sophia the humanoid robot"
           loading="lazy"
           onerror="this.style.display='none'"
@@ -1065,7 +1102,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
       <!-- ── CARRIGAN ── -->
 
       <div class="gallery-img">
-        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_campus_Mountain_View_dsc06695.jpg?width=1200"
+        <img src="images/campus.jpg"
           alt="Tech campus open office environment"
           loading="lazy"
           onerror="this.style.display='none'"
