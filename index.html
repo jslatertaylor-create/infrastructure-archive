@@ -1412,215 +1412,164 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   <div class="exhibit-hero">
     <button class="exhibit-back" onclick="showSection('gallery')">← Return to Gallery</button>
     <p class="exhibit-catalogue">Wing 005</p>
-    <h2 class="exhibit-title">The Curator's <em>Office</em></h2>
+    <h2 class="exhibit-title">The Curator's <em>Corner</em></h2>
     <div class="exhibit-sources-bar">
       <span class="source-tag">Jeovane Slater-Taylor</span><span class="source-tag">Curator on Record</span>
     </div>
   </div>
 
-  
+  <!-- HEADSHOT + VISUALIZATION: side by side, visualization dominant -->
+  <div style="display:grid;grid-template-columns:220px 1fr;min-height:640px;border-bottom:1px solid var(--border)">
 
-  <div class="exhibit-body">
-    <div class="exhibit-wall-label">
-      <p class="wall-label-title">Curatorial Statement</p>
-      <p class="wall-label-text">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This office is a full account of the curator's position, because the argument of this museum is that you cannot understand the knowledge without understanding the knower.</p>
-    </div>
-
-    <div class="exhibit-essay">
-
-      <!-- HEADSHOT + DATA PORTRAIT -->
-      <div style="display:grid;grid-template-columns:1fr 2fr;gap:0;border:1px solid var(--border);overflow:hidden;margin-bottom:2.5rem">
-
-        <!-- Headshot -->
-        <div style="background:var(--bg-2);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;border-right:1px solid var(--border)">
-          <div style="width:100%;aspect-ratio:3/4;background:var(--bg-3);overflow:hidden;position:relative">
-            <img
-              src="images/headshot.jpg"
-              alt="Jeovane Slater-Taylor"
-              style="width:100%;height:100%;object-fit:cover;display:block;filter:sepia(0.08) brightness(0.9)"
-              onerror="this.style.display='none';document.getElementById('headshot-placeholder').style.display='flex'"
-            />
-            <div id="headshot-placeholder" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;padding:2rem;text-align:center">
-              <svg width="48" height="60" viewBox="0 0 48 60" xmlns="http://www.w3.org/2000/svg" opacity="0.25">
-                <circle cx="24" cy="16" r="14" fill="none" stroke="#C8922A" stroke-width="1.5"/>
-                <path d="M4 52 Q4 36 24 34 Q44 36 44 52" fill="none" stroke="#C8922A" stroke-width="1.5"/>
-              </svg>
-              <p style="font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-3)">Portrait</p>
-              <p style="font-size:0.68rem;color:var(--text-3);opacity:0.6">Upload images/headshot.jpg<br>to display</p>
-            </div>
-          </div>
-          <div style="padding:1.25rem;text-align:center;width:100%">
-            <p style="font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text)">Jeovane Slater-Taylor</p>
-            <p style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-top:0.3rem">Jeovane</p>
-            <p style="font-size:0.72rem;color:var(--text-3);margin-top:0.5rem;line-height:1.5">PhD Student<br>Science &amp; Technology Studies<br>Virginia Tech · 2026</p>
-          </div>
-        </div>
-
-        <!-- Data Portrait -->
-        <div class="data-portrait" style="margin:0;border:none">
-          <div class="dp-svg-wrap">
-            <svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg" style="background:#0A0806">
-
-              <!-- Scaled up portrait -->
-              <g transform="translate(110,60) scale(1.38)">
-              <!-- Subtle human silhouette watermark -->
-              <g opacity="0.06" transform="translate(290,220)">
-                <circle cx="0" cy="-110" r="38" fill="none" stroke="#C8922A" stroke-width="2"/>
-                <path d="M-50,-68 Q-55,-40 -55,20 Q-55,60 -35,65 L-30,120 Q-30,130 -18,130 L18,130 Q30,130 30,120 L35,65 Q55,60 55,20 Q55,-40 50,-68 Z" fill="none" stroke="#C8922A" stroke-width="2"/>
-              </g>
-
-              <!-- Connecting lines from center to each node -->
-              <g stroke="rgba(200,146,42,0.18)" stroke-width="0.75" stroke-dasharray="3,4">
-                <line x1="290" y1="220" x2="487" y2="220"/>
-                <line x1="290" y1="220" x2="465" y2="314"/>
-                <line x1="290" y1="220" x2="397" y2="390"/>
-                <line x1="290" y1="220" x2="290" y2="415"/>
-                <line x1="290" y1="220" x2="183" y2="390"/>
-                <line x1="290" y1="220" x2="115" y2="314"/>
-                <line x1="290" y1="220" x2="93" y2="220"/>
-                <line x1="290" y1="220" x2="115" y2="126"/>
-                <line x1="290" y1="220" x2="183" y2="50"/>
-                <line x1="290" y1="220" x2="290" y2="25"/>
-                <line x1="290" y1="220" x2="397" y2="50"/>
-                <line x1="290" y1="220" x2="465" y2="126"/>
-              </g>
-
-              <!-- Center node -->
-              <g text-anchor="middle">
-                <circle cx="290" cy="220" r="42" fill="rgba(200,146,42,0.08)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
-                <text x="290" y="215" fill="#EAD9BE" font-size="11" font-family="Cormorant Garamond,Georgia,serif" font-style="italic">Jeovane Slater-Taylor</text>
-                <text x="290" y="230" fill="#A89278" font-size="7.5" font-family="DM Sans,sans-serif" letter-spacing="1.5">CURATOR · RESEARCHER</text>
-              </g>
-
-              <!-- Node: Howard University (270° top) -->
-              <g class="dp-node" transform="translate(290,25)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(74,120,255,0.3)" stroke="#4A78FF" stroke-width="1"/>
-                <text class="dp-node-label" x="0" y="-12" fill="#6A90D0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">HOWARD UNIVERSITY</text>
-                <text x="0" y="-3" fill="#4A78FF" font-size="7" font-family="DM Sans,sans-serif">HBCU · BS · The Mecca</text>
-                <g class="dp-detail">
-                  <text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Counter-infrastructure</text>
-                  <text x="0" y="20" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">as epistemology</text>
-                </g>
-              </g>
-
-              <!-- Node: Cornell (300° upper-right) -->
-              <g class="dp-node" transform="translate(397,50)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
-                <text class="dp-node-label" x="0" y="-12" fill="#8A7040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">CORNELL UNIVERSITY</text>
-                <text x="0" y="-3" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">IVY LEAGUE · MS · Systems Eng.</text>
-                <g class="dp-detail">
-                  <text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Knowledge systems</text>
-                  <text x="0" y="20" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">translation</text>
-                </g>
-              </g>
-
-              <!-- Node: UMD (330° right-top) -->
-              <g class="dp-node" transform="translate(465,126)" text-anchor="start">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,150,255,0.3)" stroke="#6496FF" stroke-width="1"/>
-                <text class="dp-node-label" x="12" y="-8" fill="#5070A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">UNIV. OF MARYLAND</text>
-                <text x="12" y="2" fill="#6496FF" font-size="7" font-family="DM Sans,sans-serif">BIG TEN · MS · CS / HCI</text>
-                <g class="dp-detail">
-                  <text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Where tech met the human</text>
-                </g>
-              </g>
-
-              <!-- Node: Federal Architect (0° right) -->
-              <g class="dp-node" transform="translate(487,220)" text-anchor="start">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,100,60,0.3)" stroke="#A0643C" stroke-width="1"/>
-                <text class="dp-node-label" x="12" y="-8" fill="#806040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">SOLUTIONS ARCHITECT</text>
-                <text x="12" y="2" fill="#A0643C" font-size="7" font-family="DM Sans,sans-serif">HUD · BAE Systems · Agile Defense</text>
-                <g class="dp-detail">
-                  <text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Nine years inside</text>
-                </g>
-              </g>
-
-              <!-- Node: TS/SCI (30°) -->
-              <g class="dp-node" transform="translate(465,314)" text-anchor="start">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(120,80,40,0.3)" stroke="#785028" stroke-width="1"/>
-                <text class="dp-node-label" x="12" y="-4" fill="#785028" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">TS/SCI · PMP · Security+</text>
-                <g class="dp-detail">
-                  <text x="12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Clearance as credentialing</text>
-                </g>
-              </g>
-
-              <!-- Node: Virginia Tech (60° lower-right) -->
-              <g class="dp-node" transform="translate(397,390)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,80,80,0.3)" stroke="#C84848" stroke-width="1"/>
-                <text class="dp-node-label" x="0" y="16" fill="#803030" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">VIRGINIA TECH</text>
-                <text x="0" y="26" fill="#C84848" font-size="7" font-family="DM Sans,sans-serif">PhD Student · STS · In Progress</text>
-                <g class="dp-detail">
-                  <text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">The why kid asking down</text>
-                </g>
-              </g>
-
-              <!-- Node: DMV Community (90° bottom) -->
-              <g class="dp-node" transform="translate(290,415)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(60,160,120,0.3)" stroke="#3CA078" stroke-width="1"/>
-                <text class="dp-node-label" x="0" y="18" fill="#2A7050" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DMV COMMUNITY</text>
-                <text x="0" y="28" fill="#3CA078" font-size="7" font-family="DM Sans,sans-serif">DC · Maryland · Virginia</text>
-                <g class="dp-detail">
-                  <text x="0" y="40" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Where home and work converge</text>
-                </g>
-              </g>
-
-              <!-- Node: NSBE (120° lower-left) -->
-              <g class="dp-node" transform="translate(183,390)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
-                <text class="dp-node-label" x="0" y="16" fill="#8A6020" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">NSBE</text>
-                <text x="0" y="26" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Lifetime Member · DC Professionals</text>
-                <g class="dp-detail">
-                  <text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Infrastructure for the excluded</text>
-                </g>
-              </g>
-
-              <!-- Node: Delta Sigma Theta (150° left-bottom) -->
-              <g class="dp-node" transform="translate(115,314)" text-anchor="end">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(180,30,30,0.35)" stroke="#C82020" stroke-width="1"/>
-                <text class="dp-node-label" x="-12" y="-8" fill="#901818" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DELTA SIGMA THETA</text>
-                <text x="-12" y="2" fill="#C82020" font-size="7" font-family="DM Sans,sans-serif">Founded 1913 · Howard University</text>
-                <g class="dp-detail">
-                  <text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Black Code, lived</text>
-                </g>
-              </g>
-
-              <!-- Node: Why Kid (180° left) -->
-              <g class="dp-node" transform="translate(93,220)" text-anchor="end">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,120,200,0.3)" stroke="#A078C8" stroke-width="1"/>
-                <text class="dp-node-label" x="-12" y="-4" fill="#7050A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">THE WHY KID</text>
-                <g class="dp-detail">
-                  <text x="-12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Always asking underneath</text>
-                </g>
-              </g>
-
-              <!-- Node: Youngest of Three (210°) -->
-              <g class="dp-node" transform="translate(115,126)" text-anchor="end">
-                <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,160,180,0.3)" stroke="#64A0B4" stroke-width="1"/>
-                <text class="dp-node-label" x="-12" y="-8" fill="#407090" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">YOUNGEST OF THREE</text>
-                <text x="-12" y="2" fill="#64A0B4" font-size="7" font-family="DM Sans,sans-serif">Three Black women, one family</text>
-                <g class="dp-detail">
-                  <text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Learned by watching first</text>
-                </g>
-              </g>
-
-              <!-- Node: Black Code (240°) -->
-              <g class="dp-node" transform="translate(183,50)" text-anchor="middle">
-                <circle class="dp-dot" cx="0" cy="0" r="6" fill="rgba(200,146,42,0.4)" stroke="#C8922A" stroke-width="1.5"/>
-                <text class="dp-node-label" x="0" y="-14" fill="#A89278" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5" font-weight="500">BLACK CODE</text>
-                <text x="0" y="-4" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Dissertation Contribution</text>
-                <g class="dp-detail">
-                  <text x="0" y="8" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Culture as infrastructure</text>
-                </g>
-              </g>
-
-            </g>
-            </svg>
-          </div>
-          <p class="dp-caption">Hover each node to see its connection to the research. These data points together constitute the position from which this museum was curated, and the dissertation argues that position is the methodology, not an obstacle to it.</p>
+    <!-- Headshot column -->
+    <div style="border-right:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg-2)">
+      <div style="width:100%;height:280px;background:var(--bg-3);overflow:hidden;position:relative;flex-shrink:0">
+        <img src="images/headshot.jpg" alt="Jeovane Slater-Taylor"
+          style="width:100%;height:100%;object-fit:cover;display:block;filter:sepia(0.08) brightness(0.9)"
+          onerror="this.style.display='none';document.getElementById('headshot-placeholder').style.display='flex'"
+        />
+        <div id="headshot-placeholder" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;padding:2rem;text-align:center">
+          <svg width="48" height="60" viewBox="0 0 48 60" xmlns="http://www.w3.org/2000/svg" opacity="0.25">
+            <circle cx="24" cy="16" r="14" fill="none" stroke="#C8922A" stroke-width="1.5"/>
+            <path d="M4 52 Q4 36 24 34 Q44 36 44 52" fill="none" stroke="#C8922A" stroke-width="1.5"/>
+          </svg>
         </div>
       </div>
+      <div style="padding:1.5rem;text-align:center;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <p style="font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--text)">Jeovane Slater-Taylor</p>
+        <p style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-top:0.3rem">Jeovane</p>
+        <p style="font-size:0.72rem;color:var(--text-3);margin-top:0.5rem;line-height:1.5">PhD Student<br>Science &amp; Technology Studies<br>Virginia Tech · 2026</p>
+      </div>
+    </div>
 
-      <!-- COMMUNITY -->
-      <h3>Community as Infrastructure</h3>
+    <!-- Data portrait column — dominant -->
+    <div class="data-portrait" style="margin:0;border:none;background:#0A0806;display:flex;flex-direction:column">
+      <div class="dp-svg-wrap" style="flex:1">
+        <svg viewBox="-60 -50 700 560" xmlns="http://www.w3.org/2000/svg" style="background:#0A0806;width:100%;height:100%;min-height:500px">
+          <!-- Portrait nodes -->
+          <g opacity="0.06" transform="translate(290,220)">
+            <circle cx="0" cy="-110" r="38" fill="none" stroke="#C8922A" stroke-width="2"/>
+            <path d="M-50,-68 Q-55,-40 -55,20 Q-55,60 -35,65 L-30,120 Q-30,130 -18,130 L18,130 Q30,130 30,120 L35,65 Q55,60 55,20 Q55,-40 50,-68 Z" fill="none" stroke="#C8922A" stroke-width="2"/>
+          </g>
+          <!-- Connecting lines -->
+          <g stroke="rgba(200,146,42,0.18)" stroke-width="0.75" stroke-dasharray="3,4">
+            <line x1="290" y1="220" x2="487" y2="220"/>
+            <line x1="290" y1="220" x2="465" y2="314"/>
+            <line x1="290" y1="220" x2="397" y2="390"/>
+            <line x1="290" y1="220" x2="290" y2="415"/>
+            <line x1="290" y1="220" x2="183" y2="390"/>
+            <line x1="290" y1="220" x2="115" y2="314"/>
+            <line x1="290" y1="220" x2="93" y2="220"/>
+            <line x1="290" y1="220" x2="115" y2="126"/>
+            <line x1="290" y1="220" x2="183" y2="50"/>
+            <line x1="290" y1="220" x2="290" y2="25"/>
+            <line x1="290" y1="220" x2="397" y2="50"/>
+            <line x1="290" y1="220" x2="465" y2="126"/>
+          </g>
+          <!-- Center node -->
+          <g text-anchor="middle">
+            <circle cx="290" cy="220" r="42" fill="rgba(200,146,42,0.08)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
+            <text x="290" y="215" fill="#EAD9BE" font-size="13" font-family="Cormorant Garamond,Georgia,serif" font-style="italic">Jeovane Slater-Taylor</text>
+            <text x="290" y="230" fill="#A89278" font-size="9" font-family="DM Sans,sans-serif" letter-spacing="1.5">CURATOR · RESEARCHER</text>
+          </g>
+          <!-- Howard University (270° top) -->
+          <g class="dp-node" transform="translate(290,25)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(74,120,255,0.3)" stroke="#4A78FF" stroke-width="1"/>
+            <text class="dp-node-label" x="0" y="-12" fill="#6A90D0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">HOWARD UNIVERSITY</text>
+            <text x="0" y="-3" fill="#4A78FF" font-size="7" font-family="DM Sans,sans-serif">HBCU · BS · The Mecca</text>
+            <g class="dp-detail"><text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Counter-infrastructure</text><text x="0" y="20" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">as epistemology</text></g>
+          </g>
+          <!-- Cornell (300°) -->
+          <g class="dp-node" transform="translate(397,50)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
+            <text class="dp-node-label" x="0" y="-12" fill="#8A7040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">CORNELL UNIVERSITY</text>
+            <text x="0" y="-3" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">IVY LEAGUE · MS</text>
+            <g class="dp-detail"><text x="0" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Systems Engineering</text></g>
+          </g>
+          <!-- UMD (330°) -->
+          <g class="dp-node" transform="translate(465,126)" text-anchor="start">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,150,255,0.3)" stroke="#6496FF" stroke-width="1"/>
+            <text class="dp-node-label" x="12" y="-8" fill="#5070A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">UNIV. OF MARYLAND</text>
+            <text x="12" y="2" fill="#6496FF" font-size="7" font-family="DM Sans,sans-serif">MS · CS / HCI</text>
+            <g class="dp-detail"><text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Where tech met the human</text></g>
+          </g>
+          <!-- Federal Architect (0°) -->
+          <g class="dp-node" transform="translate(487,220)" text-anchor="start">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,100,60,0.3)" stroke="#A0643C" stroke-width="1"/>
+            <text class="dp-node-label" x="12" y="-8" fill="#806040" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">SOLUTIONS ARCHITECT</text>
+            <text x="12" y="2" fill="#A0643C" font-size="7" font-family="DM Sans,sans-serif">HUD · BAE · Agile Defense</text>
+            <g class="dp-detail"><text x="12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Nine years inside</text></g>
+          </g>
+          <!-- TS/SCI (30°) -->
+          <g class="dp-node" transform="translate(465,314)" text-anchor="start">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(120,80,40,0.3)" stroke="#785028" stroke-width="1"/>
+            <text class="dp-node-label" x="12" y="-4" fill="#785028" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">TS/SCI · PMP · Security+</text>
+            <g class="dp-detail"><text x="12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Federal credentialing</text></g>
+          </g>
+          <!-- Virginia Tech (60°) -->
+          <g class="dp-node" transform="translate(397,390)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,80,80,0.3)" stroke="#C84848" stroke-width="1"/>
+            <text class="dp-node-label" x="0" y="16" fill="#803030" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">VIRGINIA TECH</text>
+            <text x="0" y="26" fill="#C84848" font-size="7" font-family="DM Sans,sans-serif">PhD Student · STS</text>
+            <g class="dp-detail"><text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">The why kid asking down</text></g>
+          </g>
+          <!-- DMV (90°) -->
+          <g class="dp-node" transform="translate(290,415)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(60,160,120,0.3)" stroke="#3CA078" stroke-width="1"/>
+            <text class="dp-node-label" x="0" y="18" fill="#2A7050" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DMV COMMUNITY</text>
+            <text x="0" y="28" fill="#3CA078" font-size="7" font-family="DM Sans,sans-serif">DC · Maryland · Virginia</text>
+            <g class="dp-detail"><text x="0" y="40" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Home base</text></g>
+          </g>
+          <!-- NSBE (120°) -->
+          <g class="dp-node" transform="translate(183,390)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(200,146,42,0.3)" stroke="#C8922A" stroke-width="1"/>
+            <text class="dp-node-label" x="0" y="16" fill="#8A6020" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">NSBE</text>
+            <text x="0" y="26" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Lifetime Member</text>
+            <g class="dp-detail"><text x="0" y="38" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Built here</text></g>
+          </g>
+          <!-- DST (150°) -->
+          <g class="dp-node" transform="translate(115,314)" text-anchor="end">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(180,30,30,0.35)" stroke="#C82020" stroke-width="1"/>
+            <text class="dp-node-label" x="-12" y="-8" fill="#901818" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">DELTA SIGMA THETA</text>
+            <text x="-12" y="2" fill="#C82020" font-size="7" font-family="DM Sans,sans-serif">Founded 1913</text>
+            <g class="dp-detail"><text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Black Code, lived</text></g>
+          </g>
+          <!-- Why Kid (180°) -->
+          <g class="dp-node" transform="translate(93,220)" text-anchor="end">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(160,120,200,0.3)" stroke="#A078C8" stroke-width="1"/>
+            <text class="dp-node-label" x="-12" y="-4" fill="#7050A0" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">THE WHY KID</text>
+            <g class="dp-detail"><text x="-12" y="10" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Always asking underneath</text></g>
+          </g>
+          <!-- Youngest of Three (210°) -->
+          <g class="dp-node" transform="translate(115,126)" text-anchor="end">
+            <circle class="dp-dot" cx="0" cy="0" r="5" fill="rgba(100,160,180,0.3)" stroke="#64A0B4" stroke-width="1"/>
+            <text class="dp-node-label" x="-12" y="-8" fill="#407090" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5">YOUNGEST OF THREE</text>
+            <text x="-12" y="2" fill="#64A0B4" font-size="7" font-family="DM Sans,sans-serif">Three Black women</text>
+            <g class="dp-detail"><text x="-12" y="14" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Learned by watching</text></g>
+          </g>
+          <!-- Black Code (240°) -->
+          <g class="dp-node" transform="translate(183,50)" text-anchor="middle">
+            <circle class="dp-dot" cx="0" cy="0" r="6" fill="rgba(200,146,42,0.4)" stroke="#C8922A" stroke-width="1.5"/>
+            <text class="dp-node-label" x="0" y="-14" fill="#A89278" font-size="8.5" font-family="DM Sans,sans-serif" letter-spacing="0.5" font-weight="500">BLACK CODE</text>
+            <text x="0" y="-4" fill="#C8922A" font-size="7" font-family="DM Sans,sans-serif">Dissertation Framework</text>
+            <g class="dp-detail"><text x="0" y="8" fill="#A89278" font-size="7" font-family="DM Sans,sans-serif">Culture as infrastructure</text></g>
+          </g>
+        </svg>
+      </div>
+      <p class="dp-caption">Hover each node to see its connection to the research.</p>
+    </div>
+  </div>
+
+  <!-- CURATORIAL STATEMENT — full width, after visual -->
+  <div style="padding:2rem;border-bottom:1px solid var(--border);background:var(--bg-2)">
+    <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem">Curatorial Statement</p>
+    <p style="font-size:0.92rem;color:var(--text-2);line-height:1.8;max-width:800px">Who curates matters. The position from which knowledge is assembled is not incidental to what gets assembled. This corner is a full account of the curator's position, because the argument of this museum is that you cannot understand the knowledge without understanding the knower.</p>
+  </div>
+
+  <!-- CONTENT — single column -->
+  <div class="exhibit-body" style="padding-top:2.5rem"><div class="exhibit-wall-label" style="visibility:hidden"></div><div class="exhibit-essay">
+
+<h3>Community as Infrastructure</h3>
 
       <p>The most important lesson of nine years in technical fields was not technical. It was this: community is infrastructure. Not metaphorically, literally. The friends who explained what the room really meant after the meeting ended. The line sisters who had already navigated the institution you were entering and left the map. The professional network that passed you an opportunity before it was posted. The family that held you when the institution couldn't. These are not background to professional success. They are the mechanism. They are what makes the work survivable and the person inside the work intact.</p>
 
@@ -1632,7 +1581,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <div style="display:flex;flex-direction:column;gap:1.5rem;margin:2.5rem 0">
         <div style="background:var(--bg-2);border:1px solid var(--border);padding:2rem;display:grid;grid-template-columns:100px 1fr;gap:1.5rem;align-items:start">
-          <div style="background:#000;border-radius:4px;padding:0.75rem;display:flex;align-items:center;justify-content:center">
+          <div style="display:flex;align-items:center;justify-content:center;padding:0.5rem">
             <img src="images/dst-logo.png" alt="Delta Sigma Theta Sorority Inc. crest" style="width:100%;max-width:80px;height:auto;display:block"/>
           </div>
           <div>
@@ -1641,7 +1590,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
           </div>
         </div>
         <div style="background:var(--bg-2);border:1px solid var(--border);padding:2rem;display:grid;grid-template-columns:100px 1fr;gap:1.5rem;align-items:start">
-          <div style="background:#000;border-radius:4px;padding:0.75rem;display:flex;align-items:center;justify-content:center">
+          <div style="display:flex;align-items:center;justify-content:center;padding:0.5rem">
             <img src="images/nsbe-logo.png" alt="National Society of Black Engineers logo" style="width:100%;max-width:80px;height:auto;display:block"/>
           </div>
           <div>
@@ -1650,25 +1599,45 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
           </div>
         </div>
         <div style="background:var(--bg-2);border:1px solid var(--border);overflow:hidden">
-          <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);padding:1.25rem 1.5rem 0.5rem">Place as Community</p>
-          <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0E0C08">
-            <path d="M120,70 L180,55 L250,50 L320,46 L400,44 L470,46 L540,50 L600,58 L640,72 L660,90 L665,112 L658,135 L643,155 L625,172 L610,188 L600,205 L588,220 L570,230 L545,235 L518,238 L490,236 L462,230 L432,224 L400,220 L368,222 L338,228 L308,232 L278,228 L250,220 L225,210 L200,196 L180,180 L162,163 L148,145 L135,125 L122,105 Z" fill="rgba(200,146,42,0.06)" stroke="rgba(200,146,42,0.22)" stroke-width="1.5"/>
-            <path d="M42,108 L68,96 L90,100 L104,112 L106,130 L94,143 L74,147 L54,140 L40,126 Z" fill="rgba(200,146,42,0.06)" stroke="rgba(200,146,42,0.22)" stroke-width="1"/>
-            <text x="74" y="165" fill="rgba(200,146,42,0.35)" font-size="7.5" font-family="DM Sans,sans-serif" text-anchor="middle">AK</text>
-            <circle cx="68" cy="118" r="5" fill="#C8922A" opacity="0.9"/>
-            <circle cx="68" cy="118" r="11" fill="rgba(200,146,42,0.12)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
-            <text x="68" y="105" fill="#C8922A" font-size="8.5" font-family="DM Sans,sans-serif" text-anchor="middle" font-weight="500">Fairbanks, AK</text>
-            <circle cx="522" cy="192" r="5" fill="#C8922A" opacity="0.9"/>
-            <circle cx="522" cy="192" r="11" fill="rgba(200,146,42,0.12)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
-            <text x="522" y="179" fill="#C8922A" font-size="8.5" font-family="DM Sans,sans-serif" text-anchor="middle" font-weight="500">Hinesville, GA</text>
-            <circle cx="585" cy="140" r="5" fill="#C8922A" opacity="0.9"/>
-            <circle cx="585" cy="140" r="11" fill="rgba(200,146,42,0.12)" stroke="rgba(200,146,42,0.35)" stroke-width="1"/>
-            <text x="585" y="127" fill="#C8922A" font-size="8.5" font-family="DM Sans,sans-serif" text-anchor="middle" font-weight="500">DMV</text>
-            <line x1="585" y1="140" x2="522" y2="192" stroke="rgba(200,146,42,0.18)" stroke-width="1" stroke-dasharray="4,3"/>
-            <line x1="522" y1="192" x2="68" y2="118" stroke="rgba(200,146,42,0.12)" stroke-width="1" stroke-dasharray="4,3"/>
-            <text x="400" y="278" fill="rgba(200,146,42,0.3)" font-size="8" font-family="DM Sans,sans-serif" text-anchor="middle" letter-spacing="2">THREE PLACES · ONE FOUNDATION</text>
-          </svg>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;padding:1.25rem 1.5rem">The DMV is home, but it is not the whole story. Hinesville, Georgia, where I grew up, and Fairbanks, Alaska are each integral parts of who I am. These three places provided completely different contexts for my life, different communities, different ways of understanding the world. I carry all of them.</p>
+          <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);padding:1.25rem 1.5rem 0.75rem">Place as Community</p>
+          <!-- Map with positioned pins -->
+          <div style="position:relative;line-height:0">
+            <img src="images/us-map.png" alt="Map of the United States" style="width:100%;display:block;opacity:0.55;filter:sepia(0.3) brightness(0.7)"/>
+
+            <!-- Pin: Fairbanks AK — bottom left inset Alaska, approx 14% from left, 82% from top -->
+            <div style="position:absolute;left:14%;top:82%;transform:translate(-50%,-50%)">
+              <div style="position:relative;text-align:center">
+                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
+                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
+                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">Fairbanks, AK</p>
+                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Context</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pin: Hinesville GA — approx 72% from left, 72% from top -->
+            <div style="position:absolute;left:72%;top:72%;transform:translate(-50%,-50%)">
+              <div style="position:relative;text-align:center">
+                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
+                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
+                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">Hinesville, GA</p>
+                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Home</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pin: DMV — approx 78% from left, 48% from top -->
+            <div style="position:absolute;left:79%;top:48%;transform:translate(-50%,-50%)">
+              <div style="position:relative;text-align:center">
+                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
+                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
+                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">The DMV</p>
+                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Home Base</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;padding:1rem 1.5rem 1.5rem">The DMV is home, but it is not the whole story. Hinesville, Georgia and Fairbanks, Alaska are each integral parts of who I am. These three places provided completely different contexts for my life. I carry all of them.</p>
         </div>
       </div>
 
@@ -1693,7 +1662,6 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
 
       <p>This museum is part of that exploration. It is an attempt to do in form what the research argues in theory, to make something that carries the identity of its maker visibly and intentionally, rather than pretending that neutrality was ever an option.</p>
 
-    </div>
   </div>
 </section>
 
