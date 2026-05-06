@@ -1419,7 +1419,8 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
   </div>
 
   <!-- HEADSHOT + VISUALIZATION: side by side, visualization dominant -->
-  <div style="display:grid;grid-template-columns:220px 1fr;height:480px;border-bottom:1px solid var(--border)">
+  <div style="max-width:1100px;margin:0 auto;border-bottom:1px solid var(--border)">
+  <div style="display:grid;grid-template-columns:220px 1fr;height:480px">
 
     <!-- Headshot column -->
     <div style="border-right:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg-2)">
@@ -1560,6 +1561,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
     </div>
   </div>
 
+  </div>
   <!-- CURATORIAL STATEMENT — full width, after visual -->
   <div style="padding:2rem;border-bottom:1px solid var(--border);background:var(--bg-2)">
     <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem">Curatorial Statement</p>
@@ -1590,7 +1592,7 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
           </div>
         </div>
         <div style="background:var(--bg-2);border:1px solid var(--border);padding:2rem;display:grid;grid-template-columns:100px 1fr;gap:1.5rem;align-items:start">
-          <div style="display:flex;align-items:center;justify-content:center;padding:0.5rem">
+          <div style="display:flex;align-items:center;justify-content:center;padding:0.75rem;background:#0C0A07;border-radius:6px;width:88px;height:88px;flex-shrink:0">
             <img src="images/nsbe-logo.png" alt="National Society of Black Engineers logo" style="width:100%;max-width:80px;height:auto;display:block"/>
           </div>
           <div>
@@ -1600,42 +1602,30 @@ footer { padding: 3rem 2.5rem; border-top: 1px solid var(--border); display: fle
         </div>
         <div style="background:var(--bg-2);border:1px solid var(--border);overflow:hidden">
           <p style="font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);padding:1.25rem 1.5rem 0.75rem">Place as Community</p>
-          <!-- Map with positioned pins -->
           <div style="position:relative;line-height:0">
-            <img src="images/us-map.png" alt="Map of the United States" style="width:100%;display:block;opacity:0.55;filter:sepia(0.3) brightness(0.7)"/>
+            <img src="images/us-map.png" alt="Map of the United States" style="width:100%;display:block;opacity:0.6;filter:sepia(0.2) brightness(0.75)"/>
+            <!-- SVG overlay using same 612x382 coordinate space as the image -->
+            <svg viewBox="0 0 612 382" style="position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible">
 
-            <!-- Pin: Fairbanks AK — bottom left inset Alaska, approx 14% from left, 82% from top -->
-            <div style="position:absolute;left:18%;top:80%;transform:translate(-50%,-50%)">
-              <div style="position:relative;text-align:center">
-                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
-                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
-                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">Fairbanks, AK</p>
-                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Context</p>
-                </div>
-              </div>
-            </div>
+              <!-- Fairbanks, AK — Alaska inset interior -->
+              <circle cx="112" cy="315" r="5" fill="#C8922A" stroke="#EAD9BE" stroke-width="1.5"/>
+              <circle cx="112" cy="315" r="11" fill="rgba(200,146,42,0.15)" stroke="rgba(200,146,42,0.4)" stroke-width="1"/>
+              <text x="112" y="304" fill="#C8922A" font-size="8" font-family="DM Sans,sans-serif" text-anchor="middle" font-weight="600">Fairbanks, AK</text>
+              <text x="112" y="294" fill="rgba(200,146,42,0.6)" font-size="6.5" font-family="DM Sans,sans-serif" text-anchor="middle">Context</text>
 
-            <!-- Pin: Hinesville GA — approx 72% from left, 72% from top -->
-            <div style="position:absolute;left:79%;top:60%;transform:translate(-50%,-50%)">
-              <div style="position:relative;text-align:center">
-                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
-                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
-                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">Hinesville, GA</p>
-                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Home</p>
-                </div>
-              </div>
-            </div>
+              <!-- Hinesville, GA — southeast Georgia coast -->
+              <circle cx="482" cy="234" r="5" fill="#C8922A" stroke="#EAD9BE" stroke-width="1.5"/>
+              <circle cx="482" cy="234" r="11" fill="rgba(200,146,42,0.15)" stroke="rgba(200,146,42,0.4)" stroke-width="1"/>
+              <text x="482" y="223" fill="#C8922A" font-size="8" font-family="DM Sans,sans-serif" text-anchor="middle" font-weight="600">Hinesville, GA</text>
+              <text x="482" y="213" fill="rgba(200,146,42,0.6)" font-size="6.5" font-family="DM Sans,sans-serif" text-anchor="middle">Home</text>
 
-            <!-- Pin: DMV — approx 78% from left, 48% from top -->
-            <div style="position:absolute;left:79%;top:45%;transform:translate(-50%,-50%)">
-              <div style="position:relative;text-align:center">
-                <div style="width:14px;height:14px;border-radius:50%;background:#C8922A;border:2px solid #EAD9BE;margin:0 auto;box-shadow:0 0 10px rgba(200,146,42,0.6)"></div>
-                <div style="position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;margin-bottom:4px">
-                  <p style="font-size:8px;font-family:DM Sans,sans-serif;color:#C8922A;font-weight:500;letter-spacing:0.5px;line-height:1.2">The DMV</p>
-                  <p style="font-size:7px;font-family:DM Sans,sans-serif;color:rgba(200,146,42,0.6);line-height:1.2">Home Base</p>
-                </div>
-              </div>
-            </div>
+              <!-- The DMV — Virginia/DC/Maryland area -->
+              <circle cx="490" cy="172" r="5" fill="#C8922A" stroke="#EAD9BE" stroke-width="1.5"/>
+              <circle cx="490" cy="172" r="11" fill="rgba(200,146,42,0.15)" stroke="rgba(200,146,42,0.4)" stroke-width="1"/>
+              <text x="510" y="168" fill="#C8922A" font-size="8" font-family="DM Sans,sans-serif" text-anchor="start" font-weight="600">The DMV</text>
+              <text x="510" y="178" fill="rgba(200,146,42,0.6)" font-size="6.5" font-family="DM Sans,sans-serif" text-anchor="start">Home Base</text>
+
+            </svg>
           </div>
           <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;padding:1rem 1.5rem 1.5rem">The DMV is home, but it is not the whole story. Hinesville, Georgia and Fairbanks, Alaska are each integral parts of who I am. These three places provided completely different contexts for my life. I carry all of them.</p>
         </div>
